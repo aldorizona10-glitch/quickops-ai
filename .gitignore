@@ -5,3 +5,5 @@ logs/
 smtp.env
 credentials.json
 token.json
+__pycache__/
+scripts/__pycache__/

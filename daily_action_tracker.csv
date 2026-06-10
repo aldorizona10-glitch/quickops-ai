@@ -14,3 +14,8 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,HN Hiring,Pango,Send own-words email,applications_batch_001.md,Sent,gmail_id:19eafa3a9978723f,Check reply in 24h,Mentioned GMT+7 and ops exceptions
 2026-06-10,HN Hiring,Babou,Send application email,applications_batch_001.md,Sent,gmail_id:19eafa3656d54135,Check reply in 24h,Mentioned agent workflow/human approval
 2026-06-10,HN Hiring,Who Wants To Be Hired,Post profile,applications_batch_001.md,Ready,,Use correct thread only,
+2026-06-10,HN Hiring,Servicing Copilot,Send contractor bake-off email,email_queue/readifinancial-servicing-copilot.eml,Sent,gmail_id:19eafaf1c83b9a3a,Check reply in 24h,High priority $5k paid bake-off
+2026-06-10,HN Hiring,Starbridge,Send AI/data workflow email,email_queue/starbridge.eml,Sent,gmail_id:19eafaf61c1b4fec,Check reply in 24h,Remote AI sales insights platform
+2026-06-10,HN Hiring,Reef Technologies,Send remote backend email,email_queue/reef-technologies.eml,Sent,gmail_id:19eafaf3e5d25e80,Check reply in 24h,Remote EMEA/APAC hourly role
+2026-06-10,HN Hiring,Tech Mahindra Cloud Advisory,Send AI ops automation email,email_queue/techmahindra-cloud-advisory.eml,Sent,gmail_id:19eafaf841a63b13,Check reply in 24h,Global cloud advisory
+2026-06-10,HN Hiring,This Dot Labs,Send AI workflow email,email_queue/thisdot-labs.eml,Sent,gmail_id:19eafafa780a460a,Check reply in 24h,Remote with US overlap maybe possible

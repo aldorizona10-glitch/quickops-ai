@@ -1,0 +1,24 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: info@readifinancial.com
+Subject: HN - Servicing Copilot contractor bake-off
+Content-Type: text/plain; charset=utf-8
+
+Hi,
+
+I saw your HN post for Servicing Copilot and the $5k paid bake-off.
+
+The product is interesting because it is a real operations workflow, not a generic AI wrapper: CSV loan tape import, idempotent upsert, audit trail, case detail screen, classifying borrower email replies, activity log, and follow-up logic.
+
+I am Aldo Rizona, based in Indonesia. I work on AI-assisted automation, workflow systems, and security/adversarial systems. I recently packaged a small operations workflow service here:
+
+https://aldorizona10-glitch.github.io/quickops-ai/landing/
+
+GitHub:
+https://github.com/aldorizona10-glitch
+
+If the bake-off is still open, I would like to be considered. The part I would focus on first is making the import and event log reliable: deterministic idempotency, visible failure states, clean audit history, and a simple case screen that makes the follow-up workflow obvious to a servicing user.
+
+I can send a short implementation plan for the trial scope if useful.
+
+Best,
+Aldo

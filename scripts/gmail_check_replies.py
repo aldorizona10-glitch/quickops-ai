@@ -18,6 +18,11 @@ TARGET_SENDERS = {
     "jobs@goshopbrands.com": "Go.Shop",
     "steve@pango.ai": "Pango",
     "careers@babou.ai": "Babou",
+    "info@readifinancial.com": "Servicing Copilot",
+    "recruiting@starbridge.ai": "Starbridge",
+    "hiring@reef.pl": "Reef Technologies",
+    "cprabala@techmahindra.com": "Tech Mahindra",
+    "jobs@thisdot.co": "This Dot Labs",
 }
 
 

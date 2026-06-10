@@ -18,6 +18,11 @@ ALLOWED_RECIPIENTS = {
     "jobs@goshopbrands.com",
     "steve@pango.ai",
     "careers@babou.ai",
+    "info@readifinancial.com",
+    "recruiting@starbridge.ai",
+    "hiring@reef.pl",
+    "cprabala@techmahindra.com",
+    "jobs@thisdot.co",
 }
 
 
@@ -114,6 +119,17 @@ def log_sent(path: Path, msg: EmailMessage, dry_run: bool) -> None:
         f.write(",".join(row) + "\n")
 
 
+def sent_files() -> set[str]:
+    if not SENT_LOG.exists():
+        return set()
+    sent = set()
+    for line in SENT_LOG.read_text(encoding="utf-8").splitlines()[1:]:
+        parts = line.split(",")
+        if len(parts) >= 5 and parts[4] == "sent":
+            sent.add(parts[1])
+    return sent
+
+
 def main() -> int:
     queue_files = sorted(QUEUE_DIR.glob("*.eml"))
     if not queue_files:
@@ -129,8 +145,12 @@ def main() -> int:
 
     cfg = None if dry_run else smtp_config()
     sent_count = 0
+    already_sent = sent_files()
 
     for path in queue_files:
+        if not dry_run and path.name in already_sent:
+            print(f"SKIP: {path.name} already sent")
+            continue
         msg = read_eml(path)
         try:
             validate_message(path, msg)
