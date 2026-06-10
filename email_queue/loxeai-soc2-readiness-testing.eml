@@ -1,0 +1,27 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: mehta.arja@northeastern.edu
+Subject: Show HN - SoC 2 readiness workflow testing pass
+Content-Type: text/plain; charset=utf-8
+
+Hi,
+
+I saw your Show HN post for the verifiable open-source SoC 2 readiness scanner. This is close to my AI/security and automation work, so I wanted to offer a small fixed-scope external testing pass.
+
+Offer: I can do one USD 100 pass and send back a concise report covering:
+
+- first-run friction from a technical operator perspective
+- evidence/readiness output clarity for a small team preparing compliance work
+- edge cases around missing repo metadata, confusing control status, and handoff to non-security operators
+- one practical checklist you can reuse with early users or design partners
+
+I will stay within public/demo flows unless you explicitly provide a sandbox. No production probing, no noisy security testing, and no access attempts outside the intended product flow.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+Context I found:
+https://news.ycombinator.com/item?id=48164906
+
+Best,
+Aldo

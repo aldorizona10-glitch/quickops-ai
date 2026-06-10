@@ -45,6 +45,7 @@ ALLOWED_RECIPIENTS = {
     "os@ota.run",
     "support@clor.com",
     "hello@integuru.ai",
+    "mehta.arja@northeastern.edu",
 }
 
 

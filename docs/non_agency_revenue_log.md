@@ -73,6 +73,15 @@ Next actions:
   - Integuru: `hello@integuru.ai`, Gmail ID `19eb31e3aa0a834f`
 - Payment status: not paid; depends on reply, acceptance, delivery, and invoice/payout agreement.
 
+2026-06-11 additional USD 100 security/workflow outreach:
+
+- Target: Loxea / verifiable open-source SoC 2 readiness scanner.
+- Source: https://news.ycombinator.com/item?id=48164906
+- Offer sent: USD 100 external testing pass for first-run friction, evidence/readiness output clarity, compliance handoff edge cases, and early-user checklist.
+- Email queue file: `email_queue/loxeai-soc2-readiness-testing.eml`
+- Gmail send status: sent, Gmail ID `19eb354163dc2ab7`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and invoice/payout agreement.
+
 ### Quantum Visualizer data/product maintenance
 
 - Bounty source: https://github.com/1btc-news/news-client/issues/33
