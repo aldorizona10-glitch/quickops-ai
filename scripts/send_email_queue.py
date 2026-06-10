@@ -28,6 +28,10 @@ ALLOWED_RECIPIENTS = {
     "jobs@drswarm.com",
     "talent+hn@cwai.co",
     "careers@coder.com",
+    "hello@inspectioncredit.com",
+    "os@ota.run",
+    "support@clor.com",
+    "hello@integuru.ai",
 }
 
 

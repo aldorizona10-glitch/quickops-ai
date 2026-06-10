@@ -1,0 +1,27 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: os@ota.run
+Subject: Show HN - readiness workflow testing pass
+Content-Type: text/plain; charset=utf-8
+
+Hi,
+
+I saw OTA on Hacker News. A readiness contract for software repos is close to the kind of automation and technical-operator workflow I have been building.
+
+Offer: I can do one USD 100 pass and send back a concise report covering:
+
+- first-run friction from a repo maintainer perspective
+- docs and output clarity for someone adopting it without hand-holding
+- edge cases around repo structure, missing metadata, and confusing readiness states
+- one practical checklist you can reuse for onboarding early projects
+
+I will stay within public/demo flows unless you explicitly provide a sandbox. No production probing, no noisy security testing, and no access attempts outside the intended product flow.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/paid-listening/
+
+Context I found:
+https://news.ycombinator.com/item?id=48234838
+
+Best,
+Aldo

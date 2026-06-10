@@ -41,6 +41,12 @@ Non-agency revenue status:
 python3 scripts/non_agency_status.py
 ```
 
+Full automation revenue scout:
+
+```bash
+python3 scripts/full_auto_revenue_scout.py
+```
+
 Autopilot akan:
 
 - Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.

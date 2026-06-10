@@ -41,6 +41,10 @@ ALLOWED_RECIPIENTS = {
     "contact@caddieagent.ai",
     "convoyeurapp@gmail.com",
     "hallo@odeva.nl",
+    "hello@inspectioncredit.com",
+    "os@ota.run",
+    "support@clor.com",
+    "hello@integuru.ai",
 }
 
 
