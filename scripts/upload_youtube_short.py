@@ -18,6 +18,43 @@ LOG_DIR = ROOT / "logs"
 UPLOAD_LOG = LOG_DIR / "youtube_upload_log.csv"
 
 
+class YouTubeApiError(RuntimeError):
+    pass
+
+
+def format_youtube_error(stage: str, code: int, body: str) -> str:
+    try:
+        data = json.loads(body)
+    except json.JSONDecodeError:
+        return f"YouTube {stage} failed HTTP {code}: {body}"
+
+    err = data.get("error", {})
+    message = err.get("message", body)
+    details = err.get("details", [])
+    activation_url = ""
+    reason = err.get("status", "")
+    for item in details:
+        if item.get("@type", "").endswith("google.rpc.ErrorInfo"):
+            reason = item.get("reason", reason)
+            activation_url = item.get("metadata", {}).get("activationUrl", activation_url)
+    lines = [
+        f"YouTube {stage} failed HTTP {code}: {reason or 'API_ERROR'}",
+        message,
+    ]
+    if activation_url:
+        lines.extend(
+            [
+                "",
+                "Required manual action:",
+                f"1. Open: {activation_url}",
+                "2. Enable YouTube Data API v3 for this project.",
+                "3. Wait 2-10 minutes for propagation.",
+                "4. Re-run: QUICKOPS_UPLOAD_YOUTUBE_PRIVATE=1 python3 scripts/autopilot_run_once.py",
+            ]
+        )
+    return "\n".join(lines)
+
+
 def load_metadata() -> dict[str, dict[str, str]]:
     with METADATA.open(newline="", encoding="utf-8") as f:
         return {row["id"]: row for row in csv.DictReader(f)}
@@ -67,7 +104,7 @@ def start_resumable_upload(access_token: str, metadata: dict, file_size: int, mi
             return location
     except error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"YouTube upload init failed HTTP {exc.code}: {body}") from exc
+        raise YouTubeApiError(format_youtube_error("upload init", exc.code, body)) from exc
 
 
 def upload_file(access_token: str, upload_url: str, path: Path, mime: str) -> dict:
@@ -87,7 +124,7 @@ def upload_file(access_token: str, upload_url: str, path: Path, mime: str) -> di
             return json.loads(resp.read().decode("utf-8"))
     except error.HTTPError as exc:
         body = exc.read().decode("utf-8", errors="replace")
-        raise RuntimeError(f"YouTube upload failed HTTP {exc.code}: {body}") from exc
+        raise YouTubeApiError(format_youtube_error("upload", exc.code, body)) from exc
 
 
 def build_youtube_metadata(row: dict[str, str], privacy: str) -> dict:
@@ -140,7 +177,7 @@ def main() -> int:
             raise RuntimeError(f"Missing rendered video: {path}. Run scripts/render_youtube_shorts.py first.")
         mime = mimetypes.guess_type(path.name)[0] or "video/mp4"
         yt_metadata = build_youtube_metadata(metadata[short_id], privacy)
-        print(f"UPLOADING: {short_id} -> {metadata[short_id]['title']} ({privacy})")
+        print(f"UPLOADING: {short_id} -> {metadata[short_id]['title']} ({privacy})", flush=True)
         upload_url = start_resumable_upload(access_token, yt_metadata, path.stat().st_size, mime)
         result = upload_file(access_token, upload_url, path, mime)
         video_id = result.get("id", "")
@@ -150,4 +187,8 @@ def main() -> int:
 
 
 if __name__ == "__main__":
-    raise SystemExit(main())
+    try:
+        raise SystemExit(main())
+    except YouTubeApiError as exc:
+        print(str(exc), file=sys.stderr)
+        raise SystemExit(1)
