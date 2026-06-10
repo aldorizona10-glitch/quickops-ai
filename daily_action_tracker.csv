@@ -1,0 +1,11 @@
+date,channel,target,action,message_file,status,result,next_action,notes
+2026-06-10,Hacker News,MailAI,Send/comment outreach,outreach_batch_001.md,Ready,,Check reply in 24h,
+2026-06-10,Hacker News,Auxx AI,Send/comment outreach,outreach_batch_001.md,Ready,,Check reply in 24h,
+2026-06-10,Hacker News,rtrvr.ai,Send/comment outreach,outreach_batch_001.md,Ready,,Check reply in 24h,
+2026-06-10,Hacker News,Caddie AI,Send/comment outreach,outreach_batch_001.md,Ready,,Check reply in 24h,
+2026-06-10,Hacker News,Add to Sheets,Send/comment outreach,outreach_batch_001.md,Ready,,Check reply in 24h,
+2026-06-10,Upwork,Search Zapier automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,
+2026-06-10,Upwork,Search n8n automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,
+2026-06-10,LinkedIn,Manual follow up search,Connect/DM,outreach_batch_002.md,Ready,,Send 5 personalized DMs,
+2026-06-10,X,Search Zapier broke,Reply,outreach_batch_002.md,Ready,,Reply to 5 relevant posts,
+2026-06-10,Reddit,CRM/follow-up threads,Helpful reply,outreach_batch_002.md,Ready,,Reply where allowed,

@@ -6,6 +6,11 @@ Model agensi: Micro AI Operations Agency untuk bisnis kecil.
 
 Nama kerja: QuickOps AI
 
+Live page:
+
+- https://aldorizona10-glitch.github.io/quickops-ai/landing/
+- https://aldorizona10-glitch.github.io/quickops-ai/ after root redirect is active
+
 ## Posisi
 
 QuickOps AI membantu bisnis kecil menghemat waktu admin dengan setup CRM ringan, automasi follow-up, form lead, chatbot FAQ sederhana, spreadsheet dashboard, dan workflow n8n/Google Sheets.
@@ -70,6 +75,14 @@ Deliverable:
 ## Strategi Mendapatkan Klien
 
 Jalur paling cepat adalah outbound manual, bukan menunggu website ranking.
+
+Target global lebih penting daripada target lokal. Prioritas channel:
+
+- Hacker News founder/product feedback.
+- X search untuk keluhan Zapier, CRM, follow-up, spreadsheet.
+- LinkedIn untuk consultant, agency owner, coach, real estate, clinic, B2B founder.
+- Upwork/Fiverr/Contra untuk job yang sudah punya demand.
+- Reddit hanya jika aturan subreddit mengizinkan bantuan atau promosi.
 
 Target harian:
 
