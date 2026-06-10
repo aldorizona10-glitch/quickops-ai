@@ -51,6 +51,16 @@ Next actions:
 - Zero capability search found paid discovery/search capabilities, but they were not called because the user requested zero cash outlay.
 - Current closest non-agency payout remains maifetch GBP 50; not paid until maintainer accepts/merges and pays.
 
+2026-06-11 agency-adjacent paid testing attempt:
+
+- Target: Odeva Booking, Show HN founder request for testers.
+- Source: https://news.ycombinator.com/item?id=48376362
+- Official contact found in Odeva `llms-full.txt`: `hallo@odeva.nl`
+- Offer sent: USD 100 operator/API/docs testing pass for booking lifecycle, payments/refunds, guest confirmations, tourist tax, group reservations, and founding-partner workflow handoff.
+- Email queue file: `email_queue/odeva-booking-workflow-testing.eml`
+- Gmail send status: sent, Gmail ID `19eb2f0202fc0d9e`.
+- Payment status: not paid; depends on reply, acceptance, and paid agreement.
+
 ### Quantum Visualizer data/product maintenance
 
 - Bounty source: https://github.com/1btc-news/news-client/issues/33

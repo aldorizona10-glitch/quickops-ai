@@ -40,6 +40,7 @@ ALLOWED_RECIPIENTS = {
     "contact@addtosheets.com",
     "contact@caddieagent.ai",
     "convoyeurapp@gmail.com",
+    "hallo@odeva.nl",
 }
 
 

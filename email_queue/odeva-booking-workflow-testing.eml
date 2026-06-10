@@ -1,0 +1,26 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: hallo@odeva.nl
+Subject: Show HN - booking workflow tester for Odeva
+Content-Type: text/plain; charset=utf-8
+
+Hi Ramon,
+
+I saw your Show HN post for Odeva and the line that the current wall is a lack of testers.
+
+Small fixed-scope offer: I can do one USD 100 operator/testing pass on Odeva from the outside and send back a concise report covering:
+
+- booking/reservation lifecycle friction from a small accommodation operator perspective
+- API/docs clarity for booking widget, reservation state, payments, refunds, and guest confirmations
+- edge cases worth testing around tourist tax, group reservations, payment status, and manual admin work
+- one practical "first customer workflow" checklist you can reuse with founding partners
+
+I will stay within public docs/demo flows unless you explicitly provide a sandbox. No production probing, no noisy security testing.
+
+Relevant proof:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+If useful, send me the preferred sandbox/docs path and I can turn around the first pass quickly.
+
+Best,
+Aldo
