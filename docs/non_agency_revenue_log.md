@@ -51,6 +51,31 @@ Next actions:
 - Zero capability search found paid discovery/search capabilities, but they were not called because the user requested zero cash outlay.
 - Current closest non-agency payout remains maifetch GBP 50; not paid until maintainer accepts/merges and pays.
 
+### Quantum Visualizer data/product maintenance
+
+- Bounty source: https://github.com/1btc-news/news-client/issues/33
+- Active maintenance lane: data-correctness / narrow source-backed contributions.
+- Pull request: https://github.com/Iskander-Agent/quantum-visualizer/pull/74
+- Fork branch: https://github.com/aldorizona10-glitch/quantum-visualizer/tree/fix-root-readiness-index-normalization
+- Status: PR open and mergeable when checked.
+- Payout context: no explicit payout commitment for this PR; Issue #33 pays accepted features/data updates only after reviewer/admin approval.
+- Work completed: root `index.html` now handles numeric `metadata.quantum_readiness_index` from v3.5 data, matching the compatibility behavior already present in `public/index.html`.
+
+Validation completed:
+
+```bash
+npm run validate:data
+npm run check:dashboard
+npm run check:frontend
+node -e root index.html inline script syntax check
+```
+
+Next actions:
+
+1. Watch PR #74 for DRI/reviewer feedback.
+2. Patch quickly if review changes are requested.
+3. If accepted/merged, ask whether it qualifies for the Issue #33 accepted-feature/data-update payout lane.
+
 ## Bounty Triage Notes
 
 Skipped for now:
