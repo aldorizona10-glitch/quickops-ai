@@ -96,3 +96,5 @@ Skipped for now:
 - `warpspeedopen-source/warpspeed-bounties#5`: nominal $660, but requires external signup and maintainer confirmation before work begins.
 - `watney-ai/open-source-bounties#1`: nominal EUR 2, but target file is missing and the issue already has many noisy PR attempts.
 - `eigenwallet/core#727`: bounty exists, but explicitly requires exclusively human-written communication and no AI-generated PRs.
+- `ubiquity/business-development#89` and `#90`: nominal USD 400/USD 200, but UbiquityOS requires core-team/admin status to start; outside contributor attempts are rejected by the bot.
+- `ritik4ever/stellar-bounty-board#288`: medium 150-point task, but an implementation PR already exists and later claim comments are present; skip as duplicate-risk.
