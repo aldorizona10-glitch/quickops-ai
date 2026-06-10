@@ -13,7 +13,8 @@ def main() -> int:
     print("- maifetch Rust rewrite: https://github.com/HutchyBen/maifetch/pull/10")
     print("- Bounty issue: https://github.com/HutchyBen/maifetch/issues/1")
     print("- Stated bounty: GBP 50")
-    print("- Status: PR open; payment depends on maintainer acceptance")
+    print("- Status: PR open and mergeable; follow-up comment sent")
+    print("- Payment depends on maintainer acceptance")
     print()
     print("Local worktree:")
     print("- /tmp/maifetch")
@@ -23,6 +24,7 @@ def main() -> int:
     print("1. Monitor PR #10 for maintainer comments.")
     print("2. Patch and rebuild if review changes are requested.")
     print("3. Ask for payout instructions after acceptance/merge.")
+    print("4. Avoid bounties that require leaking system prompts or starting before maintainer confirmation.")
     print()
     print(f"Log: {log}")
     return 0

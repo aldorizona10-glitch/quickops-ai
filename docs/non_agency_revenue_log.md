@@ -38,3 +38,19 @@ Next actions:
 2. If changes are requested, patch `/tmp/maifetch`, rebuild, and push to `aldorizona10-glitch:rewrite-in-rust`.
 3. After merge/acceptance, ask maintainer where to provide payout details.
 
+2026-06-11 update:
+
+- PR #10 rechecked: open and mergeable.
+- Follow-up comment added to clarify that `cargo build --release` passes and compatibility aliases are supported.
+- No maintainer comments yet.
+
+## Bounty Triage Notes
+
+Skipped for now:
+
+- `ItzFireable/Portfolio#7`: bounty target changed from C++ to Python to Haskell, with public concern about payout reliability.
+- `UnsafeLabs/Bounty-Hunters#571` and `#569`: requires publishing full system/session prompt or complete runtime initialization text. This is not acceptable.
+- `claude-builders-bounty#5`: nominal $200, but heavily saturated with many existing PRs and repeated claim comments.
+- `warpspeedopen-source/warpspeed-bounties#5`: nominal $660, but requires external signup and maintainer confirmation before work begins.
+- `watney-ai/open-source-bounties#1`: nominal EUR 2, but target file is missing and the issue already has many noisy PR attempts.
+- `eigenwallet/core#727`: bounty exists, but explicitly requires exclusively human-written communication and no AI-generated PRs.
