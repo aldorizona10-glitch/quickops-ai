@@ -102,7 +102,7 @@ Deliverable:
 - Database lead di Google Sheets, Airtable free, atau HubSpot CRM free.
 - Template follow-up email/WhatsApp.
 - Dashboard status lead sederhana: New, Contacted, Won, Lost.
-- Video Loom/OBS 3-5 menit yang menjelaskan cara pakai.
+- Catatan serah-terima singkat yang menjelaskan cara pakai.
 
 Waktu pengerjaan: 24-48 jam.
 
@@ -177,7 +177,7 @@ Hari 1:
 Hari 2:
 
 - Buat demo untuk bisnis fiktif: form lead -> spreadsheet -> follow-up template.
-- Rekam video demo 3 menit.
+- Buat demo tertulis dan screenshot alur.
 - Screenshot before/after.
 
 Hari 3:

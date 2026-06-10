@@ -24,7 +24,7 @@ I can build or document one workflow for USD 100:
 - CRM or Google Sheet
 - follow-up template
 - simple status dashboard
-- short handover doc/video
+- short handover doc and operator checklist
 
 If that is useful, send me one workflow you want cleaned up and I will map the first version.
 
@@ -44,7 +44,7 @@ I build a small fixed-scope setup:
 - CRM/Google Sheet pipeline
 - three follow-up templates
 - simple dashboard
-- 3-5 minute handover video
+- handover notes and operator checklist
 
 Price is USD 100, delivered in 24-48 hours after access.
 

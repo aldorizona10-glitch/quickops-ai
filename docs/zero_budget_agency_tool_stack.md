@@ -15,7 +15,7 @@ This stack avoids paid subscriptions at the start. It is built for getting the f
 | Client CRM option | HubSpot CRM | Free tier available | Deliver simple CRM setup if the client wants a hosted CRM. |
 | Workflow automation | n8n self-host/local | No software fee for local/self-host use under its license limits | Build and document client workflow prototypes. |
 | Lightweight scripts | Google Apps Script | Free quota limits | Sheets automations, email drafts, form follow-ups. |
-| Demo recording | OBS Studio | Free | Record delivery walkthroughs. |
+| Delivery handover | Markdown/HTML notes | Free | Produce clear handover notes and operator checklists. |
 | Static landing pages | HTML/CSS on GitHub Pages | Free | Create a client demo page or audit page. |
 | Security proof | HackerOne letter summary | Free existing asset | Trust proof, sent only as summary unless original PDF is requested. |
 
@@ -55,4 +55,3 @@ The assistant acts as a small agency team:
 - No paid services unless the user explicitly approves spending.
 - No raw HackerOne PDF published publicly.
 - No promise of guaranteed earnings.
-

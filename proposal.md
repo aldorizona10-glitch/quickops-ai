@@ -27,7 +27,7 @@ I will build one lightweight lead workflow:
 - Pipeline stages: New, Contacted, Waiting, Won, Lost.
 - 3 follow-up templates.
 - Basic dashboard.
-- 3-5 minute handover video.
+- Handover notes and operator checklist.
 
 ## Not Included
 

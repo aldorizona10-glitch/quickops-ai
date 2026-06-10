@@ -72,7 +72,7 @@ The scope is one workflow:
 - Lead capture source.
 - CRM/spreadsheet setup.
 - Follow-up templates.
-- Short handover video.
+- Short handover notes and operator checklist.
 
 Timeline: 24-48 hours after access and payment.
 

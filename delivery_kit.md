@@ -12,7 +12,7 @@ One USD 100 workflow includes:
 - Up to five status stages.
 - Three follow-up templates.
 - One simple dashboard or status view.
-- One handover doc or 3-5 minute video.
+- One handover doc and operator checklist.
 
 Not included:
 
