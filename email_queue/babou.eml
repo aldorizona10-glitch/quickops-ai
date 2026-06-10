@@ -1,0 +1,20 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: careers@babou.ai
+Subject: HN - AI agent workflow builder
+Content-Type: text/plain; charset=utf-8
+
+Hi Babou team,
+
+I saw your HN post. The idea of turning deploys, docs, and shipped product changes into campaigns is a strong workflow problem.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I have been packaging practical operations workflows around intake, CRM/spreadsheet tracking, follow-up templates, and handover:
+
+https://aldorizona10-glitch.github.io/quickops-ai/landing/
+
+GitHub:
+https://github.com/aldorizona10-glitch
+
+I am interested in agent workflows that produce usable outputs but still respect human approval. If useful, I can send a short write-up on how I would structure a launch-campaign workflow with states, review points, and failure handling.
+
+Best,
+Aldo

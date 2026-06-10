@@ -1,0 +1,26 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: 
+Subject: HN - Contractor application for Servicing Copilot bake-off
+Content-Type: text/plain; charset=utf-8
+
+Hi,
+
+I saw your HN post for Servicing Copilot. The workflows you described - NSF collections follow-up and renewal management - are exactly the kind of operations systems I like building: clear data model, workflow status, follow-up logic, reliability, and handoff for real users.
+
+I am Aldo Rizona, an AI security researcher and automation/adversarial systems builder. I recently packaged a small operations workflow service here:
+
+https://aldorizona10-glitch.github.io/quickops-ai/landing/
+
+GitHub:
+https://github.com/aldorizona10-glitch
+
+Why I think I can help:
+
+- I am comfortable turning messy operational steps into concrete workflow states.
+- I can work with AI-assisted development and produce practical systems, not just demos.
+- Your product needs careful handling around customer data, idempotent imports, event logs, and follow-up workflows; those are the parts I would focus on first.
+
+If the bake-off is still open, I would like to be considered. I can send a short implementation plan for one of the MVP workflows before starting.
+
+Best,
+Aldo
