@@ -116,7 +116,7 @@ def main() -> int:
 
     print_section("Live Trust Links")
     print("- Profile: https://aldorizona10-glitch.github.io/quickops-ai/profile/")
-    print("- Start pilot: https://aldorizona10-glitch.github.io/quickops-ai/start/")
+    print("- Start pilot: https://aldorizona10-glitch.github.io/quickops-ai/start/index.html")
     print("- Agency site: https://aldorizona10-glitch.github.io/quickops-ai/")
     print("- Security audit: https://aldorizona10-glitch.github.io/quickops-ai/security-audit/")
     print("- GitHub repo: https://github.com/aldorizona10-glitch/quickops-ai")
