@@ -39,6 +39,30 @@ python3 scripts/send_email_queue.py
 
 For Gmail, use an official app password only if your account supports it and 2FA is enabled. Do not use normal account password and do not paste it into chat.
 
+## Gmail SMTP Example
+
+Use this shape, but put the real app password only in your own terminal:
+
+```bash
+cd /mnt/c/Users/user/zero-to-100-agency
+export SMTP_HOST="smtp.gmail.com"
+export SMTP_PORT="587"
+export SMTP_USER="aldorizona10@gmail.com"
+export SMTP_PASSWORD="PASTE_GMAIL_APP_PASSWORD_HERE"
+export CONFIRM_SEND_QUICKOPS="I_UNDERSTAND_SEND_REAL_EMAIL"
+python3 scripts/send_email_queue.py
+```
+
+Google app password page:
+
+https://myaccount.google.com/apppasswords
+
+If that page is unavailable, first enable 2-Step Verification:
+
+https://myaccount.google.com/signinoptions/two-step-verification
+
+Do not use `smtp.example.com`; it is only a placeholder and will fail.
+
 ## Current Allowlist
 
 - jobs@goshopbrands.com

@@ -62,9 +62,24 @@ def smtp_config() -> dict[str, str]:
     missing = [name for name in required if not os.environ.get(name)]
     if missing:
         raise RuntimeError("Missing env vars: " + ", ".join(missing))
+    placeholders = {
+        "SMTP_HOST": {"smtp.example.com", "example.com"},
+        "SMTP_USER": {"your_sender@example.com", "your_email@example.com"},
+        "SMTP_PASSWORD": {"your_smtp_or_app_password", "password", "app_password"},
+    }
+    for name, bad_values in placeholders.items():
+        value = os.environ.get(name, "").strip()
+        if value in bad_values or value.startswith("your_"):
+            raise RuntimeError(f"{name} still contains a placeholder value")
+    try:
+        port = int(os.environ["SMTP_PORT"])
+    except ValueError as exc:
+        raise RuntimeError("SMTP_PORT must be a number") from exc
+    if port not in {465, 587}:
+        raise RuntimeError("SMTP_PORT must be 465 or 587")
     return {
         "host": os.environ["SMTP_HOST"],
-        "port": os.environ["SMTP_PORT"],
+        "port": str(port),
         "user": os.environ["SMTP_USER"],
         "password": os.environ["SMTP_PASSWORD"],
     }
