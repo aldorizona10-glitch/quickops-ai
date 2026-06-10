@@ -34,6 +34,8 @@ ALLOWED_RECIPIENTS = {
     "hello@integuru.ai",
     "mehta.arja@northeastern.edu",
     "support@rtrvr.ai",
+    "hello@auto-crm.com",
+    "aiolahq@gmail.com",
 }
 
 

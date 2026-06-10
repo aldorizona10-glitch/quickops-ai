@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: aiolahq@gmail.com
+Subject: Show HN - agent workspace workflow testing pass
+Content-Type: text/plain; charset=utf-8
+
+Hi Aiola team,
+
+I found Aiola while looking at recent agent/workspace tools. The product surface around agents, tasks, app logs, analytics, and automations looks like the kind of workflow where a small outside testing pass can find practical onboarding and handoff issues quickly.
+
+Small fixed-scope offer: I can do one USD 100 external workflow/testing pass covering:
+
+- first-run path from workspace setup to first useful agent task
+- unclear states around logs, analytics, and automation outcomes
+- handoff points where a user may not know whether the agent succeeded, failed, or needs input
+- one reusable checklist for improving early-user activation
+- a concise implementation/spec note for a demo workflow your team can reuse
+
+I will stay within public/demo flows unless you explicitly provide a sandbox. No production probing, no noisy security testing, and no access attempts outside the intended product flow.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/landing/#services
+https://aldorizona10-glitch.github.io/quickops-ai/start/index.html
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+
+If useful, I can keep the deliverable concise so it is fast for your team to review.
+
+Best,
+Aldo

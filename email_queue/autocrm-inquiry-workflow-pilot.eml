@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: hello@auto-crm.com
+Subject: Show HN - inquiry-to-CRM workflow pilot
+Content-Type: text/plain; charset=utf-8
+
+Hi Auto-CRM team,
+
+I found Auto-CRM from the Show HN launch. The industrial-supplies use case stood out because it is the exact point where small teams lose money: email and WhatsApp inquiries come in, larger opportunities need fast prioritization, and smaller follow-ups can quietly disappear.
+
+Small fixed-scope offer: I can do one USD 100 external workflow pilot for Auto-CRM covering:
+
+- a practical inquiry-to-CRM test flow for email/WhatsApp-style lead capture
+- fields that should be extracted and ranked for sales follow-up
+- edge cases where duplicate contacts, unclear product requests, or missing quantities can break the handoff
+- a concise operator checklist that can be reused for demos or customer onboarding
+- one short implementation/spec note showing how this can become a repeatable template
+
+I will stay within public/demo flows unless you explicitly provide a sandbox. No scraping of private customer data, no production probing, and no access attempts outside the intended product flow.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/landing/#services
+https://aldorizona10-glitch.github.io/quickops-ai/start/index.html
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+
+If useful, I can send the first version as a concise paid deliverable and keep the scope small enough to review quickly.
+
+Best,
+Aldo
