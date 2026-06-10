@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>QuickOps AI Lab</title>
+  <meta name="description" content="Short practical AI workflow and security breakdowns by QuickOps AI.">
+  <style>
+    :root {
+      color-scheme: dark;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background: #090d14;
+      color: #edf2fb;
+    }
+    body {
+      margin: 0;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(79, 140, 255, .26), transparent 34rem),
+        radial-gradient(circle at 90% 18%, rgba(32, 214, 160, .16), transparent 28rem),
+        #090d14;
+    }
+    .wrap {
+      width: min(1120px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+    header {
+      padding: 26px 0;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 20px;
+    }
+    .brand {
+      font-weight: 800;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      color: #c9d7ec;
+      font-size: 13px;
+    }
+    nav {
+      display: flex;
+      gap: 18px;
+      flex-wrap: wrap;
+    }
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+    nav a {
+      color: #aebcd0;
+      font-size: 14px;
+    }
+    .hero {
+      padding: 72px 0 44px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
+      gap: 44px;
+      align-items: center;
+    }
+    h1 {
+      font-size: clamp(42px, 7vw, 82px);
+      line-height: .96;
+      letter-spacing: 0;
+      margin: 0 0 24px;
+      max-width: 820px;
+    }
+    .lead {
+      color: #b9c6d8;
+      font-size: 19px;
+      line-height: 1.65;
+      max-width: 680px;
+      margin: 0;
+    }
+    .panel {
+      border: 1px solid rgba(255,255,255,.14);
+      background: rgba(255,255,255,.06);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .panel h2 {
+      margin: 0 0 12px;
+      font-size: 22px;
+    }
+    .panel p {
+      margin: 0 0 18px;
+      color: #b9c6d8;
+      line-height: 1.55;
+    }
+    .button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 46px;
+      padding: 0 18px;
+      border-radius: 8px;
+      background: #edf2fb;
+      color: #08101d;
+      font-weight: 800;
+    }
+    .button.secondary {
+      background: transparent;
+      color: #edf2fb;
+      border: 1px solid rgba(255,255,255,.22);
+    }
+    .actions {
+      display: flex;
+      gap: 12px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+      padding: 28px 0 70px;
+    }
+    .item {
+      border-top: 1px solid rgba(255,255,255,.14);
+      padding-top: 18px;
+    }
+    .item b {
+      display: block;
+      margin-bottom: 8px;
+    }
+    .item span {
+      color: #aebcd0;
+      line-height: 1.55;
+      font-size: 15px;
+    }
+    footer {
+      color: #7f8da1;
+      border-top: 1px solid rgba(255,255,255,.1);
+      padding: 22px 0 34px;
+      font-size: 14px;
+    }
+    @media (max-width: 820px) {
+      .hero, .grid { grid-template-columns: 1fr; }
+      header { align-items: flex-start; flex-direction: column; }
+    }
+  </style>
+</head>
+<body>
+  <header class="wrap">
+    <a class="brand" href="../">QuickOps AI Lab</a>
+    <nav>
+      <a href="../security-audit/">AI Security Audit</a>
+      <a href="../landing/">Workflow Pilot</a>
+      <a href="mailto:aldorizona10@gmail.com">Contact</a>
+    </nav>
+  </header>
+
+  <main class="wrap">
+    <section class="hero">
+      <div>
+        <h1>Short AI workflow lessons for teams shipping fast.</h1>
+        <p class="lead">Practical breakdowns on prompt injection, agent permissions, lead capture, workflow automation, and small operational systems that protect revenue.</p>
+        <div class="actions">
+          <a class="button" href="../security-audit/">Audit one AI workflow</a>
+          <a class="button secondary" href="../landing/">Build one ops workflow</a>
+        </div>
+      </div>
+      <aside class="panel">
+        <h2>Fixed-scope pilots</h2>
+        <p>One workflow. USD 100. Practical report or setup. No long contract.</p>
+        <a class="button" href="mailto:aldorizona10@gmail.com?subject=QuickOps%20AI%20pilot">Start by email</a>
+      </aside>
+    </section>
+
+    <section class="grid" aria-label="Topics">
+      <div class="item">
+        <b>AI security</b>
+        <span>Prompt injection, context leakage, tool boundaries, human approval, and audit logs.</span>
+      </div>
+      <div class="item">
+        <b>Operations automation</b>
+        <span>Forms, spreadsheets, CRM stages, reminders, first replies, and handoff videos.</span>
+      </div>
+      <div class="item">
+        <b>Founder-ready delivery</b>
+        <span>Small scoped work delivered in 24-48 hours after permission, access, and payment are confirmed.</span>
+      </div>
+    </section>
+  </main>
+
+  <footer class="wrap">
+    QuickOps AI. Contact: aldorizona10@gmail.com. GitHub: aldorizona10-glitch.
+  </footer>
+</body>
+</html>

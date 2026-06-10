@@ -11,6 +11,7 @@ Live page:
 - https://aldorizona10-glitch.github.io/quickops-ai/
 - https://aldorizona10-glitch.github.io/quickops-ai/landing/
 - https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+- https://aldorizona10-glitch.github.io/quickops-ai/youtube/
 
 Security revenue desk:
 
