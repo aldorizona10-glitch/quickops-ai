@@ -22,6 +22,12 @@ cd /mnt/c/Users/user/zero-to-100-agency
 python3 scripts/autopilot_run_once.py
 ```
 
+Audit semua tool dan gap automation:
+
+```bash
+python3 scripts/automation_doctor.py
+```
+
 Autopilot akan:
 
 - Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.

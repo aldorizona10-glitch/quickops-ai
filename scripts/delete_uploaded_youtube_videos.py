@@ -11,6 +11,7 @@ from youtube_auth import refresh_access_token
 
 ROOT = Path(__file__).resolve().parents[1]
 LOG = Path(os.environ.get("YOUTUBE_DELETE_LOG", ROOT / "logs" / "youtube_trend_upload_log.csv"))
+DELETED_LOG = Path(os.environ.get("YOUTUBE_DELETED_LOG", ROOT / "logs" / "youtube_deleted_log.csv"))
 CONFIRM = "I_UNDERSTAND_DELETE_YOUTUBE_VIDEOS"
 
 
@@ -55,6 +56,15 @@ def delete_video(access_token: str, video_id: str) -> None:
         raise YouTubeApiError(format_youtube_error(exc.code, body)) from exc
 
 
+def append_deleted(short_id: str, video_id: str, title: str) -> None:
+    DELETED_LOG.parent.mkdir(exist_ok=True)
+    if not DELETED_LOG.exists():
+        DELETED_LOG.write_text("short_id,video_id,title\n", encoding="utf-8")
+    safe_title = title.replace(",", " ")
+    with DELETED_LOG.open("a", encoding="utf-8") as f:
+        f.write(f"{short_id},{video_id},{safe_title}\n")
+
+
 def main() -> int:
     if os.environ.get("CONFIRM_DELETE_YOUTUBE_VIDEOS") != CONFIRM:
         raise RuntimeError(f"Set CONFIRM_DELETE_YOUTUBE_VIDEOS={CONFIRM} to delete YouTube videos.")
@@ -71,6 +81,7 @@ def main() -> int:
     for short_id, video_id, title in rows:
         print(f"DELETING: {short_id} {video_id} {title}", flush=True)
         delete_video(access_token, video_id)
+        append_deleted(short_id, video_id, title)
         print(f"DELETED: {video_id}", flush=True)
     return 0
 
