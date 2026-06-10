@@ -6,6 +6,46 @@ This file tracks revenue attempts that are not QuickOps agency outreach. These a
 
 ## Open-Source Bounty
 
+### maifetch Elixir rewrite
+
+- Bounty source: https://github.com/HutchyBen/maifetch/issues/1
+- Latest maintainer direction: rewrite the project in Elixir for BEAM VM benefits.
+- Latest stated amount before Elixir request: GBP 175; maintainer said the bounty is still in place.
+- Fork branch: https://github.com/aldorizona10-glitch/maifetch/tree/elixir-rewrite-bounty-1
+- Pull request: https://github.com/HutchyBen/maifetch/pull/12
+- Claim comment: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4675809351
+- Status: PR open and mergeable when checked.
+- Local worktree: `/tmp/maifetch-elixir`
+- Commit: `6f5d397 Rewrite maifetch in Elixir`
+- Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
+
+Scope completed:
+
+- Replaced Go project with Elixir/Mix escript project.
+- Preserved CLI > env > config > default precedence.
+- Supported `-a`, `-t`, `--access-token`, and `--token`.
+- Supported `MAITEA_*` variables with `MAIFETCH_*` compatibility aliases.
+- Added MaiTea API wrapper functions for profiles, plays, tracks, status, all plays, best scores, and all best scores.
+- Added profile/recent-play terminal output, rank/difficulty mapping, full-width ASCII normalization, and focused ExUnit tests.
+
+Validation:
+
+```bash
+git diff --check
+```
+
+Runtime validation note:
+
+- `elixir` and `mix` are not installed in this WSL environment.
+- `apt-get install elixir` was blocked by lack of root privileges.
+- The PR body clearly disclosed this and listed reviewer validation commands: `mix deps.get`, `mix test`, `mix escript.build`.
+
+Next actions:
+
+1. Watch PR #12 for maintainer feedback.
+2. If changes are requested, patch `/tmp/maifetch-elixir`, push `aldorizona10-glitch:elixir-rewrite-bounty-1`, and reply on the PR.
+3. After merge/acceptance, ask maintainer for payout instructions.
+
 ### maifetch Rust rewrite
 
 - Bounty source: https://github.com/HutchyBen/maifetch/issues/1
