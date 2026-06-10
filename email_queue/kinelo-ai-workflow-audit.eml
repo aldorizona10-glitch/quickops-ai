@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: jobs@kinelo.com
+Subject: HN - AI workflow boundary audit for Kinelo
+Content-Type: text/plain; charset=utf-8
+
+Hi Kinelo team,
+
+I saw your HN post about context myopia and workflows that organize humans with autonomous AI coworkers. That is exactly the type of product where agent boundaries, evidence quality, and action safety matter early.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I offer a small fixed-scope AI Security Micro-Audit:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+For USD 100, I review one agreed workflow and deliver a short practical report within 24-48 hours after permission and access are confirmed. The review covers prompt injection, context leakage, unsafe tool/action paths, missing human approval, and logging/audit gaps.
+
+If useful, I can review one demo or non-production workflow and keep the output builder-focused.
+
+Best,
+Aldo

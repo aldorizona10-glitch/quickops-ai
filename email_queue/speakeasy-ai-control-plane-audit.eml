@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: sagar@speakeasy.com
+Subject: HN - security check for AI control plane workflows
+Content-Type: text/plain; charset=utf-8
+
+Hi Sagar,
+
+I saw your HN post about Speakeasy staffing up around an AI control plane, MCP OAuth/protocol work, observability, and secure agent scaling.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I run a small fixed-scope AI Security Micro-Audit for teams shipping agent/tool workflows:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+The scope is deliberately small: one workflow, USD 100, 24-48 hour report after permission and access are confirmed. I check prompt-injection paths, OAuth/scope boundaries, unsafe tool/action paths, sensitive context leakage, and missing approval/logging controls.
+
+If useful, I can review one non-production flow or demo path and send a concise engineering-focused report.
+
+Best,
+Aldo

@@ -24,3 +24,6 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,AI Security,DrSwarm,Send micro-audit offer,email_queue/drswarm-ai-security-audit.eml,Sent,gmail_id:19eafb8e967d1289,Check reply in 24h,Healthcare AI workflow automation
 2026-06-10,AI Security,Catalyst Wayfare,Send micro-audit offer,email_queue/catalystwayfare-ai-security-audit.eml,Sent,gmail_id:19eafb8a30b5565f,Check reply in 24h,Production AI agent systems
 2026-06-10,AI Security,Coder,Send micro-audit offer,email_queue/coder-ai-security-audit.eml,Sent,gmail_id:19eafb8c7254a124,Check reply in 24h,Agentic development security
+2026-06-10,AI Security,Speakeasy,Send micro-audit offer,email_queue/speakeasy-ai-control-plane-audit.eml,Sent,gmail_id:19eafe20deeee5f4,Check reply in 24h,AI control plane and MCP OAuth
+2026-06-10,AI Security,Kinelo,Send micro-audit offer,email_queue/kinelo-ai-workflow-audit.eml,Sent,gmail_id:19eafe1eafd8f924,Check reply in 24h,AI coworkers and workflow safety
+2026-06-10,Agency,Hotwash,Send operations workflow pilot,email_queue/hotwash-ops-workflow-pilot.eml,Sent,gmail_id:19eafe1c520884b6,Check reply in 24h,Operational learning workflow

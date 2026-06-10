@@ -28,6 +28,9 @@ TARGET_SENDERS = {
     "jobs@drswarm.com": "DrSwarm",
     "talent+hn@cwai.co": "Catalyst Wayfare",
     "careers@coder.com": "Coder",
+    "sagar@speakeasy.com": "Speakeasy",
+    "jobs@kinelo.com": "Kinelo",
+    "hiring@hotwash.com": "Hotwash",
 }
 
 
