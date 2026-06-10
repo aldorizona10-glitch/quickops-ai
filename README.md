@@ -34,6 +34,12 @@ Agency command center, tanpa YouTube:
 python3 scripts/agency_command_center.py
 ```
 
+Structured agency pipeline status:
+
+```bash
+python3 scripts/agency_pipeline_status.py
+```
+
 Non-agency revenue status:
 
 ```bash

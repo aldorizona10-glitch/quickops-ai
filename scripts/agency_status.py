@@ -46,9 +46,10 @@ def main() -> int:
         print(f"- {row.get('company')} | {row.get('subject')} | {row.get('from')}")
     print()
     print("Next agency actions:")
-    print("- Monitor replies from Starbridge, Auxx AI, Add to Sheets, Caddie, Tutati, and prior outreach targets.")
+    print("- Core agency source of truth: https://aldorizona10-glitch.github.io/quickops-ai/landing/#services")
+    print("- Main portfolio source of truth: https://aldorizona10-glitch.github.io/quickops-ai/")
+    print("- Run `python3 scripts/agency_pipeline_status.py` for structured lane-by-lane status.")
     print("- If a prospect says yes/interested, send fixed USD 100 scope and payment instructions.")
-    print("- Create or update LinkedIn manually using docs/linkedin_profile_ready.md, then send the live URL to Starbridge.")
     return 0
 
 

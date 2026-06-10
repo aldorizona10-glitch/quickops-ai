@@ -33,6 +33,7 @@ ALLOWED_RECIPIENTS = {
     "support@clor.com",
     "hello@integuru.ai",
     "mehta.arja@northeastern.edu",
+    "support@rtrvr.ai",
 }
 
 
