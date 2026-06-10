@@ -27,3 +27,8 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,AI Security,Speakeasy,Send micro-audit offer,email_queue/speakeasy-ai-control-plane-audit.eml,Sent,gmail_id:19eafe20deeee5f4,Check reply in 24h,AI control plane and MCP OAuth
 2026-06-10,AI Security,Kinelo,Send micro-audit offer,email_queue/kinelo-ai-workflow-audit.eml,Sent,gmail_id:19eafe1eafd8f924,Check reply in 24h,AI coworkers and workflow safety
 2026-06-10,Agency,Hotwash,Send operations workflow pilot,email_queue/hotwash-ops-workflow-pilot.eml,Sent,gmail_id:19eafe1c520884b6,Check reply in 24h,Operational learning workflow
+2026-06-10,Hacker News,Auxx AI,Send customer-support workflow pilot,email_queue/auxx-ai-support-workflow-pilot.eml,Sent,gmail_id:19eb220c5cd0f057,Check reply in 24h,Public sales contact from website schema
+2026-06-10,Hacker News,Add to Sheets,Send agency lead template pilot,email_queue/addtosheets-lead-template-pilot.eml,Sent,gmail_id:19eb220cda20b345,Check reply in 24h,Public contact from llms.txt
+2026-06-10,Hacker News,Caddie,Send GTM workflow pilot,email_queue/caddie-gtm-workflow-pilot.eml,Sent,gmail_id:19eb22755b14ea59,Check reply in 24h,Public contact from site output
+2026-06-10,Hacker News,Tutati,Send live moderation workflow offer,email_queue/tutati-live-moderation-workflow.eml,Sent,gmail_id:19eb2294582a74d7,Check reply in 24h,Public email from HN post
+2026-06-10,HN Hiring,Starbridge,Send public profile page update,email_queue/starbridge-profile-page-update.eml,Sent,gmail_id:19eb2386b6d8e55a,Check reply in 24h,Temporary public profile URL sent

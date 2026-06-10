@@ -1,0 +1,26 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: Convoyeurapp@gmail.com
+Subject: HN - live queue moderation workflow for Tutati
+Content-Type: text/plain; charset=utf-8
+
+Hi Tutati team,
+
+I saw your HN post and the technical question about moderating live 60-second video slots, handling queue drops, and deciding what happens when someone leaves or loses connection mid-queue.
+
+I am Aldo Rizona, an automation systems builder and AI security researcher. I run QuickOps AI:
+
+https://aldorizona10-glitch.github.io/quickops-ai/
+
+For Tutati, the practical workflow I would map first is:
+
+- queue state: waiting, ready, live, skipped, disconnected
+- pre-live checkpoint before a user goes on stage
+- short delay/moderation buffer for risky content
+- escalation rules for report/flag events
+- fallback behavior when a user disconnects or fails readiness
+- operator dashboard fields and handoff notes
+
+I can produce a compact implementation plan or working workflow spec for USD 100. My HackerOne proof under my name shows USD 2,500 in bounty payments, so I can also look at the moderation/abuse angle with a security mindset.
+
+Best,
+Aldo

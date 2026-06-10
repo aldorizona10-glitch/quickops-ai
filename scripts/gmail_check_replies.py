@@ -31,6 +31,11 @@ TARGET_SENDERS = {
     "sagar@speakeasy.com": "Speakeasy",
     "jobs@kinelo.com": "Kinelo",
     "hiring@hotwash.com": "Hotwash",
+    "sales@auxx.ai": "Auxx AI",
+    "support@auxx.ai": "Auxx AI",
+    "contact@addtosheets.com": "Add to Sheets",
+    "contact@caddieagent.ai": "Caddie",
+    "convoyeurapp@gmail.com": "Tutati",
 }
 
 

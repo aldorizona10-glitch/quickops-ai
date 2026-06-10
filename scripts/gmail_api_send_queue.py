@@ -36,6 +36,10 @@ ALLOWED_RECIPIENTS = {
     "sagar@speakeasy.com",
     "jobs@kinelo.com",
     "hiring@hotwash.com",
+    "sales@auxx.ai",
+    "contact@addtosheets.com",
+    "contact@caddieagent.ai",
+    "convoyeurapp@gmail.com",
 }
 
 
@@ -126,8 +130,11 @@ def sent_files() -> set[str]:
 
 def main() -> int:
     queue_files = sorted(QUEUE_DIR.glob("*.eml"))
+    send_only = os.environ.get("QUICKOPS_SEND_ONLY", "").strip()
+    if send_only:
+        queue_files = [path for path in queue_files if path.name == send_only]
     if not queue_files:
-        print("No .eml files found in email_queue/")
+        print("No matching .eml files found in email_queue/")
         return 1
 
     live_send = os.environ.get("CONFIRM_SEND_QUICKOPS") == "I_UNDERSTAND_SEND_REAL_EMAIL"

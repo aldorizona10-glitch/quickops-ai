@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: sales@auxx.ai
+Subject: HN - customer-support workflow implementation for Auxx
+Content-Type: text/plain; charset=utf-8
+
+Hi Auxx team,
+
+I saw the HN context around Auxx and the support workflow pain: small businesses drowning in messages, forgetting replies, and needing CRM/status around customer conversations.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I run QuickOps AI, a small fixed-scope operations workflow setup:
+
+https://aldorizona10-glitch.github.io/quickops-ai/
+
+I also have HackerOne proof under my name showing USD 2,500 in bounty payments for reporting security vulnerabilities, so my angle is both implementation and security-minded workflow review.
+
+If useful, I can do one compact operator-facing workflow pilot for USD 100: inbox triage -> ticket/status sheet or CRM state -> drafted reply templates -> follow-up reminder -> handoff notes. For Auxx specifically, I can also test the workflow from the perspective of a small-business operator and write a practical teardown.
+
+Best,
+Aldo
