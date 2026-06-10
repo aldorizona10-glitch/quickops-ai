@@ -57,6 +57,7 @@ ALLOWED_RECIPIENTS = {
     "team@trulytyped.com",
     "sales@statewright.ai",
     "hello@sekorti.com",
+    "taylor@apmhelp.com",
 }
 
 

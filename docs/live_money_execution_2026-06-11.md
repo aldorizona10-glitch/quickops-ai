@@ -32,7 +32,21 @@ Generated: 2026-06-11 06:42 WIB
    - Scope promised: public/demo-only unless Sekorti authorizes a sandbox; no customer data, no noisy testing.
    - Cash path: USD 100 fixed operator/security workflow review.
 
-6. Refreshed authorized bug bounty case snapshots.
+6. Submitted maifetch Elixir bounty attempt.
+   - Pull request: `https://github.com/HutchyBen/maifetch/pull/12`
+   - Claim comment: `https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4675809351`
+   - Status: open and mergeable when checked.
+   - Cash path: latest maintainer direction says Elixir rewrite with bounty still in place; last explicit amount before that was GBP 175.
+   - Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
+
+7. Sent paid PM-in-a-box workflow/growth pilot offer to APMHelp.
+   - Recipient: `taylor@apmhelp.com`
+   - Message: `email_queue/apmhelp-pminabox-ai-growth-workflow.eml`
+   - Gmail ID: `19eb3f7d20caf2c1`
+   - Basis: June 2026 HN hiring post asks for AI-native growth/automation help; PM-in-a-box public site confirms property-management agentic harness and marketplace.
+   - Cash path: USD 100 pilot or contract discussion.
+
+8. Refreshed authorized bug bounty case snapshots.
    - OpenAI Bugcrowd
    - Google and Alphabet VRP
    - Microsoft MSRC
@@ -76,6 +90,15 @@ If Sekorti replies:
   - authorized sandbox questionnaire flow
   - evidence/source citation and approval-handoff checklist
   - sensitive-doc boundary checklist
+
+If APMHelp / PM-in-a-box replies:
+
+- Offer USD 100 fixed pilot.
+- Ask whether Taylor wants:
+  - contributor acquisition funnel review
+  - operator onboarding review
+  - marketplace listing quality template
+  - alpha/beta lead qualification handoff
 
 ### P1 - Authorized Bug Bounty
 
