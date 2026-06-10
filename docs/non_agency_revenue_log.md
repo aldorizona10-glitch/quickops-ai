@@ -98,3 +98,7 @@ Skipped for now:
 - `eigenwallet/core#727`: bounty exists, but explicitly requires exclusively human-written communication and no AI-generated PRs.
 - `ubiquity/business-development#89` and `#90`: nominal USD 400/USD 200, but UbiquityOS requires core-team/admin status to start; outside contributor attempts are rejected by the bot.
 - `ritik4ever/stellar-bounty-board#288`: medium 150-point task, but an implementation PR already exists and later claim comments are present; skip as duplicate-risk.
+- `Expensify/App` Help Wanted search: 200 open issues checked; no clean unassigned external issue found after filtering out assigned/Internal/Reviewing tasks.
+- `aLexzzz430/Cognitive-OS#5`: nominal USD 3,000, but many attempts/PRs already exist and the thread is saturated; skip unless maintainer explicitly requests a new round.
+- `charles-openclaw/charles-microbounties#1`: nominal USD 5 XMR, first verified useful submission wins; already has many high-quality submissions. Inspected fresh small CLI repos, but no strong reproducible candidate found.
+- Small CLI repo scan: `Himanshu507/cgcone`, `yopie-org/mailtarget`, `Vani2130/mcp_ctl`, `himanshuskukla/mcp-audit`, `alaas4989/cc-update-all`, and `RefuseHQ/refuse` inspected for quick CLI metadata/help/version bugs; no clean payout-worthy PoC produced in this pass.
