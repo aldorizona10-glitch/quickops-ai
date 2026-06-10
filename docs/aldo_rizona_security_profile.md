@@ -18,7 +18,7 @@ Aldo Rizona is an Indonesia-based AI security researcher and automation systems 
 - AI-assisted workflow systems for lead capture, CRM/spreadsheet state, follow-up logic, and operator handoff.
 - Data and operations pipelines where unstructured or messy inputs need to become reliable operator-facing outputs.
 - AI workflow security review, including prompt-injection paths, context leakage, unsafe tool/action boundaries, missing approval controls, and audit/logging gaps.
-- Lightweight Python automation for outreach, Gmail reply tracking, content rendering, and operational workflows.
+- Lightweight Python automation for outreach, Gmail reply tracking, revenue tracking, and operational workflows.
 
 ## External Security Proof
 

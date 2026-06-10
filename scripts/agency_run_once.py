@@ -21,7 +21,7 @@ def main() -> int:
         code = run(cmd)
         if code != 0:
             return code
-    print("Agency run complete. YouTube automation intentionally skipped.")
+    print("Agency run complete.")
     return 0
 
 

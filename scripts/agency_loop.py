@@ -15,7 +15,7 @@ def run_once() -> int:
 
 
 def main() -> int:
-    parser = argparse.ArgumentParser(description="Run agency-only monitoring loop. YouTube is intentionally skipped.")
+    parser = argparse.ArgumentParser(description="Run agency monitoring loop.")
     parser.add_argument("--interval-minutes", type=int, default=15)
     parser.add_argument("--max-runs", type=int, default=0, help="0 means run forever")
     args = parser.parse_args()

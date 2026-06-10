@@ -91,7 +91,7 @@ def main() -> int:
 
     print("QuickOps Agency Command Center")
     print("==============================")
-    print("Mode: agency only; YouTube automation skipped.")
+    print("Mode: agency operations.")
     print("Goal: convert public trust + outreach + reply handling into the first USD 100 deal.")
 
     print_section("Developer Team")

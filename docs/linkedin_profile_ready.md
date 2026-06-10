@@ -14,7 +14,7 @@ My work focuses on:
 
 - lead intake, CRM/spreadsheet state, follow-up logic, and operator handoff
 - AI workflow security reviews for prompt injection, context leakage, unsafe action paths, approval gates, OAuth/API scope assumptions, and logging gaps
-- lightweight Python automation for outreach operations, reply tracking, content rendering, and workflow maintenance
+- lightweight Python automation for outreach operations, reply tracking, revenue tracking, and workflow maintenance
 
 I run QuickOps AI, a small fixed-scope operations and AI security studio for lean teams. Starter engagements are intentionally narrow: one workflow, clear permission boundaries, concise handover, and fast delivery.
 
@@ -41,7 +41,7 @@ Work includes:
 
 - fixed-scope workflow pilots for intake, CRM/spreadsheet tracking, follow-up templates, and handover
 - AI security micro-audits for prompt injection, context leakage, unsafe tool/action paths, missing human approval, and logging gaps
-- Python automation for agency operations, Gmail reply monitoring, outbound tracking, and content workflow support
+- Python automation for agency operations, Gmail reply monitoring, outbound tracking, and delivery workflow support
 
 ## Featured Links
 

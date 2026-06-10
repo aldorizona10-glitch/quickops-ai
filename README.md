@@ -6,12 +6,23 @@ Model agensi: Micro AI Operations Agency untuk bisnis kecil.
 
 Nama kerja: QuickOps AI
 
+## Workspace Scope
+
+Repo ini khusus untuk operasi agency, outreach, security micro-audit, bug bounty research, dan revenue tracking.
+
+Proyek YouTube/Shorts dipisahkan ke repo lokal:
+
+```text
+/mnt/c/Users/user/quickops-youtube-lab
+```
+
+Jangan menambahkan script render, upload, token, metadata, atau aset YouTube ke repo ini.
+
 Live page:
 
 - https://aldorizona10-glitch.github.io/quickops-ai/
 - https://aldorizona10-glitch.github.io/quickops-ai/landing/
 - https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
-- https://aldorizona10-glitch.github.io/quickops-ai/youtube/
 
 ## Full Automation Runner
 
@@ -28,7 +39,7 @@ Audit semua tool dan gap automation:
 python3 scripts/automation_doctor.py
 ```
 
-Agency command center, tanpa YouTube:
+Agency command center:
 
 ```bash
 python3 scripts/agency_command_center.py
@@ -54,17 +65,8 @@ python3 scripts/full_auto_revenue_scout.py
 
 Autopilot akan:
 
-- Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.
-- Render MP4 YouTube Shorts native ke `youtube_shorts_factory/rendered/`.
 - Cek Gmail replies dari target outreach.
-- Upload Shorts private hanya jika OAuth YouTube sudah tersambung dan `QUICKOPS_UPLOAD_YOUTUBE_PRIVATE=1` diset.
-
-Setup YouTube resmi sekali saja:
-
-```bash
-python3 scripts/youtube_oauth_local.py
-QUICKOPS_UPLOAD_YOUTUBE_PRIVATE=1 python3 scripts/autopilot_run_once.py
-```
+- Menjalankan status operasi agency dan revenue scout yang relevan.
 
 Security revenue desk:
 
@@ -131,7 +133,7 @@ Deliverable:
 
 - Ambil 1 artikel/video/review panjang.
 - Buat 10 post pendek untuk LinkedIn/X/Instagram.
-- Buat 5 ide Reels/Shorts.
+- Buat 5 ide post visual atau carousel.
 - Buat caption dan CTA.
 
 ## Strategi Mendapatkan Klien
