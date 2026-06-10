@@ -34,6 +34,12 @@ Agency command center, tanpa YouTube:
 python3 scripts/agency_command_center.py
 ```
 
+Non-agency revenue status:
+
+```bash
+python3 scripts/non_agency_status.py
+```
+
 Autopilot akan:
 
 - Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.
