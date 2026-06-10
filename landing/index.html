@@ -3,62 +3,76 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>QuickOps AI - Lead Workflow Setup</title>
-  <meta name="description" content="Small lead capture and follow-up workflows for local businesses, delivered in 24-48 hours.">
+  <title>QuickOps AI - Workflow Systems for Lean Teams</title>
+  <meta name="description" content="Lean workflow implementation for founders and small teams: intake, CRM state, follow-up templates, and handover documentation.">
   <style>
     :root {
-      color-scheme: light;
-      --ink: #172026;
-      --muted: #5c6b73;
-      --line: #d7dee2;
-      --soft: #f4f7f4;
-      --accent: #18715f;
-      --accent-dark: #105245;
-      --warn: #9b5c00;
-      --white: #ffffff;
+      --ink: #101820;
+      --muted: #5e6a72;
+      --line: #d9e0e5;
+      --paper: #ffffff;
+      --soft: #f5f7f8;
+      --accent: #126455;
+      --accent-dark: #0c493e;
+      --panel: #ffffff;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
       color: var(--ink);
-      background: var(--white);
+      background: var(--paper);
       line-height: 1.55;
     }
-    header, section, footer { padding: 28px 20px; }
-    .wrap { max-width: 1040px; margin: 0 auto; }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
     nav {
+      background: rgba(255,255,255,.96);
+      border-bottom: 1px solid var(--line);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+    .navrow {
+      min-height: 64px;
       display: flex;
       align-items: center;
       justify-content: space-between;
-      gap: 16px;
-      padding: 18px 20px;
-      border-bottom: 1px solid var(--line);
+      gap: 18px;
     }
-    .brand { font-weight: 800; font-size: 18px; }
-    .navlink { color: var(--muted); text-decoration: none; font-size: 14px; }
+    .brand { font-weight: 850; letter-spacing: .01em; }
+    .navlinks { display: flex; gap: 18px; align-items: center; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: 14px; }
+    section { padding: 58px 0; }
     .hero {
-      background: var(--soft);
+      padding: 76px 0 54px;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8f8 100%);
       border-bottom: 1px solid var(--line);
-      padding: 54px 20px;
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.15fr) minmax(280px, .85fr);
-      gap: 30px;
+      grid-template-columns: minmax(0, 1.12fr) minmax(320px, .88fr);
+      gap: 36px;
       align-items: center;
     }
+    .eyebrow {
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: .08em;
+      margin-bottom: 12px;
+    }
     h1 {
-      font-size: clamp(34px, 5vw, 64px);
-      line-height: 1.02;
       margin: 0 0 18px;
+      font-size: clamp(38px, 5vw, 64px);
+      line-height: 1.02;
       letter-spacing: 0;
     }
-    h2 { font-size: 28px; line-height: 1.16; margin: 0 0 18px; }
-    h3 { font-size: 17px; margin: 0 0 8px; }
+    h2 { margin: 0 0 16px; font-size: 30px; line-height: 1.18; letter-spacing: 0; }
+    h3 { margin: 0 0 8px; font-size: 17px; letter-spacing: 0; }
     p { margin: 0 0 14px; color: var(--muted); }
-    .lead { font-size: 19px; max-width: 680px; }
-    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 24px; }
+    .lead { font-size: 19px; max-width: 720px; }
+    .actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 26px; }
     .btn {
       display: inline-flex;
       align-items: center;
@@ -68,27 +82,26 @@
       border-radius: 6px;
       border: 1px solid var(--accent);
       background: var(--accent);
-      color: white;
+      color: #fff;
       text-decoration: none;
-      font-weight: 700;
+      font-weight: 760;
       font-size: 15px;
     }
-    .btn.secondary {
-      background: transparent;
-      color: var(--accent-dark);
-    }
-    .panel {
+    .btn.secondary { background: transparent; color: var(--accent-dark); }
+    .panel, .card {
+      background: var(--panel);
       border: 1px solid var(--line);
-      background: var(--white);
       border-radius: 8px;
       padding: 22px;
     }
+    .panel { box-shadow: 0 16px 40px rgba(16, 24, 32, .07); }
     .metric {
       display: grid;
       grid-template-columns: 1fr auto;
       gap: 14px;
-      padding: 12px 0;
+      padding: 13px 0;
       border-bottom: 1px solid var(--line);
+      color: var(--muted);
     }
     .metric:last-child { border-bottom: 0; }
     .metric strong { color: var(--ink); }
@@ -97,119 +110,120 @@
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
     }
-    .item {
-      border: 1px solid var(--line);
-      border-radius: 8px;
-      padding: 18px;
-      min-height: 150px;
+    .two {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 28px;
+      align-items: start;
     }
-    .price {
-      font-size: 44px;
-      line-height: 1;
-      color: var(--accent-dark);
-      font-weight: 850;
-      margin: 8px 0 10px;
-    }
+    .band { background: var(--soft); border-block: 1px solid var(--line); }
     ul { margin: 0; padding-left: 20px; color: var(--muted); }
     li { margin: 8px 0; }
-    .band { background: #fbfcfb; border-block: 1px solid var(--line); }
-    .footer { color: var(--muted); font-size: 14px; }
-    @media (max-width: 760px) {
-      .hero-grid, .grid { grid-template-columns: 1fr; }
-      nav { align-items: flex-start; }
-      .hero { padding-top: 38px; }
+    .price { font-size: 38px; line-height: 1; color: var(--accent-dark); font-weight: 850; margin: 10px 0; }
+    .note { font-size: 14px; }
+    code { overflow-wrap: anywhere; background: #eef3f1; border-radius: 4px; padding: 2px 4px; }
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 820px) {
+      .hero-grid, .grid, .two { grid-template-columns: 1fr; }
+      .navrow { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      section { padding: 42px 0; }
+      .hero { padding-top: 48px; }
     }
   </style>
 </head>
 <body>
   <nav>
-    <div class="brand">QuickOps AI</div>
-    <a class="navlink" href="mailto:aldorizona10@gmail.com">aldorizona10@gmail.com</a>
+    <div class="wrap navrow">
+      <div class="brand">QuickOps AI</div>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#engagement">Engagement</a>
+        <a href="/quickops-ai/security-audit/">AI Security</a>
+        <a href="mailto:aldorizona10@gmail.com">Contact</a>
+      </div>
+    </div>
   </nav>
 
   <main>
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <h1>Lead workflows for small businesses, built in 24-48 hours.</h1>
-          <p class="lead">We connect your form, inbox, CRM, spreadsheet, and follow-up templates so new inquiries stop getting lost.</p>
+          <div class="eyebrow">Workflow implementation for lean teams</div>
+          <h1>Operational workflows that turn inquiries into tracked follow-up.</h1>
+          <p class="lead">QuickOps AI designs and implements lightweight intake, CRM, spreadsheet, and follow-up systems for founders and small teams that need a working process quickly.</p>
           <div class="actions">
-            <a class="btn" href="mailto:aldorizona10@gmail.com?subject=Lead%20workflow%20setup">Request a USD 100 setup</a>
-            <a class="btn secondary" href="#scope">See scope</a>
+            <a class="btn" href="mailto:aldorizona10@gmail.com?subject=QuickOps%20workflow%20pilot">Request a pilot</a>
+            <a class="btn secondary" href="#services">View services</a>
           </div>
         </div>
         <div class="panel" aria-label="workflow summary">
-          <div class="metric"><span>Lead form</span><strong>Captured</strong></div>
-          <div class="metric"><span>CRM or sheet</span><strong>Organized</strong></div>
-          <div class="metric"><span>Follow-up templates</span><strong>Ready</strong></div>
-          <div class="metric"><span>Handover video</span><strong>Included</strong></div>
+          <div class="metric"><span>Intake</span><strong>Forms, inbox, CRM</strong></div>
+          <div class="metric"><span>Tracking</span><strong>Stages and owners</strong></div>
+          <div class="metric"><span>Follow-up</span><strong>Templates and reminders</strong></div>
+          <div class="metric"><span>Handover</span><strong>Docs or short video</strong></div>
         </div>
       </div>
     </section>
 
-    <section id="scope">
+    <section id="services">
       <div class="wrap">
-        <h2>Fixed scope, practical delivery.</h2>
+        <h2>Focused Services</h2>
         <div class="grid">
-          <div class="item">
-            <h3>Capture</h3>
-            <p>Set up a simple lead form or clean up your existing contact path.</p>
+          <div class="card">
+            <h3>Lead Workflow Setup</h3>
+            <p>Convert forms, inboxes, or manual inquiries into a clear CRM or spreadsheet pipeline with status, owner, and next action.</p>
           </div>
-          <div class="item">
-            <h3>Track</h3>
-            <p>Move every inquiry into HubSpot, Google Sheets, or Airtable with clear status stages.</p>
+          <div class="card">
+            <h3>Follow-Up System</h3>
+            <p>Create first-reply, reminder, and closing templates so response quality is consistent and leads do not disappear.</p>
           </div>
-          <div class="item">
-            <h3>Follow Up</h3>
-            <p>Create first-reply, reminder, and closing templates your team can use immediately.</p>
+          <div class="card">
+            <h3>Operational Handoff</h3>
+            <p>Document the workflow, test it with sample data, and deliver a compact handover so the team can run it without dependency.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="band">
-      <div class="wrap hero-grid">
+    <section class="band" id="engagement">
+      <div class="wrap two">
         <div>
-          <h2>Starter package</h2>
-          <p class="price">USD 100</p>
-          <p>One workflow. No long contract. Built for owners who need a working system, not another strategy deck.</p>
+          <div class="eyebrow">Pilot engagement</div>
+          <h2>One workflow, delivered in 24-48 hours after scope confirmation.</h2>
+          <p>The starter engagement is intentionally narrow: one workflow, one destination system, one handover. It is designed to create a useful operational baseline before expanding automation.</p>
         </div>
         <div class="panel">
+          <h3>Starter Pilot</h3>
+          <p class="price">USD 100</p>
           <ul>
-            <li>Lead intake form or form cleanup</li>
-            <li>CRM/spreadsheet pipeline setup</li>
+            <li>Intake path or form cleanup</li>
+            <li>CRM, Google Sheets, Airtable, or HubSpot pipeline</li>
             <li>Three follow-up templates</li>
-            <li>Basic lead dashboard</li>
-            <li>3-5 minute handover video</li>
+            <li>Basic status dashboard or view</li>
+            <li>Handover notes or 3-5 minute video</li>
           </ul>
+          <p class="note">Payment is requested only after scope, access, and delivery boundary are confirmed by email.</p>
         </div>
       </div>
     </section>
 
     <section>
-      <div class="wrap">
-        <h2>Payment</h2>
-        <div class="grid">
-          <div class="item">
-            <h3>Bank Transfer Indonesia</h3>
-            <p>SeaBank: 901894819238</p>
-          </div>
-          <div class="item">
-            <h3>USDT</h3>
-            <p>BEP20 / BNB Smart Chain only:</p>
-            <p>0x9feaaacc40eaba89cbc50b2aa58cdc4b04711170</p>
-          </div>
-          <div class="item">
-            <h3>Contact</h3>
-            <p>Email before sending payment so the workflow scope and delivery timeline are confirmed.</p>
-          </div>
+      <div class="wrap two">
+        <div>
+          <h2>Payment Options</h2>
+          <p>Available after written scope confirmation.</p>
+        </div>
+        <div class="panel">
+          <p><strong>SeaBank Indonesia:</strong> 901894819238</p>
+          <p><strong>USDT:</strong> BEP20 / BNB Smart Chain only</p>
+          <p><code>0x9feaaacc40eaba89cbc50b2aa58cdc4b04711170</code></p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap footer">QuickOps AI. Contact: aldorizona10@gmail.com. GitHub: aldorizona10-glitch.</div>
+    <div class="wrap">QuickOps AI. Contact: <a href="mailto:aldorizona10@gmail.com">aldorizona10@gmail.com</a>. GitHub: <a href="https://github.com/aldorizona10-glitch">aldorizona10-glitch</a>.</div>
   </footer>
 </body>
 </html>

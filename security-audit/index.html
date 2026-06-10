@@ -3,114 +3,126 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AI Security Micro-Audit - Aldo Rizona</title>
-  <meta name="description" content="Fixed-scope AI security micro-audit for AI apps, agents, chatbots, and workflow automations.">
+  <title>AI Security Micro-Audit - QuickOps AI</title>
+  <meta name="description" content="Focused AI security review for LLM apps, agents, and automation workflows.">
   <style>
     :root {
-      --ink: #161b22;
-      --muted: #59636e;
-      --line: #d8dee4;
-      --bg: #f6f8fa;
+      --ink: #111827;
+      --muted: #5f6b7a;
+      --line: #d8dee8;
+      --paper: #ffffff;
+      --soft: #f5f7fb;
+      --accent: #1d4ed8;
+      --accent-dark: #1e3a8a;
       --panel: #ffffff;
-      --accent: #0969da;
-      --accent-dark: #054da7;
-      --risk: #9a3412;
     }
     * { box-sizing: border-box; }
     body {
       margin: 0;
       font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: var(--bg);
+      background: var(--paper);
       color: var(--ink);
       line-height: 1.55;
     }
-    nav, section, footer { padding: 24px 20px; }
-    .wrap { max-width: 1040px; margin: 0 auto; }
-    nav {
-      border-bottom: 1px solid var(--line);
-      background: var(--panel);
-    }
+    .wrap { width: min(1120px, calc(100% - 40px)); margin: 0 auto; }
+    nav { border-bottom: 1px solid var(--line); background: #fff; }
     .navrow {
+      min-height: 64px;
       display: flex;
-      align-items: center;
       justify-content: space-between;
-      gap: 16px;
+      align-items: center;
+      gap: 18px;
     }
-    .brand { font-weight: 800; }
-    a { color: var(--accent); }
+    .brand { font-weight: 850; }
+    .navlinks { display: flex; gap: 18px; flex-wrap: wrap; }
+    .navlinks a { color: var(--muted); text-decoration: none; font-size: 14px; }
+    section { padding: 58px 0; }
     .hero {
-      padding: 56px 20px 42px;
-      background: var(--panel);
+      padding: 76px 0 54px;
+      background: linear-gradient(180deg, #ffffff 0%, #f6f8fc 100%);
       border-bottom: 1px solid var(--line);
     }
     .hero-grid {
       display: grid;
-      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .9fr);
-      gap: 28px;
+      grid-template-columns: minmax(0, 1.08fr) minmax(320px, .92fr);
+      gap: 36px;
       align-items: center;
     }
+    .eyebrow {
+      color: var(--accent-dark);
+      font-size: 13px;
+      font-weight: 850;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
     h1 {
-      font-size: clamp(34px, 5vw, 58px);
-      line-height: 1.04;
-      margin: 0 0 16px;
+      margin: 0 0 18px;
+      font-size: clamp(38px, 5vw, 62px);
+      line-height: 1.03;
       letter-spacing: 0;
     }
-    h2 { margin: 0 0 16px; font-size: 28px; line-height: 1.2; }
+    h2 { margin: 0 0 16px; font-size: 30px; line-height: 1.18; }
     h3 { margin: 0 0 8px; font-size: 17px; }
     p { margin: 0 0 14px; color: var(--muted); }
-    .lead { font-size: 19px; max-width: 700px; }
+    .lead { font-size: 19px; max-width: 720px; }
     .btn {
       display: inline-flex;
       align-items: center;
       justify-content: center;
       min-height: 44px;
-      padding: 0 16px;
+      padding: 0 18px;
       border-radius: 6px;
       background: var(--accent);
       color: white;
       text-decoration: none;
-      font-weight: 750;
+      font-weight: 760;
       margin-top: 14px;
     }
     .panel, .card {
       background: var(--panel);
       border: 1px solid var(--line);
       border-radius: 8px;
-      padding: 20px;
+      padding: 22px;
     }
+    .panel { box-shadow: 0 16px 40px rgba(17, 24, 39, .07); }
     .grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
       gap: 16px;
     }
-    .price {
-      font-size: 42px;
-      line-height: 1;
-      color: var(--accent-dark);
-      font-weight: 850;
-      margin: 8px 0 12px;
+    .two {
+      display: grid;
+      grid-template-columns: minmax(0, .9fr) minmax(0, 1.1fr);
+      gap: 28px;
+      align-items: start;
     }
+    .band { background: var(--soft); border-block: 1px solid var(--line); }
     ul { margin: 0; padding-left: 20px; color: var(--muted); }
     li { margin: 8px 0; }
-    code {
-      overflow-wrap: anywhere;
-      background: #eef2f7;
-      border-radius: 4px;
-      padding: 2px 4px;
-    }
-    .band { border-block: 1px solid var(--line); }
-    footer { color: var(--muted); font-size: 14px; }
-    @media (max-width: 760px) {
-      .hero-grid, .grid { grid-template-columns: 1fr; }
-      .navrow { align-items: flex-start; flex-direction: column; }
+    .price { font-size: 38px; line-height: 1; color: var(--accent-dark); font-weight: 850; margin: 10px 0; }
+    .metric { padding: 12px 0; border-bottom: 1px solid var(--line); color: var(--muted); }
+    .metric:last-child { border-bottom: 0; }
+    code { overflow-wrap: anywhere; background: #eef2ff; border-radius: 4px; padding: 2px 4px; }
+    footer { padding: 28px 0; border-top: 1px solid var(--line); color: var(--muted); font-size: 14px; }
+    @media (max-width: 820px) {
+      .hero-grid, .grid, .two { grid-template-columns: 1fr; }
+      .navrow { align-items: flex-start; flex-direction: column; padding: 14px 0; }
+      section { padding: 42px 0; }
+      .hero { padding-top: 48px; }
     }
   </style>
 </head>
 <body>
   <nav>
     <div class="wrap navrow">
-      <div class="brand">AI Security Micro-Audit</div>
-      <a href="mailto:aldorizona10@gmail.com">aldorizona10@gmail.com</a>
+      <div class="brand">QuickOps AI Security</div>
+      <div class="navlinks">
+        <a href="#scope">Scope</a>
+        <a href="#deliverable">Deliverable</a>
+        <a href="/quickops-ai/landing/">Workflow Ops</a>
+        <a href="mailto:aldorizona10@gmail.com">Contact</a>
+      </div>
     </div>
   </nav>
 
@@ -118,50 +130,55 @@
     <section class="hero">
       <div class="wrap hero-grid">
         <div>
-          <h1>Fixed-scope AI security review for agents, chatbots, and workflow apps.</h1>
-          <p class="lead">I test one AI workflow for prompt injection exposure, data leakage paths, unsafe tool use, OAuth/API handling, and abuse cases. Delivered as a short practical report.</p>
-          <a class="btn" href="mailto:aldorizona10@gmail.com?subject=AI%20Security%20Micro-Audit">Request a USD 100 micro-audit</a>
+          <div class="eyebrow">AI security review for builders</div>
+          <h1>Focused review for LLM apps, agents, and automation workflows.</h1>
+          <p class="lead">A compact security review for one AI workflow: prompt injection exposure, sensitive context leakage, unsafe tool use, OAuth/API boundaries, and missing approval gates.</p>
+          <a class="btn" href="mailto:aldorizona10@gmail.com?subject=AI%20Security%20Micro-Audit">Request an audit</a>
         </div>
         <div class="panel">
-          <h2>Starter Audit</h2>
+          <h2>Micro-Audit Pilot</h2>
           <p class="price">USD 100</p>
-          <p>One workflow. One report. 24-48 hour turnaround after scope confirmation.</p>
+          <div class="metric">One agreed workflow or demo path</div>
+          <div class="metric">24-48 hour written report</div>
+          <div class="metric">Non-destructive testing only</div>
+          <div class="metric">Permission required before testing</div>
         </div>
       </div>
     </section>
 
-    <section>
+    <section id="scope">
       <div class="wrap">
-        <h2>What I Check</h2>
+        <h2>Review Areas</h2>
         <div class="grid">
           <div class="card">
             <h3>Prompt Injection</h3>
-            <p>Direct and indirect instruction override attempts against the target workflow.</p>
+            <p>Direct and indirect attempts to override workflow instructions, leak hidden context, or redirect the model's objective.</p>
           </div>
           <div class="card">
-            <h3>Data Leakage</h3>
-            <p>Risk paths for secrets, private context, internal notes, documents, and hidden instructions.</p>
+            <h3>Data Exposure</h3>
+            <p>Checks for sensitive context leakage, over-shared retrieval results, private notes, secrets, and unsafe error surfaces.</p>
           </div>
           <div class="card">
-            <h3>Tool Misuse</h3>
-            <p>Unsafe actions, over-broad permissions, missing confirmation gates, and weak audit trails.</p>
+            <h3>Tool Boundaries</h3>
+            <p>Review of tool/action permissions, confirmation gates, OAuth/API scope assumptions, and auditability gaps.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="band">
-      <div class="wrap hero-grid">
+    <section class="band" id="deliverable">
+      <div class="wrap two">
         <div>
-          <h2>Deliverable</h2>
-          <p>A concise report designed for builders, not a long compliance document.</p>
+          <div class="eyebrow">Deliverable</div>
+          <h2>A short report your builders can act on.</h2>
+          <p>The output is designed to be practical: what was tested, what was observed, why it matters, and what to fix first.</p>
         </div>
         <div class="panel">
           <ul>
-            <li>Scope and tested workflow</li>
-            <li>Risk summary with severity</li>
-            <li>Reproduction notes where safe</li>
-            <li>Recommended fixes</li>
+            <li>Scope and permission boundary</li>
+            <li>Risk summary by severity</li>
+            <li>Reproduction-safe notes</li>
+            <li>Recommended mitigations</li>
             <li>Retest checklist</li>
           </ul>
         </div>
@@ -169,29 +186,22 @@
     </section>
 
     <section>
-      <div class="wrap">
-        <h2>Payment</h2>
-        <div class="grid">
-          <div class="card">
-            <h3>Bank Transfer Indonesia</h3>
-            <p>SeaBank: 901894819238</p>
-          </div>
-          <div class="card">
-            <h3>USDT</h3>
-            <p>BEP20 / BNB Smart Chain only:</p>
-            <p><code>0x9feaaacc40eaba89cbc50b2aa58cdc4b04711170</code></p>
-          </div>
-          <div class="card">
-            <h3>Before Payment</h3>
-            <p>Email first so the target workflow and permission boundary are confirmed.</p>
-          </div>
+      <div class="wrap two">
+        <div>
+          <h2>Engagement Terms</h2>
+          <p>Testing starts only after written permission and scope confirmation. Payment details are provided after the target workflow is agreed.</p>
+        </div>
+        <div class="panel">
+          <p><strong>Starter pilot:</strong> USD 100</p>
+          <p><strong>Payment options:</strong> SeaBank Indonesia or USDT BEP20 / BNB Smart Chain.</p>
+          <p><strong>Contact:</strong> <a href="mailto:aldorizona10@gmail.com">aldorizona10@gmail.com</a></p>
         </div>
       </div>
     </section>
   </main>
 
   <footer>
-    <div class="wrap">Aldo Rizona. AI Security Researcher and Automation Systems Builder. GitHub: aldorizona10-glitch.</div>
+    <div class="wrap">Aldo Rizona. AI Security Researcher and Automation Systems Builder. GitHub: <a href="https://github.com/aldorizona10-glitch">aldorizona10-glitch</a>.</div>
   </footer>
 </body>
 </html>
