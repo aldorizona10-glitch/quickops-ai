@@ -44,11 +44,28 @@ Next actions:
 - Follow-up comment added to clarify that `cargo build --release` passes and compatibility aliases are supported.
 - No maintainer comments yet.
 
+2026-06-11 second search update:
+
+- PR #10 rechecked again: still open, mergeable, no new maintainer comments.
+- Gmail reply check: 0 new replies logged.
+- Zero capability search found paid discovery/search capabilities, but they were not called because the user requested zero cash outlay.
+- Current closest non-agency payout remains maifetch GBP 50; not paid until maintainer accepts/merges and pays.
+
 ## Bounty Triage Notes
 
 Skipped for now:
 
 - `ItzFireable/Portfolio#7`: bounty target changed from C++ to Python to Haskell, with public concern about payout reliability.
+- `ItzFireable/Portfolio#7` rechecked 2026-06-11: still open, but owner changed bounty scope repeatedly; skip as payout-risk.
+- `PG-AGI/toingg-jarvis#13`: Algora USD 5 bounty is real, but already has many attempts/claimed PRs/reward rows; poor ROI and likely duplicate.
+- `PG-AGI/toingg-jarvis#11`: Algora USD 5 bounty is real, but existing PRs already cover the clarified Pipecat/Gemini tool-calling scope; poor ROI and likely duplicate.
+- `SecureBananaLabs/bug-bounty#743`: Algora USD 700 parent bounty is real, but the repo has extreme duplicate activity. Common low-hanging issues such as auth gaps, upload auth, proposal validation, OAuth provider validation, refresh-token validation, job budget validation, and search query validation already have many duplicate child issues/attempts.
+- `SecureBananaLabs/bug-bounty#30`: Algora USD 750 benchmark bounty is real, but heavily saturated with many prior attempts, rewards, and open claims.
+- `UnitOneAI/SecuritySkills#598`, `#599`, `#600`: stated USD 350 proposals say to wait for maintainer approval before implementation; do not start until approved.
+- `charles-openclaw/charles-microbounties`: 200 latest open issues checked; no zero-comment issue found. Recent candidates already had `/attempt`, `/opire try`, or upstream PR links.
+- `Scottcjn/Rustchain` and `Scottcjn/bottube`: token/RTC claims, not direct cash; recent candidates already claimed by original reporters.
+- `Clawland-AI/clawland-ai.github.io#2` and `Clawland-AI/picclaw#24`: bounty-shaped tasks, but multiple PRs/claims already exist.
+- `Expensify/App#75982`: nominal USD 250 issue is closed and internal; not actionable.
 - `UnsafeLabs/Bounty-Hunters#571` and `#569`: requires publishing full system/session prompt or complete runtime initialization text. This is not acceptable.
 - `claude-builders-bounty#5`: nominal $200, but heavily saturated with many existing PRs and repeated claim comments.
 - `warpspeedopen-source/warpspeed-bounties#5`: nominal $660, but requires external signup and maintainer confirmation before work begins.
