@@ -5,7 +5,11 @@ logs/
 smtp.env
 credentials.json
 token.json
+youtube_token.json
 __pycache__/
 scripts/__pycache__/
 bug_bounty_cases/
 bug_bounty_findings/
+.local-tools/
+youtube_shorts_factory/rendered/
+youtube_shorts_factory/.render_work/

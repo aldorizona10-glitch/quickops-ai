@@ -17,6 +17,32 @@ CTA:
 
 ## No-Cost Workflow
 
+Native MP4 render:
+
+```bash
+python3 scripts/render_youtube_shorts.py
+```
+
+Rendered videos are written to `youtube_shorts_factory/rendered/`.
+
+YouTube upload automation:
+
+1. In Google Cloud, enable YouTube Data API v3 on the same project as `credentials.json`.
+2. Run `python3 scripts/youtube_oauth_local.py` once and approve YouTube upload access.
+3. Upload one Short privately:
+
+```bash
+python3 scripts/upload_youtube_short.py short_001
+```
+
+4. Upload public only when intentionally confirmed:
+
+```bash
+YOUTUBE_PRIVACY_STATUS=public CONFIRM_PUBLIC_YOUTUBE_UPLOAD=I_UNDERSTAND_PUBLIC_UPLOAD python3 scripts/upload_youtube_short.py short_001
+```
+
+Browser recorder fallback:
+
 1. Open `shorts_recorder.html` in Chrome or Edge.
 2. Pick a Short from the dropdown.
 3. Click `Record WebM`.
@@ -33,4 +59,3 @@ Direct revenue path:
 - 1 Short per day for credibility.
 - 10 targeted outreach emails per day for direct sales.
 - Pin/comment CTA: "I do fixed-scope AI workflow/security audits for USD 100. Link in description."
-
