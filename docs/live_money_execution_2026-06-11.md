@@ -1,12 +1,12 @@
 # Live Money Execution - 2026-06-11
 
-Generated: 2026-06-11 06:05 WIB
+Generated: 2026-06-11 06:42 WIB
 
 ## Actions Completed
 
 1. Refreshed revenue scout.
    - Output: `full_auto_revenue_scout.csv`
-   - Count: 82 opportunities
+   - Count: 78 opportunities
 
 2. Checked Gmail replies.
    - Result: 0 new replies
@@ -24,7 +24,15 @@ Generated: 2026-06-11 06:05 WIB
    - Gmail ID: `19eb3c5f3b6e96c7`
    - Cash path: USD 100 fixed external review.
 
-5. Refreshed authorized bug bounty case snapshots.
+5. Sent paid security questionnaire workflow review offer to Sekorti.
+   - Recipient: `hello@sekorti.com`
+   - Message: `email_queue/sekorti-security-questionnaire-workflow-review.eml`
+   - Gmail ID: `19eb3e4410858b63`
+   - Basis: public contact page and public security-questionnaire product page.
+   - Scope promised: public/demo-only unless Sekorti authorizes a sandbox; no customer data, no noisy testing.
+   - Cash path: USD 100 fixed operator/security workflow review.
+
+6. Refreshed authorized bug bounty case snapshots.
    - OpenAI Bugcrowd
    - Google and Alphabet VRP
    - Microsoft MSRC
@@ -59,6 +67,15 @@ If Statewright replies:
   - public onboarding/docs review
   - sandbox workflow review
   - MCP/tool-permission boundary checklist
+
+If Sekorti replies:
+
+- Offer USD 100 fixed review.
+- Ask whether they prefer:
+  - public onboarding and questionnaire demo review
+  - authorized sandbox questionnaire flow
+  - evidence/source citation and approval-handoff checklist
+  - sensitive-doc boundary checklist
 
 ### P1 - Authorized Bug Bounty
 

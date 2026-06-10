@@ -1,6 +1,6 @@
 # Full Automation Revenue Scout Report
 
-Generated: 2026-06-11 05:57:36 WIB
+Generated: 2026-06-11 06:30:33 WIB
 
 This report lists earning paths where discovery and triage can be automated. It does not claim money is earned until a platform/client/maintainer accepts and pays.
 
@@ -56,6 +56,36 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - PDF workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
+### Show HN: Updatecli – A Declarative Update Policy Engine
+
+- Source: hacker_news
+- Lane: HN Show HN workflow buyer
+- Score: 85
+- URL: https://news.ycombinator.com/item?id=48192415
+- Context: https://news.ycombinator.com/item?id=48192415
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: Built a verifiable, open-source SoC 2 readiness scanner
+
+- Source: hacker_news
+- Lane: HN Show HN workflow buyer
+- Score: 85
+- URL: https://loxeai.com
+- Context: https://news.ycombinator.com/item?id=48164906
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: mehta.arja@northeastern.edu
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
 ### Show HN: Inspection Credit – read your inspection, draft the negotiation
 
 - Source: hacker_news
@@ -101,19 +131,19 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: Statewright – Visual state machines that make AI agents reliable
+### Show HN: Turnstile – a Windows browser picker that suggests routing rules
 
 - Source: hacker_news
-- Lane: HN Show HN product feedback
+- Lane: HN Show HN workflow buyer
 - Score: 68
-- URL: https://github.com/statewright/statewright
-- Context: https://news.ycombinator.com/item?id=48108778
+- URL: https://news.ycombinator.com/item?id=48296321
+- Context: https://news.ycombinator.com/item?id=48296321
 - Automation: auto_discover_auto_draft_manual_send
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: sales@statewright.ai
-- Contact URL: https://support.github.com
-- Draft subject: Show HN - AI workflow testing pass
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Show HN: AG2B – Run the agent loop in the browser, expose your tools via WebMCP
@@ -131,21 +161,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: OTA – a readiness contract for software repos
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 60
-- URL: https://ota.run
-- Context: https://news.ycombinator.com/item?id=48234838
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: os@ota.run
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
 ### Show HN: Clor – give your agent claws
 
 - Source: hacker_news
@@ -159,6 +174,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact email: support@clor.com
 - Contact URL: https://clor.com/claws/support-vendor-status-watch
 - Draft subject: Show HN - AI workflow testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: OTA – a readiness contract for software repos
+
+- Source: hacker_news
+- Lane: HN Show HN workflow buyer
+- Score: 60
+- URL: https://ota.run
+- Context: https://news.ycombinator.com/item?id=48234838
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: os@ota.run
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Arrow-air/website: Test Bounty
@@ -209,7 +239,7 @@ This report lists earning paths where discovery and triage can be automated. It 
 ### Show HN: SoMatic – Vision-based OS automation framework for AI agents
 
 - Source: hacker_news
-- Lane: HN Show HN product feedback
+- Lane: HN Show HN workflow buyer
 - Score: 50
 - URL: https://github.com/Smyan1909/SoMatic
 - Context: https://news.ycombinator.com/item?id=48221146
@@ -219,21 +249,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact email: 
 - Contact URL: https://support.github.com
 - Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: An iOS bubble level designed to calibrate away camera bump
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 50
-- URL: https://apps.apple.com/us/app/bubble-level-calibrated/id6767735397
-- Context: https://news.ycombinator.com/item?id=48429618
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: https://apps.apple.com/us/app/reorder-contacts-reorder-it/id583700229
-- Draft subject: Show HN - e-signature workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### midnightntwrk/contributor-hub: [Bounty]:
@@ -363,21 +378,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Score: 45
 - URL: https://github.com/kiddie7/Bug-bounty-/issues/1
 - Context: https://github.com/kiddie7/Bug-bounty-/issues/1
-- Automation: auto_discover_manual_claim_auto_pr_possible
-- Cash path: Bounty payment only after maintainer accepts/merges and pays
-- Blocker: Must inspect duplicate attempts and payout rules before coding
-- Contact email: 
-- Contact URL: 
-- Draft subject: 
-- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
-
-### fallenswordhelper/fallenswordhelper: Bounty Tab ???
-
-- Source: github
-- Lane: Open-source paid bounty
-- Score: 45
-- URL: https://github.com/fallenswordhelper/fallenswordhelper/issues/864
-- Context: https://github.com/fallenswordhelper/fallenswordhelper/issues/864
 - Automation: auto_discover_manual_claim_auto_pr_possible
 - Cash path: Bounty payment only after maintainer accepts/merges and pays
 - Blocker: Must inspect duplicate attempts and payout rules before coding

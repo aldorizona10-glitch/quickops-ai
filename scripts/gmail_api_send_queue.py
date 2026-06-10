@@ -56,6 +56,7 @@ ALLOWED_RECIPIENTS = {
     "labs@tkeeper.org",
     "team@trulytyped.com",
     "sales@statewright.ai",
+    "hello@sekorti.com",
 }
 
 
