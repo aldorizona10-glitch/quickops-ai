@@ -3,6 +3,8 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,Hacker News,Auxx AI,Send/comment outreach,outreach_batch_001.md,Superseded,sent via email_queue/auxx-ai-support-workflow-pilot.eml,Check reply in 24h,
 2026-06-10,Hacker News,rtrvr.ai,Send lead workflow pilot,email_queue/rtrvr-lead-workflow-pilot.eml,Sent,gmail_id:19eb35c6ccdaf6d1,Check reply in 24h,Public support email found on rtrvr.ai
 2026-06-10,Hacker News,Caddie AI,Send/comment outreach,outreach_batch_001.md,Superseded,sent via email_queue/caddie-gtm-workflow-pilot.eml,Check reply in 24h,
+2026-06-11,Hacker News,Truly Typed,Send responsible disclosure,email_queue/trulytyped-passive-security-disclosure.eml,Sent,gmail_id:19eb3c5a5e300e18,Check reply in 24h,"Passive finding only; did not use exposed credential/key"
+2026-06-11,Hacker News,Statewright,Send paid review offer,email_queue/statewright-ai-workflow-security-review.eml,Sent,gmail_id:19eb3c5f3b6e96c7,Check reply in 24h,"USD 100 AI workflow/security boundary review offer"
 2026-06-10,Hacker News,Add to Sheets,Send/comment outreach,outreach_batch_001.md,Superseded,sent via email_queue/addtosheets-lead-template-pilot.eml,Check reply in 24h,
 2026-06-10,Upwork,Search Zapier automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,
 2026-06-10,Upwork,Search n8n automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,

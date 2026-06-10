@@ -54,6 +54,8 @@ ALLOWED_RECIPIENTS = {
     "founders@helix-db.com",
     "contact@capakit.com",
     "labs@tkeeper.org",
+    "team@trulytyped.com",
+    "sales@statewright.ai",
 }
 
 

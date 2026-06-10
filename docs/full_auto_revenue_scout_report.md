@@ -1,6 +1,6 @@
 # Full Automation Revenue Scout Report
 
-Generated: 2026-06-11 04:56:22 WIB
+Generated: 2026-06-11 05:57:36 WIB
 
 This report lists earning paths where discovery and triage can be automated. It does not claim money is earned until a platform/client/maintainer accepts and pays.
 
@@ -101,6 +101,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
+### Show HN: Statewright – Visual state machines that make AI agents reliable
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 68
+- URL: https://github.com/statewright/statewright
+- Context: https://news.ycombinator.com/item?id=48108778
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: sales@statewright.ai
+- Contact URL: https://support.github.com
+- Draft subject: Show HN - AI workflow testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
 ### Show HN: AG2B – Run the agent loop in the browser, expose your tools via WebMCP
 
 - Source: hacker_news
@@ -113,6 +128,36 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
 - Contact URL: 
+- Draft subject: Show HN - AI workflow testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: OTA – a readiness contract for software repos
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 60
+- URL: https://ota.run
+- Context: https://news.ycombinator.com/item?id=48234838
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: os@ota.run
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: Clor – give your agent claws
+
+- Source: hacker_news
+- Lane: HN Show HN workflow buyer
+- Score: 60
+- URL: https://clor.com/
+- Context: https://news.ycombinator.com/item?id=48375347
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: support@clor.com
+- Contact URL: https://clor.com/claws/support-vendor-status-watch
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -159,6 +204,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact email: hello@integuru.ai
 - Contact URL: mailto:hello@integuru.ai
 - Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: SoMatic – Vision-based OS automation framework for AI agents
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 50
+- URL: https://github.com/Smyan1909/SoMatic
+- Context: https://news.ycombinator.com/item?id=48221146
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: https://support.github.com
+- Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Show HN: An iOS bubble level designed to calibrate away camera bump
@@ -325,63 +385,3 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact URL: 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
-
-### Show HN: Odeva Booking – A unified PMS for holiday parks and campgrounds
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 43
-- URL: https://news.ycombinator.com/item?id=48376362
-- Context: https://news.ycombinator.com/item?id=48376362
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: A Bluesky client for PICO-8
-
-- Source: hacker_news
-- Lane: HN Show HN testing buyer
-- Score: 43
-- URL: https://picosky.vinnymac.dev/
-- Context: https://news.ycombinator.com/item?id=48475534
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Beta live video app where everyone watches one person at a time
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 40
-- URL: https://news.ycombinator.com/item?id=48445583
-- Context: https://news.ycombinator.com/item?id=48445583
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: TabyAgent – A lighter and easier alternative to OpenClaw/Hermes
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 40
-- URL: https://github.com/gpdir16/tabyAgent
-- Context: https://news.ycombinator.com/item?id=48431928
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: https://support.github.com
-- Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.

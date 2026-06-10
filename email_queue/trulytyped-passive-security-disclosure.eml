@@ -1,0 +1,30 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: team@trulytyped.com
+Subject: Truly Typed - passive security finding on public landing page
+
+Hi Deepan / Truly Typed team,
+
+I saw your Show HN post and did a passive, non-invasive review of the public landing page only. I did not log in, use any exposed credential, call private APIs, or attempt to access data.
+
+I found what looks like sensitive staging/test material exposed in the HTML served by the public site. This appears to include a test account credential and an API key-like value embedded client-side.
+
+Recommended immediate checks:
+
+- remove any real or staging credentials from public HTML
+- rotate the exposed key/token if it maps to a live provider or backend
+- invalidate the test account password if it is usable anywhere
+- move QA-only notes and secrets to private deployment docs or server-side config
+- add a lightweight secret scan in CI before deploy
+
+I am keeping the exact values out of this email to avoid spreading them. If you want, I can send the precise file/line context privately and a concise remediation checklist.
+
+I also offer fixed-scope security micro-audits for AI/workflow products. For USD 100, I can do a small authorized pass covering public exposure, auth/session boundaries, signup/login/reset flows, and automation/bot-defense assumptions, then send a short actionable report.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+Context: https://news.ycombinator.com/item?id=48125186
+
+Best,
+Aldo

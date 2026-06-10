@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: sales@statewright.ai
+Subject: Statewright - AI workflow/security boundary review
+
+Hi Statewright team,
+
+I saw Statewright from Show HN and reviewed the public site/repo positioning. The product is directly in the space I work on: AI agent workflow boundaries, tool permissions, operator handoff, and auditability.
+
+Offer: I can do one fixed USD 100 external review and send back a concise report covering:
+
+- onboarding and first workflow friction
+- MCP/tool-permission boundary assumptions
+- failure states around state transitions and command/edit guards
+- docs clarity for a technical operator setting up Claude Code/Codex/Cursor workflows
+- one practical checklist you can reuse for early users and security-conscious buyers
+
+I will stay within public/demo flows only unless you explicitly authorize a sandbox. No production probing, no noisy testing, and no attempt to access other users' data.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+Context I found:
+https://statewright.ai
+https://github.com/statewright/statewright
+
+Best,
+Aldo
