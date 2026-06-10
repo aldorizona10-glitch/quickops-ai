@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: riccardo@interfacelabs.ai
+Subject: Show HN - AuthAI security micro-audit
+Content-Type: text/plain; charset=utf-8
+
+Hi Riccardo,
+
+I found AuthAI from the Show HN launch and read the README/security model. The user-authorized AI session flow is exactly the kind of product where a small external red/purple-team pass can be useful before more developers build on it.
+
+Small fixed-scope offer: I can do one USD 100 security micro-audit for AuthAI covering:
+
+- auth/session boundary review for the JWT relay pattern
+- token-handling threat model sanity check against the README claims
+- unsafe integration paths where an app backend can accidentally expose AuthAI JWTs or app secrets
+- provider/device-flow abuse cases worth documenting for developers
+- one concise report with findings, repro notes where applicable, and hardening recommendations
+
+I will not test production accounts, private user data, provider systems, or anything outside written authorization. I can start from public docs/code and only run active tests if you explicitly provide a sandbox or approve the exact scope.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+If useful, I can keep it small and deliver a reviewable report in 24-48 hours after scope/payment confirmation.
+
+Best,
+Aldo

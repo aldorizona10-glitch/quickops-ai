@@ -36,6 +36,8 @@ ALLOWED_RECIPIENTS = {
     "support@rtrvr.ai",
     "hello@auto-crm.com",
     "aiolahq@gmail.com",
+    "riccardo@interfacelabs.ai",
+    "founders@helix-db.com",
 }
 
 

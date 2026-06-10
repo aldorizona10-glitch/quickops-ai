@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: founders@helix-db.com
+Subject: Show HN - AI memory/security workflow review
+Content-Type: text/plain; charset=utf-8
+
+Hi HelixDB founders,
+
+I found the HelixDB Show HN post about graph/vector/FTS storage for AI memory and company-brain workloads. The product direction is a strong fit for a small security/workflow review because AI memory systems can fail at the boundary between retrieval, tenant separation, tool access, and operator trust.
+
+Small fixed-scope offer: I can do one USD 100 AI memory security/workflow review covering:
+
+- threat model notes for graph/vector memory used by agents
+- abuse cases around cross-tenant context leakage, stale memory, and unsafe retrieval joins
+- review of public docs/examples for places developers may over-trust agent memory
+- suggested guardrail checklist for customer onboarding and demos
+- one concise report with prioritized hardening recommendations
+
+I will stay within public docs/code unless you explicitly authorize a sandbox. No production probing, no customer-data testing, and no active testing outside written scope.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+If useful, I can keep this narrow enough to review quickly and deliver in 24-48 hours after scope/payment confirmation.
+
+Best,
+Aldo
