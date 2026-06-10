@@ -15,6 +15,7 @@ def run(cmd: list[str]) -> int:
 
 def main() -> int:
     checks = [
+        ["bash", "scripts/setup_native_tools.sh"],
         ["python3", "scripts/autopilot_status.py"],
         ["python3", "scripts/render_youtube_shorts.py"],
         ["python3", "scripts/gmail_check_replies.py"],

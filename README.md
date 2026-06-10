@@ -13,6 +13,29 @@ Live page:
 - https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
 - https://aldorizona10-glitch.github.io/quickops-ai/youtube/
 
+## Full Automation Runner
+
+Satu perintah utama:
+
+```bash
+cd /mnt/c/Users/user/zero-to-100-agency
+python3 scripts/autopilot_run_once.py
+```
+
+Autopilot akan:
+
+- Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.
+- Render MP4 YouTube Shorts native ke `youtube_shorts_factory/rendered/`.
+- Cek Gmail replies dari target outreach.
+- Upload Shorts private hanya jika OAuth YouTube sudah tersambung dan `QUICKOPS_UPLOAD_YOUTUBE_PRIVATE=1` diset.
+
+Setup YouTube resmi sekali saja:
+
+```bash
+python3 scripts/youtube_oauth_local.py
+QUICKOPS_UPLOAD_YOUTUBE_PRIVATE=1 python3 scripts/autopilot_run_once.py
+```
+
 Security revenue desk:
 
 - `bug_bounty_2026_plan.md`
