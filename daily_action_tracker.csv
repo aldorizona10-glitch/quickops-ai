@@ -32,3 +32,4 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,Hacker News,Caddie,Send GTM workflow pilot,email_queue/caddie-gtm-workflow-pilot.eml,Sent,gmail_id:19eb22755b14ea59,Check reply in 24h,Public contact from site output
 2026-06-10,Hacker News,Tutati,Send live moderation workflow offer,email_queue/tutati-live-moderation-workflow.eml,Sent,gmail_id:19eb2294582a74d7,Check reply in 24h,Public email from HN post
 2026-06-10,HN Hiring,Starbridge,Send public profile page update,email_queue/starbridge-profile-page-update.eml,Sent,gmail_id:19eb2386b6d8e55a,Check reply in 24h,Temporary public profile URL sent
+2026-06-10,HN Hiring,Starbridge,Send permanent GitHub Pages profile update,email_queue/starbridge-permanent-profile-page.eml,Sent,gmail_id:19eb250e778e66d5,Check reply in 24h,Permanent zero-cost GitHub Pages profile URL
