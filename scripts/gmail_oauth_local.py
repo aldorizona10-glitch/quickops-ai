@@ -9,11 +9,9 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 from pathlib import Path
 from urllib import parse, request, error
 
+from gmail_auth import SCOPES, TOKEN_FILE, load_client, scope_string
 
 ROOT = Path(__file__).resolve().parents[1]
-CREDENTIALS_FILE = ROOT / "credentials.json"
-TOKEN_FILE = ROOT / "token.json"
-SCOPE = "https://www.googleapis.com/auth/gmail.send"
 
 
 class OAuthHandler(BaseHTTPRequestHandler):
@@ -34,16 +32,6 @@ class OAuthHandler(BaseHTTPRequestHandler):
 
     def log_message(self, fmt, *args):
         return
-
-
-def load_client() -> dict:
-    if not CREDENTIALS_FILE.exists():
-        raise RuntimeError(f"Missing {CREDENTIALS_FILE}")
-    data = json.loads(CREDENTIALS_FILE.read_text(encoding="utf-8"))
-    client = data.get("installed") or data.get("web")
-    if not client:
-        raise RuntimeError("credentials.json must contain an installed or web OAuth client")
-    return client
 
 
 def exchange_code(client: dict, code: str, redirect_uri: str) -> dict:
@@ -83,7 +71,7 @@ def main() -> int:
             "client_id": client["client_id"],
             "redirect_uri": redirect_uri,
             "response_type": "code",
-            "scope": SCOPE,
+            "scope": scope_string(),
             "access_type": "offline",
             "prompt": "consent",
             "state": state,
@@ -93,7 +81,7 @@ def main() -> int:
     thread = threading.Thread(target=server.handle_request, daemon=True)
     thread.start()
 
-    print("Open this URL in your browser and approve Gmail send access:")
+    print("Open this URL in your browser and approve Gmail send/read access:")
     print(auth_url)
     try:
         webbrowser.open(auth_url)
@@ -118,9 +106,12 @@ def main() -> int:
 
     token = exchange_code(client, code, redirect_uri)
     token["created_at"] = int(time.time())
-    token["scope"] = SCOPE
+    token["scope"] = scope_string()
     TOKEN_FILE.write_text(json.dumps(token, indent=2), encoding="utf-8")
     print(f"Saved token to {TOKEN_FILE}")
+    print("Granted scopes:")
+    for scope in SCOPES:
+        print(f"- {scope}")
     print("Now run: python3 scripts/gmail_api_send_queue.py")
     return 0
 
