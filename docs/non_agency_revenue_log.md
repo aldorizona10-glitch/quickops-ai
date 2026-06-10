@@ -102,3 +102,12 @@ Skipped for now:
 - `aLexzzz430/Cognitive-OS#5`: nominal USD 3,000, but many attempts/PRs already exist and the thread is saturated; skip unless maintainer explicitly requests a new round.
 - `charles-openclaw/charles-microbounties#1`: nominal USD 5 XMR, first verified useful submission wins; already has many high-quality submissions. Inspected fresh small CLI repos, but no strong reproducible candidate found.
 - Small CLI repo scan: `Himanshu507/cgcone`, `yopie-org/mailtarget`, `Vani2130/mcp_ctl`, `himanshuskukla/mcp-audit`, `alaas4989/cc-update-all`, and `RefuseHQ/refuse` inspected for quick CLI metadata/help/version bugs; no clean payout-worthy PoC produced in this pass.
+
+2026-06-11 additional live triage:
+
+- `SecureBananaLabs/bug-bounty#743`: confirmed Algora USD 700 parent bounty is real and has historical reward links, but obvious fixes are now duplicate-heavy. Checked whitespace-password, user password storage, job budget range, proposal/message/notification auth, message payload validation, notification server-owned fields, search validation, admin role self-assignment, and Zod 400 handling. Each candidate already has existing issues and/or PRs. Do not submit duplicates.
+- `SecureBananaLabs/bug-bounty#6336`: whitespace-only password issue has open PR `#6337` plus many same-scope historical PRs; skipped.
+- `SecureBananaLabs/bug-bounty#6334`: user password storage is already covered by child issue `#6526` and PR `#6527`; skipped.
+- `SecureBananaLabs/bug-bounty` budget range bug: many duplicate issues/PRs exist (`#2853`, `#5350`, `#5803`, and others); skipped.
+- `charles-openclaw/charles-microbounties`: latest open issues rechecked. No zero-comment open candidate found; newest issues already have `/attempt`, `/opire try`, or upstream PRs by other contributors. Do not duplicate.
+- Current active payout attempts remain maifetch GBP 50 and the quantum visualizer maintenance PR. No new cash has been received.
