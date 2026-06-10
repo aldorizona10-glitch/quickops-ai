@@ -1,0 +1,7 @@
+logs/
+*.secret
+.env
+.env.*
+smtp.env
+credentials.json
+token.json
