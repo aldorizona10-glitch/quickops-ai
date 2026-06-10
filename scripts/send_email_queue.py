@@ -39,6 +39,8 @@ ALLOWED_RECIPIENTS = {
     "aiolahq@gmail.com",
     "riccardo@interfacelabs.ai",
     "founders@helix-db.com",
+    "contact@capakit.com",
+    "labs@tkeeper.org",
 }
 
 

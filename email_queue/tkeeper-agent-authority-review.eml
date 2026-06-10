@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: labs@tkeeper.org
+Subject: Show HN - machine-authority security review
+Content-Type: text/plain; charset=utf-8
+
+Hi TKeeper Labs,
+
+I found TKeeper while researching security tools for AI-agent and machine-identity workflows. A self-hosted MPC signing control plane for high-stakes machine actions is a strong fit for a small purple/green/yellow-team review because the important failure modes are not only cryptographic, but also policy wording, approval semantics, agent authority, auditability, and developer misuse.
+
+Small fixed-scope offer: I can do one USD 100 machine-authority security review covering:
+
+- purple-team threat model for AI-agent requested actions, approval flow confusion, and policy/proof failure modes
+- green-team readiness notes for audit evidence, operator accountability, and compliance-facing explanations
+- yellow-team review of agent-facing language, tool boundaries, and unsafe assumptions in examples/docs
+- developer onboarding review for places where teams may give agents too much authority too early
+- one concise report with prioritized hardening recommendations and documentation improvements
+
+I will stay within public docs/code unless you explicitly authorize a sandbox or test environment. No production probing, no key material handling, no customer-data testing, and no active testing outside written scope.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+If useful, I can keep this narrow enough to review quickly and deliver in 24-48 hours after scope/payment confirmation.
+
+Best,
+Aldo

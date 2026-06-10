@@ -1,0 +1,28 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: contact@capakit.com
+Subject: Show HN - AI sandbox security review
+Content-Type: text/plain; charset=utf-8
+
+Hi CapaKit team,
+
+I found CapaKit from the AI app Kit launch and read through the public site/security positioning. The build-to-run sandbox model is a strong fit for a small external red/blue/purple/yellow-team pass because the risky surface includes agent instructions, dependency install/build behavior, secrets, mounts, MCP exposure, network policy, and what developers assume the sandbox guarantees.
+
+Small fixed-scope offer: I can do one USD 100 AI sandbox security review covering:
+
+- red-team style abuse cases for build-time dependency/install behavior, mounts, secrets, and network exceptions
+- blue-team hardening notes for docs, default policy wording, logging/audit expectations, and developer onboarding
+- purple-team mapping of attack paths to specific mitigations and tests
+- yellow-team review of agent instructions and places where a coding agent may overstep the intended lifecycle contract
+- one concise report with prioritized findings, repro notes where applicable, and concrete documentation/control recommendations
+
+I will not probe production infrastructure, bypass access controls, test third-party systems, or run active testing outside written scope. I can start from public docs/code and only run hands-on tests if you explicitly approve the sandbox and exact boundaries.
+
+Relevant links:
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://github.com/aldorizona10-glitch/quickops-ai
+
+If useful, I can keep this narrow and deliver a reviewable report in 24-48 hours after scope/payment confirmation.
+
+Best,
+Aldo

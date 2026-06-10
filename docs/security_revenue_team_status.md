@@ -23,6 +23,8 @@ This desk turns the operator into a security delivery team, but only inside lega
 
 - AuthAI: security micro-audit offer queued/sent path. Focus: JWT relay, token handling, provider device-flow abuse cases.
 - HelixDB: AI memory security/workflow review queued/sent path. Focus: graph/vector memory, tenant/context leakage, agent trust boundaries.
+- CapaKit: AI sandbox security review path. Focus: build-to-run isolation, dependency/install behavior, mounts, secrets, MCP exposure, network policy, and agent instruction boundaries.
+- TKeeper: machine-authority security review path. Focus: AI-agent requested actions, approval semantics, policy/proof failure modes, audit evidence, and developer misuse.
 
 ## Rules
 
