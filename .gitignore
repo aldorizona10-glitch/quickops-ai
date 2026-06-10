@@ -17,3 +17,6 @@ youtube_shorts_factory/.render_work/
 trend_shorts_factory/rendered/
 trend_shorts_factory/.render_work/
 trend_shorts_factory/audio/
+trend_shorts_factory/rendered_global/
+trend_shorts_factory/.render_work_global/
+trend_shorts_factory/audio_global/

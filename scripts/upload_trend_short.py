@@ -12,10 +12,10 @@ from youtube_auth import refresh_access_token
 
 ROOT = Path(__file__).resolve().parents[1]
 FACTORY = ROOT / "trend_shorts_factory"
-RENDERED = FACTORY / "rendered"
-METADATA = FACTORY / "trend_metadata.csv"
+RENDERED = Path(os.environ.get("TREND_RENDERED_DIR", FACTORY / "rendered"))
+METADATA = Path(os.environ.get("TREND_METADATA", FACTORY / "trend_metadata.csv"))
 LOG_DIR = ROOT / "logs"
-UPLOAD_LOG = LOG_DIR / "youtube_trend_upload_log.csv"
+UPLOAD_LOG = Path(os.environ.get("TREND_UPLOAD_LOG", LOG_DIR / "youtube_trend_upload_log.csv"))
 
 
 class YouTubeApiError(RuntimeError):

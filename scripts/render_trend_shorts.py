@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 import json
 import math
+import os
 import shutil
 import subprocess
 import sys
@@ -10,10 +11,10 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
 FACTORY = ROOT / "trend_shorts_factory"
-MANIFEST = FACTORY / "trend_manifest.json"
-OUT = FACTORY / "rendered"
-WORK = FACTORY / ".render_work"
-AUDIO = FACTORY / "audio"
+MANIFEST = Path(os.environ.get("TREND_MANIFEST", FACTORY / "trend_manifest.json"))
+OUT = Path(os.environ.get("TREND_RENDERED_DIR", FACTORY / "rendered"))
+WORK = Path(os.environ.get("TREND_RENDER_WORK_DIR", FACTORY / ".render_work"))
+AUDIO = Path(os.environ.get("TREND_AUDIO_DIR", FACTORY / "audio"))
 LOCAL_FFMPEG = ROOT / ".local-tools" / "ffmpeg" / "ffmpeg"
 LOCAL_FFPROBE = ROOT / ".local-tools" / "ffmpeg" / "ffprobe"
 

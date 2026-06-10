@@ -1,0 +1,66 @@
+[
+  {
+    "id": "global_001",
+    "title": "Why 2026 feels like 2016 again",
+    "topic": "global nostalgia trend",
+    "source": "Google Trends and broad social coverage show nostalgia cycles spreading across countries, with 2016 culture returning as a global meme frame.",
+    "source_url": "https://trends.google.com/trends/",
+    "voice": "The global internet is acting like twenty sixteen came back. This is not just nostalgia. It is a reaction to an online world that feels automated, polished, and overloaded. People are reaching for older filters, messy photos, simple memes, and music that feels human. The signal for creators is clear: audiences do not only want new technology. They want familiar emotion packaged in a fresh way. If your video can make people feel a memory in the first three seconds, it can travel across countries.",
+    "beats": [
+      "Nostalgia is a global shortcut",
+      "Messy visuals feel human",
+      "Old internet culture is returning",
+      "Emotion travels across languages",
+      "Hook with memory, then explain"
+    ],
+    "cta": "Follow for global trend signals."
+  },
+  {
+    "id": "global_002",
+    "title": "AI video has a trust problem",
+    "topic": "AI video and creator trust",
+    "source": "YouTube has expanded AI and multi-language creator tools while also emphasizing quality, policy, and viewer trust.",
+    "source_url": "https://www.youtube.com/howyoutubeworks/product-features/recommendations/",
+    "voice": "AI video is about to flood every feed, but the winning channels will not be the ones that post the most. They will be the ones viewers trust. Cheap clips can get attention once. A clear point of view brings people back. This is the new creator split: AI can make the footage, the voice, and the captions. But it cannot automatically create taste. In a global feed, trust is the real format.",
+    "beats": [
+      "AI makes output cheap",
+      "Cheap output is not loyalty",
+      "Taste becomes the difference",
+      "Trust beats volume",
+      "Repeat viewers are the asset"
+    ],
+    "cta": "Save this before the feed gets louder."
+  },
+  {
+    "id": "global_003",
+    "title": "Smart glasses are becoming translators",
+    "topic": "wearable AI translation",
+    "source": "Recent XR and AI glasses coverage points toward real-time translation, contextual camera memory, and ambient assistants.",
+    "source_url": "https://www.youtube.com/howyoutubeworks/product-features/recommendations/",
+    "voice": "Smart glasses are not trying to replace your phone first. The more useful version is simpler: translation while you talk, reminders while you move, and answers without opening an app. That matters globally because translation is a problem every country understands. The killer feature is not looking futuristic. It is removing friction in normal life. If wearable AI gets one thing right, it will make language feel less like a wall.",
+    "beats": [
+      "The phone is not the target",
+      "Translation is universal",
+      "Context beats screen time",
+      "Useful feels invisible",
+      "Language barriers shrink"
+    ],
+    "cta": "Follow for tech trends that travel."
+  },
+  {
+    "id": "global_004",
+    "title": "One video can target many countries",
+    "topic": "YouTube localization strategy",
+    "source": "YouTube Help explains translated titles, descriptions, and multi-language audio for building a global audience.",
+    "source_url": "https://support.google.com/youtube/answer/6289575",
+    "voice": "The smartest global YouTube move is not making ten random channels. It is making one strong video that can be understood in many regions. Start with clear English, then localize the title, description, captions, and audio when the channel has access. The algorithm is personal, but discovery still needs language signals. If the idea is global and the packaging is local, one Short can test multiple countries without paid ads.",
+    "beats": [
+      "One master video first",
+      "Localize title and description",
+      "Add captions and audio later",
+      "Test by country data",
+      "Scale what retains viewers"
+    ],
+    "cta": "Follow for zero-budget creator systems."
+  }
+]
