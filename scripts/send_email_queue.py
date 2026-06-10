@@ -13,6 +13,7 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_DIR = ROOT / "email_queue"
 LOG_DIR = ROOT / "logs"
 SENT_LOG = LOG_DIR / "sent_email_log.csv"
+GMAIL_API_SENT_LOG = LOG_DIR / "gmail_api_sent_log.csv"
 
 ALLOWED_RECIPIENTS = {
     "jobs@goshopbrands.com",
@@ -145,6 +146,18 @@ def sent_files() -> set[str]:
     return sent
 
 
+def sent_recipients() -> set[str]:
+    recipients = set()
+    for log_path in (SENT_LOG, GMAIL_API_SENT_LOG):
+        if not log_path.exists():
+            continue
+        for line in log_path.read_text(encoding="utf-8").splitlines()[1:]:
+            parts = line.split(",")
+            if len(parts) >= 5 and parts[4] == "sent":
+                recipients.update(r.strip().lower() for r in parts[2].split() if "@" in r)
+    return recipients
+
+
 def main() -> int:
     queue_files = sorted(QUEUE_DIR.glob("*.eml"))
     if not queue_files:
@@ -161,6 +174,8 @@ def main() -> int:
     cfg = None if dry_run else smtp_config()
     sent_count = 0
     already_sent = sent_files()
+    already_contacted = sent_recipients()
+    allow_repeat = os.environ.get("ALLOW_REPEAT_RECIPIENT") == "I_UNDERSTAND_REPEAT_RECIPIENT"
 
     for path in queue_files:
         if not dry_run and path.name in already_sent:
@@ -171,6 +186,14 @@ def main() -> int:
             validate_message(path, msg)
         except ValueError as exc:
             print(f"SKIP: {exc}")
+            continue
+        duplicate_recipients = [r for r in recipients_for(msg) if r in already_contacted]
+        if not dry_run and duplicate_recipients and not allow_repeat:
+            print(
+                "SKIP: duplicate recipient already contacted: "
+                + ", ".join(duplicate_recipients)
+                + " (set ALLOW_REPEAT_RECIPIENT=I_UNDERSTAND_REPEAT_RECIPIENT only for an explicit reply/follow-up)"
+            )
             continue
 
         print(f"{'WOULD SEND' if dry_run else 'SENDING'}: {path.name} -> {msg.get('To')} | {msg.get('Subject')}")

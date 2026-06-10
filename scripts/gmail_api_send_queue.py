@@ -16,6 +16,7 @@ ROOT = Path(__file__).resolve().parents[1]
 QUEUE_DIR = ROOT / "email_queue"
 LOG_DIR = ROOT / "logs"
 SENT_LOG = LOG_DIR / "gmail_api_sent_log.csv"
+LEGACY_SENT_LOG = LOG_DIR / "sent_email_log.csv"
 TOKEN_FILE = ROOT / "token.json"
 CREDENTIALS_FILE = ROOT / "credentials.json"
 
@@ -139,6 +140,18 @@ def sent_files() -> set[str]:
     return sent
 
 
+def sent_recipients() -> set[str]:
+    recipients = set()
+    for log_path in (SENT_LOG, LEGACY_SENT_LOG):
+        if not log_path.exists():
+            continue
+        for line in log_path.read_text(encoding="utf-8").splitlines()[1:]:
+            parts = line.split(",")
+            if len(parts) >= 5 and parts[4] == "sent":
+                recipients.update(r.strip().lower() for r in parts[2].split() if "@" in r)
+    return recipients
+
+
 def main() -> int:
     queue_files = sorted(QUEUE_DIR.glob("*.eml"))
     send_only = os.environ.get("QUICKOPS_SEND_ONLY", "").strip()
@@ -156,6 +169,8 @@ def main() -> int:
     print("LIVE GMAIL API SEND MODE" if live_send else "DRY RUN: no email will be sent")
     sent_count = 0
     already_sent = sent_files()
+    already_contacted = sent_recipients()
+    allow_repeat = os.environ.get("ALLOW_REPEAT_RECIPIENT") == "I_UNDERSTAND_REPEAT_RECIPIENT"
 
     for path in queue_files:
         if live_send and path.name in already_sent:
@@ -166,6 +181,14 @@ def main() -> int:
             validate_message(path, msg)
         except ValueError as exc:
             print(f"SKIP: {exc}")
+            continue
+        duplicate_recipients = [r for r in recipients_for(msg) if r in already_contacted]
+        if live_send and duplicate_recipients and not allow_repeat:
+            print(
+                "SKIP: duplicate recipient already contacted: "
+                + ", ".join(duplicate_recipients)
+                + " (set ALLOW_REPEAT_RECIPIENT=I_UNDERSTAND_REPEAT_RECIPIENT only for an explicit reply/follow-up)"
+            )
             continue
 
         print(f"{'SENDING' if live_send else 'WOULD SEND'}: {path.name} -> {msg.get('To')} | {msg.get('Subject')}")
