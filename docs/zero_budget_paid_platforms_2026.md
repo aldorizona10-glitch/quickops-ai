@@ -31,21 +31,20 @@ This tracks non-agency paths that do not require buying inventory, ad spend, pai
    - Path: paid one-to-one video conversation.
    - Official page: https://www.rentacyberfriend.com/
    - Why it fits: It describes a human connection marketplace where Cyber Friends share time and experience through one-to-one video calls and set their schedule.
-   - Best profile angle: Indonesian/English conversation, work stress, AI tools, online safety, practical problem sorting.
-   - Blocker: human account setup, profile approval, platform demand.
+   - Status: deprecated for this portfolio because it can weaken the professional agency/security positioning.
+   - Blocker: human account setup, profile approval, platform demand, and brand-positioning risk.
 
 5. Premium.Chat
    - Path: paid text chat, video calls, consulting, support services.
    - Official page: https://premium.chat/
    - Why it fits: It supports text chat, video calls, flat-rate or per-minute fees, and payouts by PayPal or direct deposit.
-   - Best profile angle: AI workflow help, online safety checks, calm paid conversation.
-   - Blocker: signup, payout method, audience/customer traffic.
+   - Best profile angle: AI workflow help and technical consulting only.
+   - Blocker: signup, payout method, audience/customer traffic, and brand-positioning risk.
 
 6. Fiverr
    - Path: seller marketplace gig.
    - Official page: https://www.fiverr.com/
    - Best gig angles:
-     - "I will be your calm listener for work stress and practical next steps"
      - "I will help you understand AI tools and automation safely"
      - "I will review your GitHub or online profile for trust"
    - Blocker: gig approval, competition, buyer traffic.
@@ -69,13 +68,7 @@ Backup proof links:
 
 ## Copy-Paste Bio
 
-Short:
-
-> I help people think through work stress, AI tools, online safety, and practical next steps. I speak Indonesian and English. My style is calm, direct, and practical. I do peer support and technical guidance, not therapy, legal advice, financial advice, or emergency care.
-
-Long:
-
-> I am Aldo Rizona, an Indonesia-based AI security researcher and automation systems builder. I offer calm one-to-one conversation, practical problem sorting, AI tool guidance, and online safety help. I can help you turn confusing work, tech, or internet problems into clear next actions. This is peer support and practical guidance only, not therapy or crisis counseling.
+Use the professional profile copy in `docs/linkedin_profile_ready.md` instead of paid-conversation copy.
 
 ## First 24-Hour Actions
 
@@ -83,8 +76,8 @@ Long:
 2. Create Respondent participant profile.
 3. Join Prolific waitlist.
 4. Apply to UserTesting and complete the practice test.
-5. Create Rent A Cyber Friend profile using the public profile asset.
-6. Create Premium.Chat profile for AI workflow help and paid conversation.
+5. Skip Rent A Cyber Friend for this portfolio.
+6. Use Premium.Chat only if positioned as AI workflow consulting.
 7. Create one Fiverr gig after profiles above are submitted.
 
 ## Safety Rules
@@ -93,6 +86,5 @@ Long:
 - Never buy or rent verified accounts.
 - Never use VPN/geospoofing to bypass country rules.
 - Never claim to be a therapist, doctor, lawyer, or financial advisor.
-- Refuse crisis counseling and direct people to emergency/local professional help.
 - Keep adult/romantic/sexual content out of any public profile.
 - Use platform payments where possible.
