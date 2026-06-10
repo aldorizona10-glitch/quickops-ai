@@ -7,3 +7,5 @@ credentials.json
 token.json
 __pycache__/
 scripts/__pycache__/
+bug_bounty_cases/
+bug_bounty_findings/

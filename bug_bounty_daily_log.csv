@@ -5,3 +5,13 @@ date_time_wib,track,program_or_client,action,status,next_step
 2026-06-10 11:30,Bug bounty,GitHub HackerOne,Added public HackerOne program to shortlist,ready,Use own repos/actions/pages only
 2026-06-10 11:30,Bug bounty,Shopify HackerOne,Added public HackerOne program to shortlist,ready,Confirm scope after login before testing
 2026-06-10 11:30,Agency,QuickOps AI,Keep outbound and USD 100 pilot offer active,active,Continue reply monitoring and send next targeted batch only to relevant prospects
+2026-06-10 11:39,Bug bounty,OpenAI Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/01-openai-bug-bounty/scope_notes.md before any active test
+2026-06-10 11:39,Bug bounty,Google and Alphabet VRP,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/02-google-and-alphabet-vrp/scope_notes.md before any active test
+2026-06-10 11:39,Bug bounty,Microsoft MSRC Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/03-microsoft-msrc-bounty/scope_notes.md before any active test
+2026-06-10 11:39,Bug bounty,GitHub Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/04-github-bug-bounty/scope_notes.md before any active test
+2026-06-10 11:39,Bug bounty,Shopify Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/05-shopify-bug-bounty/scope_notes.md before any active test
+2026-06-10 11:41,Bug bounty,OpenAI Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/01-openai-bug-bounty/scope_notes.md before any active test
+2026-06-10 11:41,Bug bounty,Google and Alphabet VRP,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/02-google-and-alphabet-vrp/scope_notes.md before any active test
+2026-06-10 11:41,Bug bounty,Microsoft MSRC Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/03-microsoft-msrc-bounty/scope_notes.md before any active test
+2026-06-10 11:41,Bug bounty,GitHub Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/04-github-bug-bounty/scope_notes.md before any active test
+2026-06-10 11:41,Bug bounty,Shopify Bug Bounty,Safe scope snapshot collected,snapshot_collected,Review /mnt/c/Users/user/zero-to-100-agency/bug_bounty_cases/05-shopify-bug-bounty/scope_notes.md before any active test
