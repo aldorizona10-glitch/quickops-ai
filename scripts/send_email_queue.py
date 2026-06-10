@@ -23,6 +23,11 @@ ALLOWED_RECIPIENTS = {
     "hiring@reef.pl",
     "cprabala@techmahindra.com",
     "jobs@thisdot.co",
+    "steven@kanary.com",
+    "eddie.hammond@kepler.ai",
+    "jobs@drswarm.com",
+    "talent+hn@cwai.co",
+    "careers@coder.com",
 }
 
 

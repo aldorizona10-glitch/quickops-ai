@@ -19,3 +19,8 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,HN Hiring,Reef Technologies,Send remote backend email,email_queue/reef-technologies.eml,Sent,gmail_id:19eafaf3e5d25e80,Check reply in 24h,Remote EMEA/APAC hourly role
 2026-06-10,HN Hiring,Tech Mahindra Cloud Advisory,Send AI ops automation email,email_queue/techmahindra-cloud-advisory.eml,Sent,gmail_id:19eafaf841a63b13,Check reply in 24h,Global cloud advisory
 2026-06-10,HN Hiring,This Dot Labs,Send AI workflow email,email_queue/thisdot-labs.eml,Sent,gmail_id:19eafafa780a460a,Check reply in 24h,Remote with US overlap maybe possible
+2026-06-10,AI Security,Kanary,Send micro-audit offer,email_queue/kanary-ai-security-audit.eml,Sent,gmail_id:19eafb90abe88fdd,Check reply in 24h,AI personal security platform
+2026-06-10,AI Security,Kepler,Send micro-audit offer,email_queue/kepler-ai-security-audit.eml,Sent,gmail_id:19eafb92de45a8e9,Check reply in 24h,High-stakes AI trust layer
+2026-06-10,AI Security,DrSwarm,Send micro-audit offer,email_queue/drswarm-ai-security-audit.eml,Sent,gmail_id:19eafb8e967d1289,Check reply in 24h,Healthcare AI workflow automation
+2026-06-10,AI Security,Catalyst Wayfare,Send micro-audit offer,email_queue/catalystwayfare-ai-security-audit.eml,Sent,gmail_id:19eafb8a30b5565f,Check reply in 24h,Production AI agent systems
+2026-06-10,AI Security,Coder,Send micro-audit offer,email_queue/coder-ai-security-audit.eml,Sent,gmail_id:19eafb8c7254a124,Check reply in 24h,Agentic development security

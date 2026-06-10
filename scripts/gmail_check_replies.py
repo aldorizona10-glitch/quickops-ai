@@ -23,6 +23,11 @@ TARGET_SENDERS = {
     "hiring@reef.pl": "Reef Technologies",
     "cprabala@techmahindra.com": "Tech Mahindra",
     "jobs@thisdot.co": "This Dot Labs",
+    "steven@kanary.com": "Kanary",
+    "eddie.hammond@kepler.ai": "Kepler",
+    "jobs@drswarm.com": "DrSwarm",
+    "talent+hn@cwai.co": "Catalyst Wayfare",
+    "careers@coder.com": "Coder",
 }
 
 

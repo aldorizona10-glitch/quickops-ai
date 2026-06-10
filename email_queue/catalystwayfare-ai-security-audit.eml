@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: talent+hn@cwai.co
+Subject: HN - AI agent security micro-audit
+Content-Type: text/plain; charset=utf-8
+
+Hi Catalyst Wayfare team,
+
+I saw your HN post about shipping production AI systems and multi-agent orchestration for regulated and technical domains.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. Alongside automation work, I am offering a focused AI Security Micro-Audit for agentic workflows:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+Scope: one workflow, USD 100, 24-48 hour report. I check prompt injection, indirect instruction handling, data leakage paths, unsafe tool use, missing approval gates, and audit/logging gaps.
+
+If useful, I can review one agent workflow or demo path and provide a concise practical report that your builders can act on.
+
+Best,
+Aldo

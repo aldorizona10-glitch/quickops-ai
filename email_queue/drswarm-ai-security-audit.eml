@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: jobs@drswarm.com
+Subject: HN - AI workflow security micro-audit for DrSwarm
+Content-Type: text/plain; charset=utf-8
+
+Hi DrSwarm team,
+
+I saw your HN post about AI-driven workflow automation for healthcare clinics and health systems. Scheduling, billing workflows, and patient ops are high-sensitivity areas where AI workflow boundaries matter.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I am offering a small fixed-scope AI Security Micro-Audit:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+The audit checks one workflow for prompt injection exposure, sensitive context leakage, unsafe tool/action paths, missing human confirmation, and logging/audit gaps. Fixed scope: USD 100, 24-48 hour report after permission and access are confirmed.
+
+If useful, I can review one non-production workflow or demo path and send a concise practical report.
+
+Best,
+Aldo

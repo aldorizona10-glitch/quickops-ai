@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: steven@kanary.com
+Subject: HN - AI security micro-audit for Kanary workflows
+Content-Type: text/plain; charset=utf-8
+
+Hi Steven,
+
+I saw Kanary's HN post. Your product is directly in the personal-security risk space, and the agentic internet angle caught my attention.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I am offering a small fixed-scope AI Security Micro-Audit for AI workflows, agents, and security products:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+The audit is intentionally small: one workflow, USD 100, 24-48 hour report. I check prompt injection paths, data leakage attempts, unsafe tool/action boundaries, over-broad access, and audit/logging gaps.
+
+If useful, I can review one Kanary workflow or onboarding path and send a concise builder-focused report.
+
+Best,
+Aldo

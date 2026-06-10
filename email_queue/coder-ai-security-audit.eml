@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: careers@coder.com
+Subject: HN - AI agent workflow security micro-audit
+Content-Type: text/plain; charset=utf-8
+
+Hi Coder team,
+
+I saw your HN post about agentic development environments and secure governed workspaces for autonomous coding agents.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I am offering a small AI Security Micro-Audit for AI agents and workflow apps:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+The audit is fixed-scope: one workflow, USD 100, 24-48 hour report. I check prompt injection, context leakage, unsafe tool/action boundaries, missing approval gates, and logging/auditability gaps.
+
+If useful, I can review one demo workflow or public onboarding path and send a concise builder-focused report.
+
+Best,
+Aldo

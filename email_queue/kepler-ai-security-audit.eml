@@ -1,0 +1,19 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: eddie.hammond@kepler.ai
+Subject: HN - AI security micro-audit for high-stakes LLM workflows
+Content-Type: text/plain; charset=utf-8
+
+Hi Eddie,
+
+I saw Kepler's HN post about building a trust layer for AI in high-stakes industries. The architecture you described - LLM orchestration with deterministic code pipelines and provenance - is exactly the kind of system where workflow security and failure modes matter.
+
+I am Aldo Rizona, an AI security researcher and automation systems builder. I am offering a fixed-scope AI Security Micro-Audit:
+
+https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+Scope is small and practical: one workflow, USD 100, 24-48 hour report. I check prompt injection attempts, data leakage paths, unsafe orchestration boundaries, tool/action confirmation, and audit trail gaps.
+
+If useful, I can review one narrow Kepler workflow and send a concise report with reproduction-safe notes and fixes.
+
+Best,
+Aldo
