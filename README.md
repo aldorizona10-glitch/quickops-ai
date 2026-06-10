@@ -11,7 +11,6 @@ Live page:
 - https://aldorizona10-glitch.github.io/quickops-ai/
 - https://aldorizona10-glitch.github.io/quickops-ai/landing/
 - https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
-- https://aldorizona10-glitch.github.io/quickops-ai/paid-listening/
 - https://aldorizona10-glitch.github.io/quickops-ai/youtube/
 
 ## Full Automation Runner

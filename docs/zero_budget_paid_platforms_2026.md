@@ -60,7 +60,7 @@ This tracks non-agency paths that do not require buying inventory, ad spend, pai
 
 Use this link when a platform asks for a profile or proof page:
 
-- https://aldorizona10-glitch.github.io/quickops-ai/paid-listening/
+- https://aldorizona10-glitch.github.io/quickops-ai/profile/
 
 Backup proof links:
 
@@ -94,5 +94,5 @@ Long:
 - Never use VPN/geospoofing to bypass country rules.
 - Never claim to be a therapist, doctor, lawyer, or financial advisor.
 - Refuse crisis counseling and direct people to emergency/local professional help.
-- Keep adult/romantic/sexual content out of the paid-listening profile.
+- Keep adult/romantic/sexual content out of any public profile.
 - Use platform payments where possible.

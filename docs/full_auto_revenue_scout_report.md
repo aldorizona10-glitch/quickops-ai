@@ -1,13 +1,13 @@
 # Full Automation Revenue Scout Report
 
-Generated: 2026-06-11 03:30:10 WIB
+Generated: 2026-06-11 03:41:58 WIB
 
 This report lists earning paths where discovery and triage can be automated. It does not claim money is earned until a platform/client/maintainer accepts and pays.
 
 ## Automation Reality
 
 - Fully automatable: public search, scoring, duplicate filtering, draft generation, status tracking, reply checks.
-- Not fully automatable without risk: KYC, CAPTCHA, account signup, platform screening, interviews, therapy/paid-listening calls, payout setup, maintainer acceptance.
+- Not fully automatable without risk: KYC, CAPTCHA, account signup, platform screening, interviews, live service calls, payout setup, maintainer acceptance.
 
 ## Top Opportunities
 
@@ -101,6 +101,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
+### Show HN: Statewright – Visual state machines that make AI agents reliable
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 68
+- URL: https://github.com/statewright/statewright
+- Context: https://news.ycombinator.com/item?id=48108778
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: sales@statewright.ai
+- Contact URL: https://support.github.com
+- Draft subject: Show HN - AI workflow testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
 ### Show HN: AG2B – Run the agent loop in the browser, expose your tools via WebMCP
 
 - Source: hacker_news
@@ -144,21 +159,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact email: support@clor.com
 - Contact URL: https://clor.com/claws/support-vendor-status-watch
 - Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: How we made MCP development feel good
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 58
-- URL: https://manufact.com/blog/mcp-testing
-- Context: https://news.ycombinator.com/item?id=48110929
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Arrow-air/website: Test Bounty
@@ -233,21 +233,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
 - Contact URL: https://support.github.com
-- Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Agent-data – a CLI for giving agents real-time, structured data
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 50
-- URL: https://agent-data.dev/
-- Context: https://news.ycombinator.com/item?id=48052476
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -378,6 +363,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Score: 45
 - URL: https://github.com/redmushie/ss14-starlight/issues/11
 - Context: https://github.com/redmushie/ss14-starlight/issues/11
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### kiddie7/Bug-bounty-: Bug Bounty Report
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/kiddie7/Bug-bounty-/issues/1
+- Context: https://github.com/kiddie7/Bug-bounty-/issues/1
 - Automation: auto_discover_manual_claim_auto_pr_possible
 - Cash path: Bounty payment only after maintainer accepts/merges and pays
 - Blocker: Must inspect duplicate attempts and payout rules before coding

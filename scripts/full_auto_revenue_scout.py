@@ -148,7 +148,7 @@ def draft_offer(title: str, url: str, lane: str) -> tuple[str, str]:
         "I will stay within public/demo flows unless you explicitly provide a sandbox. No production probing or noisy security testing.\n\n"
         "Proof/profile:\n"
         "https://aldorizona10-glitch.github.io/quickops-ai/profile/\n"
-        "https://aldorizona10-glitch.github.io/quickops-ai/paid-listening/\n\n"
+        "https://github.com/aldorizona10-glitch/quickops-ai\n\n"
         f"Context I found: {url}\n\n"
         "Best,\n"
         "Aldo\n"
@@ -378,7 +378,7 @@ def write_outputs(rows: list[dict[str, str]]) -> None:
         "## Automation Reality",
         "",
         "- Fully automatable: public search, scoring, duplicate filtering, draft generation, status tracking, reply checks.",
-        "- Not fully automatable without risk: KYC, CAPTCHA, account signup, platform screening, interviews, therapy/paid-listening calls, payout setup, maintainer acceptance.",
+        "- Not fully automatable without risk: KYC, CAPTCHA, account signup, platform screening, interviews, live service calls, payout setup, maintainer acceptance.",
         "",
         "## Top Opportunities",
         "",
