@@ -1,0 +1,82 @@
+[
+  {
+    "id": "trend_001",
+    "title": "The chatbot era is ending. AI agents are next.",
+    "topic": "Google I/O 2026 AI agents",
+    "source": "TechRadar reported Google I/O 2026 announcements around Gemini Spark, Ask YouTube, Android XR, and AI tools.",
+    "source_url": "https://www.techradar.com/news/live/google-io-2026-live",
+    "voice": "The chatbot era is getting replaced. At Google I O twenty twenty six, the signal was obvious: AI is moving from answer boxes to always on agents. Gemini Spark was framed as a personal AI that can sit across your digital life. Ask YouTube turns videos into searchable answers. And Google is pushing mini apps from prompts. The big shift is not smarter chat. It is software that watches context, takes action, and changes how people use the web. If you build content, products, or workflows, this is the trend to watch.",
+    "beats": [
+      "Chatbots -> agents",
+      "AI that follows context",
+      "Search becomes interactive",
+      "Apps can be generated",
+      "The web becomes task-based"
+    ],
+    "cta": "Follow for sharp tech trend breakdowns."
+  },
+  {
+    "id": "trend_002",
+    "title": "Smart glasses are back, but the phone is not the target.",
+    "topic": "Android XR and AI glasses",
+    "source": "Google I/O 2026 coverage highlighted Samsung Android XR smart glasses with translation, photo capture, and contextual notifications.",
+    "source_url": "https://www.techradar.com/news/live/google-io-2026-live",
+    "voice": "Smart glasses are back, but this time the pitch is different. It is not a tiny phone on your face. The new Android XR wave is about ambient AI: translation while you talk, camera memory when you need it, and contextual notifications without pulling out a device. That matters because the next interface may not be a screen. It may be a wearable assistant that sees what you see and responds in real time. The winning product will not feel futuristic. It will feel invisible.",
+    "beats": [
+      "Not a face phone",
+      "Real-time translation",
+      "Hands-free memory",
+      "Context without scrolling",
+      "The interface becomes invisible"
+    ],
+    "cta": "Save this if you track future tech."
+  },
+  {
+    "id": "trend_003",
+    "title": "The weird fruit dating show explained AI video culture.",
+    "topic": "AI fruit microdrama trend",
+    "source": "Reports about Fruit Love Island described a viral AI-generated microdrama series with millions of followers and hundreds of millions of views.",
+    "source_url": "https://en.wikipedia.org/wiki/Fruit_Love_Island",
+    "voice": "The strangest AI video trend this year was not a tool. It was a fruit dating show. Fruit Love Island turned animated fruit into reality TV drama, and millions watched. The lesson is uncomfortable but useful: short video does not only reward quality. It rewards repeatable characters, fast conflict, and a reason to come back tomorrow. That is why AI slop spreads so fast. But it also shows the formula professional creators can borrow without making trash: recurring worlds, clean story arcs, and cliffhangers.",
+    "beats": [
+      "AI microdrama went mainstream",
+      "Characters beat pure visuals",
+      "Conflict drives retention",
+      "Episodes create habit",
+      "Use the format, not the slop"
+    ],
+    "cta": "Follow for trend mechanics, not hype."
+  },
+  {
+    "id": "trend_004",
+    "title": "AI clones are coming to Shorts. Trust becomes the product.",
+    "topic": "YouTube AI likeness creators",
+    "source": "The Verge reported YouTube plans for creators to make Shorts using AI-generated versions of themselves, alongside quality and slop controls.",
+    "source_url": "https://www.theverge.com/news/864610/youtube-shorts-ai-likenesses-neal-mohan-2026",
+    "voice": "YouTube is preparing for creators to make Shorts with AI versions of themselves. That sounds convenient, but it changes the job of a creator. The question will not be, can this video be generated? The question will be, do viewers trust that this channel still has taste, judgment, and a real point of view? AI can multiply output. It cannot automatically create credibility. In the next wave of Shorts, trust becomes the product.",
+    "beats": [
+      "AI likeness enters Shorts",
+      "Output gets cheaper",
+      "Authenticity gets harder",
+      "Taste becomes scarce",
+      "Trust becomes the product"
+    ],
+    "cta": "Follow for the creator economy shift."
+  },
+  {
+    "id": "trend_005",
+    "title": "AI is moving from premium phones to everyone.",
+    "topic": "Gemini on budget Android phones",
+    "source": "Android Central reported Gemini Go replacing Assistant Go on Android Go devices, bringing generative AI to low-cost phones.",
+    "source_url": "https://www.androidcentral.com/phones/some-of-the-cheapest-android-phones-are-finally-joining-the-gemini-era",
+    "voice": "The quiet AI trend is not the most expensive model. It is distribution. Gemini is moving onto cheaper Android Go phones, replacing the old lightweight assistant. That means generative AI is no longer only a premium phone feature. It is becoming normal infrastructure for people with budget devices. This matters more than another benchmark. When AI reaches low cost phones, the next billion users do not ask whether AI is useful. They simply start using it.",
+    "beats": [
+      "AI leaves the premium tier",
+      "Budget phones get Gemini",
+      "Distribution beats benchmarks",
+      "New users skip old habits",
+      "AI becomes infrastructure"
+    ],
+    "cta": "Follow for practical future signals."
+  }
+]

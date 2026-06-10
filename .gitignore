@@ -11,5 +11,9 @@ scripts/__pycache__/
 bug_bounty_cases/
 bug_bounty_findings/
 .local-tools/
+.venv/
 youtube_shorts_factory/rendered/
 youtube_shorts_factory/.render_work/
+trend_shorts_factory/rendered/
+trend_shorts_factory/.render_work/
+trend_shorts_factory/audio/
