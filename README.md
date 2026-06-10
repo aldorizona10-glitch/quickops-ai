@@ -28,6 +28,12 @@ Audit semua tool dan gap automation:
 python3 scripts/automation_doctor.py
 ```
 
+Agency command center, tanpa YouTube:
+
+```bash
+python3 scripts/agency_command_center.py
+```
+
 Autopilot akan:
 
 - Menyiapkan native media tools. Jika sudo bisa dipakai tanpa prompt, script memakai `sudo -n apt-get install -y ffmpeg`; jika tidak, script otomatis memakai ffmpeg static lokal gratis.
