@@ -8,8 +8,16 @@ Nama kerja: QuickOps AI
 
 Live page:
 
+- https://aldorizona10-glitch.github.io/quickops-ai/
 - https://aldorizona10-glitch.github.io/quickops-ai/landing/
-- https://aldorizona10-glitch.github.io/quickops-ai/ after root redirect is active
+- https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+
+Security revenue desk:
+
+- `bug_bounty_2026_plan.md`
+- `bug_bounty_targets_2026.csv`
+- `bug_bounty_report_template.md`
+- `bug_bounty_daily_log.csv`
 
 ## Posisi
 

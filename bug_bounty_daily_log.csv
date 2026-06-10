@@ -1,0 +1,7 @@
+date_time_wib,track,program_or_client,action,status,next_step
+2026-06-10 11:30,Bug bounty,OpenAI Bugcrowd,Verified public program status and scope warnings,ready,Read in-scope assets after researcher login and run only non-destructive own-account checks
+2026-06-10 11:30,Bug bounty,Google/Alphabet VRP,Added official VRP target to shortlist,ready,Review exact product scope before testing
+2026-06-10 11:30,Bug bounty,Microsoft MSRC,Added official MSRC reporting portal,ready,Choose a specific MSRC bounty program before testing
+2026-06-10 11:30,Bug bounty,GitHub HackerOne,Added public HackerOne program to shortlist,ready,Use own repos/actions/pages only
+2026-06-10 11:30,Bug bounty,Shopify HackerOne,Added public HackerOne program to shortlist,ready,Confirm scope after login before testing
+2026-06-10 11:30,Agency,QuickOps AI,Keep outbound and USD 100 pilot offer active,active,Continue reply monitoring and send next targeted batch only to relevant prospects
