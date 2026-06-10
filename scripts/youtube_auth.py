@@ -7,7 +7,10 @@ from urllib import parse, request, error
 ROOT = Path(__file__).resolve().parents[1]
 TOKEN_FILE = ROOT / "youtube_token.json"
 CREDENTIALS_FILE = ROOT / "credentials.json"
-SCOPES = ["https://www.googleapis.com/auth/youtube.upload"]
+SCOPES = [
+    "https://www.googleapis.com/auth/youtube.upload",
+    "https://www.googleapis.com/auth/youtube.force-ssl",
+]
 
 
 def scope_string() -> str:

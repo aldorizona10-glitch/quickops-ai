@@ -76,7 +76,7 @@ def main() -> int:
 
     threading.Thread(target=server.handle_request, daemon=True).start()
 
-    print("Open this URL in your browser and approve YouTube upload access:")
+    print("Open this URL in your browser and approve YouTube upload/delete access:")
     print(auth_url)
     try:
         webbrowser.open(auth_url)
@@ -106,7 +106,7 @@ def main() -> int:
     print("Granted scopes:")
     for scope in SCOPES:
         print(f"- {scope}")
-    print("Now run: python3 scripts/upload_youtube_short.py short_001")
+    print("Now run the YouTube upload/delete scripts.")
     return 0
 
 
