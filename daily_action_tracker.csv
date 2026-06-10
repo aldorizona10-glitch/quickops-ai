@@ -10,7 +10,7 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-10,X,Search Zapier broke,Reply,outreach_batch_002.md,Ready,,Reply to 5 relevant posts,
 2026-06-10,Reddit,CRM/follow-up threads,Helpful reply,outreach_batch_002.md,Ready,,Reply where allowed,
 2026-06-10,HN Hiring,Servicing Copilot,Send contractor email,applications_batch_001.md,Ready,,Highest priority - paid bake-off,
-2026-06-10,HN Hiring,Go.Shop,Send application email,applications_batch_001.md,Ready,,Timezone fits Indonesia,
-2026-06-10,HN Hiring,Pango,Send own-words email,applications_batch_001.md,Ready,,Mention GMT+7 and ops exceptions,
-2026-06-10,HN Hiring,Babou,Send application email,applications_batch_001.md,Ready,,Mention agent workflow/human approval,
+2026-06-10,HN Hiring,Go.Shop,Send application email,applications_batch_001.md,Sent,gmail_id:19eafa387655ed1c,Check reply in 24h,Timezone fits Indonesia
+2026-06-10,HN Hiring,Pango,Send own-words email,applications_batch_001.md,Sent,gmail_id:19eafa3a9978723f,Check reply in 24h,Mentioned GMT+7 and ops exceptions
+2026-06-10,HN Hiring,Babou,Send application email,applications_batch_001.md,Sent,gmail_id:19eafa3656d54135,Check reply in 24h,Mentioned agent workflow/human approval
 2026-06-10,HN Hiring,Who Wants To Be Hired,Post profile,applications_batch_001.md,Ready,,Use correct thread only,
