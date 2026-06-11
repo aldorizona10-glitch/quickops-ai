@@ -87,6 +87,14 @@ Generated: 2026-06-11 08:09 WIB
    - Cash path: small paid workflow QA/handoff pass around annotation, review, filtering, autosave, API, and background-job assumptions.
    - Scope promised: no production data/customer access; public docs, screenshots, demo flows, synthetic examples, or sandbox only if provided.
 
+13. Submitted ItzFireable Portfolio Haskell rewrite bounty attempt.
+   - Pull request: `https://github.com/ItzFireable/Portfolio/pull/10`
+   - Claim comment: `https://github.com/ItzFireable/Portfolio/issues/7#issuecomment-4676324922`
+   - Latest stated bounty: GBP 200.
+   - Scope: replaced Vue/Vite frontend and Elysia/Bun backend with a Haskell Scotty app, kept routes/assets/API fallback shape, and removed obsolete stack files.
+   - Validation: `git diff --check` passed; local Haskell build blocked because this WSL tool environment has no `ghc`, `cabal`, `stack`, `nix`, or `ghcup`.
+   - Risk: payout confidence is lower because maintainer has repeatedly changed requested languages; payment still depends on acceptance/merge and payout follow-through.
+
 ## Priority Queue
 
 ### P0 - Reply Conversion

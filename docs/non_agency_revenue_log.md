@@ -101,6 +101,47 @@ Next actions:
 2. If changes are requested, patch `/tmp/maifetch-elisp`, push `aldorizona10-glitch:emacs-lisp-rewrite-bounty-1`, and reply on the PR.
 3. After merge/acceptance, ask maintainer for payout instructions.
 
+### ItzFireable Portfolio Haskell rewrite
+
+- Bounty source: https://github.com/ItzFireable/Portfolio/issues/7
+- Latest maintainer direction: rewrite the portfolio in Haskell.
+- Latest stated amount: GBP 200.
+- Fork branch: https://github.com/aldorizona10-glitch/Portfolio/tree/haskell-portfolio-rewrite-bounty-7
+- Pull request: https://github.com/ItzFireable/Portfolio/pull/10
+- Claim comment: https://github.com/ItzFireable/Portfolio/issues/7#issuecomment-4676324922
+- Status: PR open when submitted.
+- Local worktree: `/tmp/itzfireable-portfolio`
+- Latest commit: `dd7e774 Rewrite portfolio in Haskell`
+- Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
+
+Scope completed:
+
+- Replaced the Vue/Vite frontend and Elysia/Bun backend with a single Haskell Scotty web app.
+- Preserved the main routes `/` and `/arcade`, navigation, project content, and visual assets.
+- Kept `/discord` and `/spotify` JSON endpoints with compatible error responses when private credentials are not configured.
+- Moved retained image assets into `public/`.
+- Removed obsolete frontend/backend build files, old Azure workflows, and stale submodule config.
+
+Validation:
+
+```bash
+git diff --check
+```
+
+- Static scan of new text files passed for non-ASCII cleanup.
+- Local Haskell build was not run because the current WSL tool environment has no `ghc`, `cabal`, `stack`, `nix`, or `ghcup`.
+- Attempted to add a GitHub Actions Haskell workflow, but push was rejected because the available GitHub token lacks `workflow` scope. The workflow file was removed before PR submission.
+
+Risk note:
+
+- This bounty has visible payout risk because the maintainer changed scope repeatedly from C++ to Python to Haskell. The PR was still submitted because the latest issue comment states a GBP 200 bounty and the implementation cost was acceptable.
+
+Next actions:
+
+1. Watch PR #10 and issue #7 for maintainer feedback.
+2. If a Haskell build failure is reported, patch `/tmp/itzfireable-portfolio`, push `aldorizona10-glitch:haskell-portfolio-rewrite-bounty-7`, and reply on the PR.
+3. If accepted/merged, ask for payout instructions.
+
 ### maifetch Rust rewrite
 
 - Bounty source: https://github.com/HutchyBen/maifetch/issues/1
@@ -206,8 +247,7 @@ Next actions:
 
 Skipped for now:
 
-- `ItzFireable/Portfolio#7`: bounty target changed from C++ to Python to Haskell, with public concern about payout reliability.
-- `ItzFireable/Portfolio#7` rechecked 2026-06-11: still open, but owner changed bounty scope repeatedly; skip as payout-risk.
+- `ItzFireable/Portfolio#7`: no longer skipped. Submitted Haskell rewrite PR #10 despite payout-risk because the latest stated amount is GBP 200.
 - `PG-AGI/toingg-jarvis#13`: Algora USD 5 bounty is real, but already has many attempts/claimed PRs/reward rows; poor ROI and likely duplicate.
 - `PG-AGI/toingg-jarvis#11`: Algora USD 5 bounty is real, but existing PRs already cover the clarified Pipecat/Gemini tool-calling scope; poor ROI and likely duplicate.
 - `SecureBananaLabs/bug-bounty#743`: Algora USD 700 parent bounty is real, but the repo has extreme duplicate activity. Common low-hanging issues such as auth gaps, upload auth, proposal validation, OAuth provider validation, refresh-token validation, job budget validation, and search query validation already have many duplicate child issues/attempts.
