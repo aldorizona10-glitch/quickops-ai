@@ -14,6 +14,7 @@ This file tracks revenue attempts that are not QuickOps agency outreach. These a
 - Fork branch: https://github.com/aldorizona10-glitch/maifetch/tree/elixir-rewrite-bounty-1
 - Pull request: https://github.com/HutchyBen/maifetch/pull/12
 - Claim comment: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4675809351
+- Hardening update comment: https://github.com/HutchyBen/maifetch/pull/12#issuecomment-4675902200
 - Status: PR open and mergeable when checked.
 - Local worktree: `/tmp/maifetch-elixir`
 - Latest commit: `7730097 Harden Elixir rewrite compatibility`
@@ -42,6 +43,7 @@ git diff --check
 - Replaced RGB ANSI helper call with a direct ANSI true-color sequence.
 - Replaced `Exception.message/1` for Req errors with `inspect/1` to avoid assuming the error value is an exception struct.
 - PR rechecked after push: open and mergeable, no status checks configured.
+- PR comment posted after hardening so the maintainer can review the latest focused Elixir rewrite state.
 
 Runtime validation note:
 
