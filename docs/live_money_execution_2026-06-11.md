@@ -71,6 +71,14 @@ Generated: 2026-06-11 06:42 WIB
    - Cash path: paid test task or contractor discussion for operator-facing workflow QA/backend handoff support.
    - Scope promised: no production access required; public docs, demo flows, sample traces, or sandbox only if they provide one.
 
+11. Sent AI agent workflow/backend paid trial offer to Kinxshn.
+   - Recipient: `mercedes@kinxshn.com`
+   - Message: `email_queue/kinxshn-agent-workflow-trial.eml`
+   - Gmail ID: `19eb4331c3d067c0`
+   - Basis: June 2026 HN hiring post asks for forward-deployed backend work on property-management AI agents.
+   - Cash path: small async paid trial around agent tool/workflow checklist, deterministic-vs-model boundary, RBAC/audit/error-state requirements.
+   - Scope caveat: explicitly disclosed GMT+7 is outside their UTC -3 to +3 preference; no production access/customer data requested.
+
 ## Priority Queue
 
 ### P0 - Reply Conversion

@@ -1,0 +1,34 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: mercedes@kinxshn.com
+Subject: HN - AI agent workflow/backend trial
+Content-Type: text/plain; charset=utf-8
+
+Hi Mercedes,
+
+I saw your HN post for a forward deployed backend engineer working on property-management AI agents.
+
+One caveat up front: I am based in GMT+7, which is outside your UTC -3 to +3 preference. If that is a hard constraint, no worries. If you are open to a small async paid trial first, the work you described is close to the systems I focus on: turning messy operational workflows into agent-usable tools, checklists, and handoff-ready implementation plans.
+
+A narrow first task I can do without production access:
+
+- review one client-facing agent workflow from a tool-calling and operator-handoff perspective
+- map deterministic tools vs. model calls for the use case
+- identify RBAC/audit/error-state requirements before implementation
+- draft an implementation checklist that a backend engineer can build from
+- turn it into a concise report or issue set
+
+I can work from public docs, sample workflow notes, synthetic data, or a sandbox if you provide one. I will not ask for customer data or production credentials.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/landing/#services
+https://aldorizona10-glitch.github.io/quickops-ai/start/index.html
+https://github.com/aldorizona10-glitch
+
+Context I reviewed:
+https://news.ycombinator.com/item?id=48362294
+
+If useful, I can start with a fixed small paid trial and keep the scope easy to evaluate.
+
+Best,
+Aldo
