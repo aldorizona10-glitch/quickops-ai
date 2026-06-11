@@ -16,7 +16,8 @@ This file tracks revenue attempts that are not QuickOps agency outreach. These a
 - Claim comment: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4675809351
 - Status: PR open and mergeable when checked.
 - Local worktree: `/tmp/maifetch-elixir`
-- Commit: `6f5d397 Rewrite maifetch in Elixir`
+- Latest commit: `7730097 Harden Elixir rewrite compatibility`
+- Original rewrite commit: `6f5d397 Rewrite maifetch in Elixir`
 - Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
 
 Scope completed:
@@ -33,6 +34,14 @@ Validation:
 ```bash
 git diff --check
 ```
+
+2026-06-11 hardening update:
+
+- Pushed commit `7730097` to PR #12.
+- Replaced map-guard CLI argument parsing with explicit `Map.fetch/2`.
+- Replaced RGB ANSI helper call with a direct ANSI true-color sequence.
+- Replaced `Exception.message/1` for Req errors with `inspect/1` to avoid assuming the error value is an exception struct.
+- PR rechecked after push: open and mergeable, no status checks configured.
 
 Runtime validation note:
 
