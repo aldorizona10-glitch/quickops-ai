@@ -60,6 +60,7 @@ ALLOWED_RECIPIENTS = {
     "taylor@apmhelp.com",
     "hiring@laminr.co",
     "mercedes@kinxshn.com",
+    "bert@segments.ai",
 }
 
 

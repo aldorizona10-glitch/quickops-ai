@@ -1,12 +1,12 @@
 # Live Money Execution - 2026-06-11
 
-Generated: 2026-06-11 06:42 WIB
+Generated: 2026-06-11 08:09 WIB
 
 ## Actions Completed
 
 1. Refreshed revenue scout.
    - Output: `full_auto_revenue_scout.csv`
-   - Count: 78 opportunities
+   - Count: 76 opportunities
 
 2. Checked Gmail replies.
    - Result: 0 new replies
@@ -78,6 +78,14 @@ Generated: 2026-06-11 06:42 WIB
    - Basis: June 2026 HN hiring post asks for forward-deployed backend work on property-management AI agents.
    - Cash path: small async paid trial around agent tool/workflow checklist, deterministic-vs-model boundary, RBAC/audit/error-state requirements.
    - Scope caveat: explicitly disclosed GMT+7 is outside their UTC -3 to +3 preference; no production access/customer data requested.
+
+12. Sent labeling workflow QA paid trial offer to Segments.ai / Uber AI Solutions.
+   - Recipient: `bert@segments.ai`
+   - Message: `email_queue/segments-labeling-workflow-qa.eml`
+   - Gmail ID: `19eb437928f9aea9`
+   - Basis: June 2026 HN hiring post asks for senior product engineering on customer-facing labeling workflows.
+   - Cash path: small paid workflow QA/handoff pass around annotation, review, filtering, autosave, API, and background-job assumptions.
+   - Scope promised: no production data/customer access; public docs, screenshots, demo flows, synthetic examples, or sandbox only if provided.
 
 ## Priority Queue
 

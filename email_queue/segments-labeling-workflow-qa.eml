@@ -1,0 +1,34 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: bert@segments.ai
+Subject: HN - labeling workflow QA / handoff pass
+Content-Type: text/plain; charset=utf-8
+
+Hi Bert,
+
+I saw your HN post for the Uber AI Solutions / Segments.ai senior product engineer role. I am not positioning this as a full-time application; I wanted to offer a smaller fixed-scope pass that maps closely to the workflow problems you listed.
+
+Your post mentioned improving customer-facing labeling workflows: 2D/3D annotation speed, autosave, undo/redo, review, filtering, issue tracking, API contracts, permissions, background jobs, and operational tooling. I can help with a concise external workflow QA/handoff pass around those surfaces.
+
+A useful first slice:
+
+- review one labeling workflow from operator and reviewer perspectives
+- map expected states for autosave, undo/redo, filtering, issue escalation, and handoff
+- identify API/background-job assumptions that should be explicit before implementation
+- draft a QA checklist for workflow regressions and edge cases
+- turn the findings into a concise implementation-ready report or issue list
+
+I can work from public docs, screenshots, demo flows, synthetic examples, or a sandbox if you choose to provide one. I will not ask for production data or customer access.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/landing/#services
+https://aldorizona10-glitch.github.io/quickops-ai/start/index.html
+https://github.com/aldorizona10-glitch
+
+Context I reviewed:
+https://news.ycombinator.com/item?id=48370791
+
+If useful, I can start with a small paid trial and keep it narrow enough for fast evaluation.
+
+Best,
+Aldo

@@ -9,6 +9,7 @@ date,channel,target,action,message_file,status,result,next_action,notes
 2026-06-11,HN Hiring,APMHelp / PM in a Box,Send paid workflow/growth pilot,email_queue/apmhelp-pminabox-ai-growth-workflow.eml,Sent,gmail_id:19eb3f7d20caf2c1,Check reply in 24h,"USD 100 PM-in-a-box marketplace/contributor funnel pilot or contract path"
 2026-06-11,HN Hiring,Laminar Engineering,Send remote contract workflow/QA support,email_queue/laminar-contract-workflow-qa.eml,Sent,gmail_id:19eb42c30f6bfa83,Check reply in 24h,"Remote contract post; narrow paid test task around operator workflow QA"
 2026-06-11,HN Hiring,Kinxshn,Send AI agent workflow/backend paid trial,email_queue/kinxshn-agent-workflow-trial.eml,Sent,gmail_id:19eb4331c3d067c0,Check reply in 24h,"Timezone caveat GMT+7 vs UTC -3 to +3; property-management AI agent workflow fit"
+2026-06-11,HN Hiring,Segments.ai / Uber AI Solutions,Send labeling workflow QA paid trial,email_queue/segments-labeling-workflow-qa.eml,Sent,gmail_id:19eb437928f9aea9,Check reply in 24h,"Labeling workflow QA/handoff pass; HN post lists autosave undo review filtering API contracts operational tooling"
 2026-06-10,Hacker News,Add to Sheets,Send/comment outreach,outreach_batch_001.md,Superseded,sent via email_queue/addtosheets-lead-template-pilot.eml,Check reply in 24h,
 2026-06-10,Upwork,Search Zapier automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,
 2026-06-10,Upwork,Search n8n automation,Submit proposal,outreach_batch_002.md,Ready,,Apply to 3 matching jobs,

@@ -1,6 +1,6 @@
 # Full Automation Revenue Scout Report
 
-Generated: 2026-06-11 07:52:30 WIB
+Generated: 2026-06-11 08:07:04 WIB
 
 This report lists earning paths where discovery and triage can be automated. It does not claim money is earned until a platform/client/maintainer accepts and pays.
 
@@ -56,36 +56,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - PDF workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: Updatecli – A Declarative Update Policy Engine
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 85
-- URL: https://news.ycombinator.com/item?id=48192415
-- Context: https://news.ycombinator.com/item?id=48192415
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Built a verifiable, open-source SoC 2 readiness scanner
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 85
-- URL: https://loxeai.com
-- Context: https://news.ycombinator.com/item?id=48164906
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: mehta.arja@northeastern.edu
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
 ### Show HN: Inspection Credit – read your inspection, draft the negotiation
 
 - Source: hacker_news
@@ -131,21 +101,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: Turnstile – a Windows browser picker that suggests routing rules
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 68
-- URL: https://news.ycombinator.com/item?id=48296321
-- Context: https://news.ycombinator.com/item?id=48296321
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
 ### Show HN: AG2B – Run the agent loop in the browser, expose your tools via WebMCP
 
 - Source: hacker_news
@@ -174,21 +129,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact email: os@ota.run
 - Contact URL: 
 - Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Flow – Workflow automation that follows you across projects
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 60
-- URL: https://github.com/flowexec/flow
-- Context: https://news.ycombinator.com/item?id=48023887
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: https://support.github.com
-- Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Show HN: Clor – give your agent claws
@@ -251,49 +191,19 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: NetCopilot – AI-native terminal for network engineers
+### Show HN: An iOS bubble level designed to calibrate away camera bump
 
 - Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 55
-- URL: https://netcopilot.app/
-- Context: https://news.ycombinator.com/item?id=47922187
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: SoMatic – Vision-based OS automation framework for AI agents
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
+- Lane: HN Show HN workflow buyer
 - Score: 50
-- URL: https://github.com/Smyan1909/SoMatic
-- Context: https://news.ycombinator.com/item?id=48221146
+- URL: https://apps.apple.com/us/app/bubble-level-calibrated/id6767735397
+- Context: https://news.ycombinator.com/item?id=48429618
 - Automation: auto_discover_auto_draft_manual_send
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
-- Contact URL: https://support.github.com
-- Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Agent-data – a CLI for giving agents real-time, structured data
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 50
-- URL: https://agent-data.dev/
-- Context: https://news.ycombinator.com/item?id=48052476
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
-- Draft subject: Show HN - AI workflow testing pass
+- Contact URL: https://apps.apple.com/us/app/reorder-contacts-reorder-it/id583700229
+- Draft subject: Show HN - e-signature workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### MoonFuji/BountyScout: 🎯 Bounty Alert: 1 fresh fiat bounty
@@ -385,3 +295,93 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Contact URL: 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### onflow/flow-credit-markets: Bug Bounty
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/onflow/flow-credit-markets/issues/26
+- Context: https://github.com/onflow/flow-credit-markets/issues/26
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### vansh-09/BountyScout: [BOUNTY] Text Needed
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/vansh-09/BountyScout/issues/17
+- Context: https://github.com/vansh-09/BountyScout/issues/17
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### redmushie/ss14-starlight: Bounty administration console
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/redmushie/ss14-starlight/issues/11
+- Context: https://github.com/redmushie/ss14-starlight/issues/11
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### kiddie7/Bug-bounty-: Bug Bounty Report
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/kiddie7/Bug-bounty-/issues/1
+- Context: https://github.com/kiddie7/Bug-bounty-/issues/1
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
+### Show HN: Odeva Booking – A unified PMS for holiday parks and campgrounds
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 43
+- URL: https://news.ycombinator.com/item?id=48376362
+- Context: https://news.ycombinator.com/item?id=48376362
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: A Bluesky client for PICO-8
+
+- Source: hacker_news
+- Lane: HN Show HN testing buyer
+- Score: 43
+- URL: https://picosky.vinnymac.dev/
+- Context: https://news.ycombinator.com/item?id=48475534
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
