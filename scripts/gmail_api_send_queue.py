@@ -58,6 +58,7 @@ ALLOWED_RECIPIENTS = {
     "sales@statewright.ai",
     "hello@sekorti.com",
     "taylor@apmhelp.com",
+    "hiring@laminr.co",
 }
 
 

@@ -1,0 +1,32 @@
+From: Aldo Rizona <aldorizona10@gmail.com>
+To: hiring@laminr.co
+Subject: HN - remote contract operator workflow/QA support
+Content-Type: text/plain; charset=utf-8
+
+Hi Laminar team,
+
+I saw your June HN post for a remote contract Full-Stack CV/ML Systems Engineer. The full CV/edge pipeline is broader than what I should claim as a perfect fit, but one slice looks directly useful for a small paid trial: operator-facing workflow QA, backend/API handoff checks, and failure-case documentation around deployed vision systems.
+
+I can start with a focused fixed-scope pass, for example:
+
+- review the operator dashboard/API workflow from a production handoff perspective
+- map failure states that should be visible to operators and engineers
+- draft a lightweight test/eval checklist for live-video diagnosis workflows
+- document integration assumptions, retry/error states, and support handoff notes
+- turn the findings into a concise implementation-ready report
+
+I work async-first from GMT+7, can overlap with UTC-05 when needed, and do not need paid tools upfront. I am not asking for access to production systems; I can work from public docs, demo flows, sample traces, or a sandbox if you choose to provide one.
+
+Proof/profile:
+https://aldorizona10-glitch.github.io/quickops-ai/profile/
+https://aldorizona10-glitch.github.io/quickops-ai/landing/#services
+https://aldorizona10-glitch.github.io/quickops-ai/start/index.html
+https://github.com/aldorizona10-glitch
+
+Context I reviewed:
+https://news.ycombinator.com/item?id=48362073
+
+If this is useful, I can do a small paid test task first and keep it narrow enough for you to evaluate quickly.
+
+Best,
+Aldo

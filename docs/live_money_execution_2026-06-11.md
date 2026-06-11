@@ -63,6 +63,14 @@ Generated: 2026-06-11 06:42 WIB
    - GitHub HackerOne
    - Shopify HackerOne
 
+10. Sent remote contract workflow/QA support offer to Laminar Engineering.
+   - Recipient: `hiring@laminr.co`
+   - Message: `email_queue/laminar-contract-workflow-qa.eml`
+   - Gmail ID: `19eb42c30f6bfa83`
+   - Basis: June 2026 HN hiring post asks for remote contract full-stack CV/ML systems help.
+   - Cash path: paid test task or contractor discussion for operator-facing workflow QA/backend handoff support.
+   - Scope promised: no production access required; public docs, demo flows, sample traces, or sandbox only if they provide one.
+
 ## Priority Queue
 
 ### P0 - Reply Conversion
