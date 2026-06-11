@@ -15,9 +15,10 @@ This file tracks revenue attempts that are not QuickOps agency outreach. These a
 - Pull request: https://github.com/HutchyBen/maifetch/pull/12
 - Claim comment: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4675809351
 - Hardening update comment: https://github.com/HutchyBen/maifetch/pull/12#issuecomment-4675902200
+- Runtime validation update comment: https://github.com/HutchyBen/maifetch/pull/12#issuecomment-4676138777
 - Status: PR open and mergeable when checked.
 - Local worktree: `/tmp/maifetch-elixir`
-- Latest commit: `7730097 Harden Elixir rewrite compatibility`
+- Latest commit: `d5c43a5 Use OTP HTTP client for Elixir rewrite`
 - Original rewrite commit: `6f5d397 Rewrite maifetch in Elixir`
 - Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
 
@@ -45,16 +46,59 @@ git diff --check
 - PR rechecked after push: open and mergeable, no status checks configured.
 - PR comment posted after hardening so the maintainer can review the latest focused Elixir rewrite state.
 
-Runtime validation note:
+2026-06-11 runtime validation update:
 
-- `elixir` and `mix` are not installed in this WSL environment.
-- `apt-get install elixir` was blocked by lack of root privileges.
-- The PR body clearly disclosed this and listed reviewer validation commands: `mix deps.get`, `mix test`, `mix escript.build`.
+- Installed Elixir/Mix in WSL with user-assisted sudo.
+- Removed `Req`/`Mint` and switched the Elixir API client to Erlang/OTP `:httpc`.
+- Added `mix.lock` so dependency resolution is reproducible and only `jason` remains as a Hex dependency.
+- Validation completed: `mix deps.get`, `mix format`, `mix test` -> 6 tests / 0 failures, `mix escript.build` -> generated escript.
+- Pushed commit `d5c43a5` to PR #12 and posted validation comment.
 
 Next actions:
 
 1. Watch PR #12 for maintainer feedback.
 2. If changes are requested, patch `/tmp/maifetch-elixir`, push `aldorizona10-glitch:elixir-rewrite-bounty-1`, and reply on the PR.
+3. After merge/acceptance, ask maintainer for payout instructions.
+
+### maifetch Emacs Lisp rewrite
+
+- Bounty source: https://github.com/HutchyBen/maifetch/issues/1
+- Latest maintainer direction: rewrite the project in Emacs Lisp so it can run inside the maintainer's editor.
+- Latest stated amount: GBP 200.
+- Fork branch: https://github.com/aldorizona10-glitch/maifetch/tree/emacs-lisp-rewrite-bounty-1
+- Pull request: https://github.com/HutchyBen/maifetch/pull/13
+- Claim comment: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4676131976
+- Status: PR open and mergeable when checked.
+- Local worktree: `/tmp/maifetch-elisp`
+- Latest commit: `d915933 Rewrite maifetch in Emacs Lisp`
+- Payment status: not paid; depends on maintainer acceptance/merge and payout follow-through.
+
+Scope completed:
+
+- Replaced Go project with single-file Emacs Lisp package `maifetch.el`.
+- Added interactive `M-x maifetch` command for use inside Emacs.
+- Added batch entrypoint through `maifetch-batch`.
+- Preserved CLI/config/env precedence and `MAITEA_*` plus `MAIFETCH_*` env aliases.
+- Added MaiTea API helpers for profiles, plays, all plays, best scores, and all best scores.
+- Added focused ERT tests.
+
+Validation completed:
+
+```bash
+git diff --check
+emacs --version
+emacs --batch -L . -l maifetch.el --eval '(byte-compile-file "maifetch.el")'
+emacs --batch -L . -l maifetch-test.el -f ert-run-tests-batch-and-exit
+emacs --batch -L . -l maifetch.el --funcall maifetch-batch -- --help
+```
+
+- GNU Emacs 30.2.
+- ERT result: 4 tests / 0 unexpected.
+
+Next actions:
+
+1. Watch PR #13 for maintainer feedback.
+2. If changes are requested, patch `/tmp/maifetch-elisp`, push `aldorizona10-glitch:emacs-lisp-rewrite-bounty-1`, and reply on the PR.
 3. After merge/acceptance, ask maintainer for payout instructions.
 
 ### maifetch Rust rewrite
