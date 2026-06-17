@@ -13,6 +13,8 @@ This is the operating standard for QuickOps AI revenue work. The goal is real mo
 - Do not run active security testing without written authorization or official bug bounty/VDP scope.
 - Do not use weak portfolio links. Use only the main agency, profile, start, and security pages.
 - Do not ask for payment before scope is confirmed, except when the prospect explicitly wants to proceed.
+- Do not pass Markdown-heavy GitHub comments or email bodies as inline shell strings. Use a body file or JSON input file so backticks, dollar signs, and command-like text cannot be executed by the shell.
+- Do not ask the user to paste platform passwords, MFA codes, cookies, or private session exports. Use the local-session pattern in `docs/secure_platform_login_runbook.md`.
 
 ## Public Links To Use
 

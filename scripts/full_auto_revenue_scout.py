@@ -16,6 +16,17 @@ WIB = timezone(timedelta(hours=7), "WIB")
 UA = "QuickOps-AI-Revenue-Scout/1.0"
 MAX_AGE_DAYS = 45
 CONTACT_DISCOVERY_LIMIT = 12
+CONTACT_PATHS = (
+    "/contact",
+    "/contact/",
+    "/support",
+    "/support/",
+    "/about",
+    "/about/",
+    "/team",
+    "/team/",
+)
+GENERAL_CONTACT_SKIP_PREFIXES = ("privacy@", "legal@", "security@", "abuse@", "noreply@", "no-reply@")
 
 
 HN_QUERIES = [
@@ -105,6 +116,35 @@ def append_unique(items: list[dict[str, str]], row: dict[str, str], seen: set[st
     items.append(row)
 
 
+def valid_contact_email(email: str) -> bool:
+    email_l = email.lower()
+    return (
+        not email_l.endswith((".png", ".jpg", ".jpeg", ".webp", ".svg"))
+        and not email_l.endswith("@example.com")
+        and not email_l.endswith("@domain.com")
+        and "example." not in email_l
+        and not email_l.startswith(GENERAL_CONTACT_SKIP_PREFIXES)
+    )
+
+
+def emails_from_text(raw: str) -> list[str]:
+    return sorted({email.lower() for email in EMAIL_RE.findall(raw) if valid_contact_email(email)})
+
+
+def likely_public_contact_links(raw: str, base_url: str) -> list[str]:
+    links = re.findall(r'href=["\']([^"\']*(?:contact|support|about|get-in-touch|hello)[^"\']*)["\']', raw, re.I)
+    resolved: list[str] = []
+    seen: set[str] = set()
+    for link in links:
+        url = urllib.parse.urljoin(base_url, link)
+        if url.startswith("mailto:"):
+            continue
+        if url.startswith("http") and url not in seen:
+            seen.add(url)
+            resolved.append(url)
+    return resolved
+
+
 def discover_contact(url: str) -> tuple[str, str]:
     if not url.startswith("http") or "news.ycombinator.com" in url:
         return "", ""
@@ -112,21 +152,38 @@ def discover_contact(url: str) -> tuple[str, str]:
         raw = fetch_text(url)
     except Exception:
         return "", ""
-    emails = sorted(
-        {
-            email.lower()
-            for email in EMAIL_RE.findall(raw)
-            if not email.lower().endswith((".png", ".jpg", ".jpeg", ".webp", ".svg"))
-            and not email.lower().endswith("@example.com")
-            and not email.lower().endswith("@domain.com")
-            and "example." not in email.lower()
-        }
-    )
-    contact_links = re.findall(r'href=["\']([^"\']*(?:contact|support|about|get-in-touch|hello)[^"\']*)["\']', raw, re.I)
-    contact_url = ""
-    if contact_links:
-        contact_url = urllib.parse.urljoin(url, contact_links[0])
+    emails = emails_from_text(raw)
+    contact_candidates = likely_public_contact_links(raw, url)
+    parsed = urllib.parse.urlparse(url)
+    if parsed.scheme and parsed.netloc:
+        base = f"{parsed.scheme}://{parsed.netloc}"
+        contact_candidates.extend(base + path for path in CONTACT_PATHS)
+    contact_url = contact_candidates[0] if contact_candidates else ""
+    checked: set[str] = set()
+    for contact_page in contact_candidates[:8]:
+        if contact_page in checked:
+            continue
+        checked.add(contact_page)
+        try:
+            contact_raw = fetch_text(contact_page, max_bytes=180_000)
+        except Exception:
+            continue
+        page_emails = emails_from_text(contact_raw)
+        if page_emails:
+            emails.extend(page_emails)
+        if not contact_url:
+            contact_url = contact_page
+    emails = sorted(set(emails))
     return (emails[0] if emails else ""), contact_url
+
+
+def first_external_hn_link(text: str) -> str:
+    links = re.findall(r'https?://[^\s<>"\']+', text)
+    for link in links:
+        cleaned = link.rstrip(").,;]")
+        if "news.ycombinator.com" not in cleaned:
+            return cleaned
+    return ""
 
 
 def draft_offer(title: str, url: str, lane: str) -> tuple[str, str]:
@@ -170,8 +227,8 @@ def hn_search() -> list[dict[str, str]]:
             if not recent_enough(hit.get("created_at_i")):
                 continue
             title = clean(hit.get("title"))
-            url = clean(hit.get("url")) or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
             text = clean(hit.get("story_text"))
+            url = clean(hit.get("url")) or first_external_hn_link(text) or f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
             created = clean(hit.get("created_at"))
             hn_url = f"https://news.ycombinator.com/item?id={hit.get('objectID')}"
             signal = f"{title} {text}"

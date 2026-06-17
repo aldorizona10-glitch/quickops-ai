@@ -101,6 +101,21 @@ Next actions:
 2. If changes are requested, patch `/tmp/maifetch-elisp`, push `aldorizona10-glitch:emacs-lisp-rewrite-bounty-1`, and reply on the PR.
 3. After merge/acceptance, ask maintainer for payout instructions.
 
+2026-06-12 triage update:
+
+- Maintainer changed the requested target again after the Emacs Lisp PR was submitted, now asking for F# / .NET.
+- This is a moving-scope bounty pattern. Do not implement another rewrite unless the maintainer first fixes the final target and payout terms before work starts.
+- Current automation position: keep PR #13 open, monitor for review/acceptance, and avoid additional unpaid rewrites.
+- Auth limitation: no `GITHUB_TOKEN` / `GH_TOKEN` is available in the local environment, and `gh` is not installed, so automated GitHub issue comments cannot be posted from here until GitHub auth is provided.
+
+Ready comment if GitHub auth becomes available:
+
+```md
+I submitted the Emacs Lisp rewrite for the latest direction at the time in #13, with local validation completed. Since the target changed again after submission, I am pausing additional rewrites until the current submitted work is reviewed or the final target and payout terms are fixed before implementation.
+```
+
+Posted: https://github.com/HutchyBen/maifetch/issues/1#issuecomment-4683140503
+
 ### ItzFireable Portfolio Haskell rewrite
 
 - Bounty source: https://github.com/ItzFireable/Portfolio/issues/7
@@ -141,6 +156,20 @@ Next actions:
 1. Watch PR #10 and issue #7 for maintainer feedback.
 2. If a Haskell build failure is reported, patch `/tmp/itzfireable-portfolio`, push `aldorizona10-glitch:haskell-portfolio-rewrite-bounty-7`, and reply on the PR.
 3. If accepted/merged, ask for payout instructions.
+
+2026-06-12 triage update:
+
+- Maintainer changed the requested target again after the Haskell PR was submitted, now asking for Fortran.
+- This is a moving-scope bounty pattern. Do not implement the Fortran rewrite unless the maintainer first fixes the final target and payout terms before work starts.
+- Current automation position: keep PR #10 open as submitted work, monitor for review/acceptance, and stop additional unpaid rewrites.
+
+Ready comment if GitHub auth becomes available:
+
+```md
+I submitted the Haskell rewrite against the latest stated bounty direction at the time. Since the target has changed again after submission, I am pausing further rewrites unless the scope and payout terms are fixed before work starts.
+```
+
+Posted: https://github.com/ItzFireable/Portfolio/issues/7#issuecomment-4683140437
 
 ### maifetch Rust rewrite
 
@@ -218,6 +247,16 @@ Next actions:
 - Gmail send status: sent, Gmail ID `19eb354163dc2ab7`.
 - Payment status: not paid; depends on reply, acceptance, delivery, and invoice/payout agreement.
 
+2026-06-12 additional USD 100 workflow/testing outreach:
+
+- Target: SynCodeLive, Show HN live coding / AI collaboration product.
+- Source: https://news.ycombinator.com/item?id=48487791
+- Public contact: `hello@syncodelive.com`
+- Offer sent: USD 100 fixed external workflow testing pass for first-session onboarding, invite/join flow, permission edge cases, AI handoff clarity, and early-tester checklist.
+- Email queue file: `email_queue/syncodelive-workflow-testing-pass.eml`
+- Gmail send status: sent, Gmail ID `19eb7c1f74d27196`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
 ### Quantum Visualizer data/product maintenance
 
 - Bounty source: https://github.com/1btc-news/news-client/issues/33
@@ -242,6 +281,50 @@ Next actions:
 1. Watch PR #74 for DRI/reviewer feedback.
 2. Patch quickly if review changes are requested.
 3. If accepted/merged, ask whether it qualifies for the Issue #33 accepted-feature/data-update payout lane.
+
+2026-06-12 triage update:
+
+- PR #74 is open, cleanly mergeable, and reviewed positively by `Iskander-Agent`.
+- `arc0btc` also logged a code-correctness pass in the bounty issue and concurred that the PR is clean with no correctness issues.
+- Current blocker is PC review / final approval from the maintainers named in the PR thread.
+- This is the healthiest current bounty-adjacent item because the review says there are no diff issues and the PR is waiting on approval rather than a moving target.
+- Current automation position: do not change the PR unless asked; monitor and be ready to patch quickly.
+- Bounty issue reference: https://github.com/1btc-news/news-client/issues/33#issuecomment-4682653874
+
+Ready comment if GitHub auth becomes available:
+
+```md
+Thanks for the review. I will keep this PR stable while it waits for PC review. If ThankNIXlater/lekanbams want any adjustment, I can patch it quickly.
+```
+
+Posted: https://github.com/Iskander-Agent/quantum-visualizer/pull/74#issuecomment-4683140581
+
+### Quantum Visualizer Neha Narula history correction
+
+- Bounty source: https://github.com/1btc-news/news-client/issues/33
+- Active maintenance lane: narrow source-backed data-correctness pass.
+- Pull request: https://github.com/Iskander-Agent/quantum-visualizer/pull/75
+- Fork branch: https://github.com/aldorizona10-glitch/quantum-visualizer/tree/fix-neha-history-score
+- Status: PR open and mergeable when checked.
+- Commit: `aba224e Fix Neha Narula history score`
+- Payout context: no explicit payout commitment for this small correction; Issue #33 says good data PRs still land, payout/admin eligibility depends on reviewer/admin approval.
+- Work completed: corrected the `update_history` entry for Neha Narula from score `1→3` to `1→4`, matching the current developer record and the already cited April 3 primary source.
+- Primary source: https://nehanarula.org/2026/04/03/bitcoin-and-quantum-computing.html
+
+Validation completed:
+
+```bash
+npm run validate:data
+npm run check:dashboard
+npm run check:frontend
+git diff --check
+```
+
+Next actions:
+
+1. Watch PR #75 for DRI/reviewer feedback.
+2. Patch quickly if a wording/source adjustment is requested.
+3. If accepted/merged, ask whether it qualifies for the Issue #33 accepted data-correctness lane.
 
 ## Bounty Triage Notes
 
@@ -277,3 +360,132 @@ Skipped for now:
 - `SecureBananaLabs/bug-bounty` budget range bug: many duplicate issues/PRs exist (`#2853`, `#5350`, `#5803`, and others); skipped.
 - `charles-openclaw/charles-microbounties`: latest open issues rechecked. No zero-comment open candidate found; newest issues already have `/attempt`, `/opire try`, or upstream PRs by other contributors. Do not duplicate.
 - Current active payout attempts remain maifetch GBP 50 and the quantum visualizer maintenance PR. No new cash has been received.
+
+2026-06-12 additional USD 100 app testing outreach:
+
+- Target: Stiuvou / Grandpa Games, an ad-free game collection for older players and general family play.
+- Source: https://news.ycombinator.com/item?id=48444267
+- Public contact: `info@stiuvou.ch`.
+- Offer sent: USD 100 external testing pass for first-download flow, first-three-games selection, older-player usability, App Store/Google Play trust signals, local-only progress and unlock-point edge cases, and early-tester checklist.
+- Email queue file: `email_queue/stiuvou-grandpagames-testing-pass.eml`.
+- Gmail send status: sent, Gmail ID `19eb7d53dff2debf`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 fast-response revenue triage:
+
+- HackerOne fast-response preference applied: prioritize programs with short first-response/triage/bounty timelines over slow high-prestige targets.
+- Airbnb HackerOne extracted from logged-in session: average first response shown as 0h, triage 12h, bounty 2w2d, payout SLA 5 business days after triage. Passive high-impact DNS takeover sweep checked 200 prioritized CT/DNS names and found 0 takeover candidates. No report submitted.
+- Newegg HackerOne extracted from logged-in session: first response 4h, triage 1d23h, bounty 1w14h. Exact eligible assets recorded. Passive CT/DNS sweep returned 0 eligible CT names and 0 takeover candidates. No report submitted.
+- GitHub HackerOne owned-asset boundary check covered 8 owned repos with 0 alerts. No report submitted.
+- Shopify remains the highest payout campaign identified, but safe testing requires researcher-created Shopify store/account assets; do not touch live merchant stores.
+- Shopify setup continuation: HackerOne handle verified as `acinfo`; alias used was `acinfo@wearehackerone.com`. Shopify accepted the alias far enough to redirect to `admin.shopify.com/signup`, but the admin endpoint returned `ERR_EMPTY_RESPONSE` in Edge and Windows curl showed Cloudflare challenge/403. No Shopify report submitted.
+- Unico IDtech HackerOne extracted from logged-in session: response efficiency 99%, first response 14h, triage 1d5h, average time to bounty 1w5d. Active iOS liveness campaign has 1.5x multiplier but requires physical iOS/TestFlight. Web SDK docs/assets were extracted through Edge; a single negative `/createProcess` request with invalid token returned 400 empty, and bundle scan did not produce a reportable issue. No report submitted.
+- Syfe HackerOne extracted from logged-in session: response efficiency 86%, first response 1d11h, triage 2d2h, rewards USD 50 to USD 1,500. Passive HEAD check over 7 in-scope roots returned expected web/API protected statuses; no finding and no report submitted. Production signup must use `acinfo@wearehackerone.com` before any account-bound testing.
+- HN/outreach dedupe pass: `hello@inspectioncredit.com`, `os@ota.run`, and `hello@integuru.ai` were already contacted; `founders@clor.com` was skipped as same-domain duplicate because `support@clor.com` was already contacted.
+- VisiSign is a clear product fit but no public email was found on the fetched pages; contact-form-only opportunities are tracked but not forced through automation.
+- Fast scout improvement added: `scripts/fast_nonduplicate_revenue_scout.py` uses short network timeouts and domain-level dedupe. Initial broad run timed out before finding a new clean email; continue with smaller batches or alternate sources.
+
+2026-06-12 additional USD 100 component-search testing outreach:
+
+- Target: Stillwind, high-resolution electronic component search.
+- Source: https://news.ycombinator.com/item?id=48494234
+- Public contact: `contact@stillwind.ai`.
+- Offer sent: USD 100 fixed-scope pass covering first-search onboarding, natural-language/spec-heavy search quality, datasheet/result clarity, sign-in/file-upload/feedback friction, and a reusable component-search QA checklist.
+- Email queue file: `email_queue/stillwind-component-search-testing-pass.eml`.
+- Gmail send status: sent, Gmail ID `19eb80efeb541d2e`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 additional USD 100 AI-coding workflow testing outreach:
+
+- Target: Command Center, AI coding environment for quality-focused developers.
+- Source: https://news.ycombinator.com/item?id=48453002
+- Public contact: `contact@cc.dev`.
+- Offer sent: USD 100 fixed-scope pass covering first-run setup, project import friction, agent task flow from prompt to diff to verification, review/rollback/failure-state handling, unclear quality/security expectations, and a reusable agent-workspace QA checklist.
+- Email queue file: `email_queue/ccdev-command-center-workflow-testing.eml`.
+- Gmail send status: sent, Gmail ID `19eb81f4925f3fb8`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 additional USD 100 transcription workflow testing outreach:
+
+- Target: MimicScribe, on-device transcriber with speaker identification.
+- Source: https://news.ycombinator.com/item?id=48415709
+- Public contact: `support@mimicscribe.app`.
+- Offer sent: USD 100 fixed-scope pass covering first-run onboarding and permissions, recording/import flow, speaker labeling and correction, privacy/trust wording, export/share friction, transcript cleanup expectations, and a reusable transcription QA checklist.
+- Email queue file: `email_queue/mimicscribe-transcription-workflow-testing.eml`.
+- Gmail send status: sent, Gmail ID `19eb820e9b67a233`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 additional USD 100 planning-workflow testing outreach:
+
+- Target: Topolog, typed DAG planning and deadline computation.
+- Source: https://news.ycombinator.com/item?id=48484353
+- Public contact: `hello@topolog.co.uk`.
+- Offer sent: USD 100 fixed-scope pass covering first-plan onboarding, parsing a messy real-world project brief, dependency/deadline/invalid-state feedback, DAG model clarity, export/share/handoff friction, and a reusable planning-workflow QA checklist.
+- Email queue file: `email_queue/topolog-planning-workflow-testing.eml`.
+- Gmail send status: sent, Gmail ID `19eb82a8d79dc31a`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 additional USD 100 quiz-conversion testing outreach:
+
+- Target: LittleTough / "Which AI agent are you?"
+- Source: https://news.ycombinator.com/item?id=48494173
+- Public contact: `info@littletough.com`.
+- Offer sent: USD 100 fixed-scope pass covering first-screen clarity, mobile flow friction, question wording and pacing, result-page clarity/shareability/CTA placement, trust signals, and a reusable quiz/landing-page QA checklist.
+- Email queue file: `email_queue/littletough-agent-quiz-conversion-testing.eml`.
+- Gmail send status: sent, Gmail ID `19eb82bc3774f23a`.
+- Payment status: not paid; depends on reply, acceptance, delivery, and payout agreement.
+
+2026-06-12 GitHub bounty execution:
+
+- Target: `HutchyBen/maifetch#1`, latest maintainer direction: F# rewrite applying relevant paradigms.
+- PR opened: `HutchyBen/maifetch#15` - https://github.com/HutchyBen/maifetch/pull/15
+- Scope: .NET 8 F# rewrite replacing Go module, preserving CLI/config/env precedence, MaiTea API wrapper, profile/recent-play output, score-count cap, ANSI labels, focused tests, and GitHub Actions build/test workflow.
+- Maintainer LLM rule handled: every F# source file starts with `LLM-assisted development: OpenAI GPT-5 Codex`.
+- Local validation update: installed .NET SDK 8.0.422 locally under workspace without sudo; `git diff --check` passed; `dotnet build Maifetch.sln --configuration Release --no-restore --verbosity minimal -m:1` passed; `dotnet run --project tests/Maifetch.Tests/Maifetch.Tests.fsproj --configuration Release --no-restore` passed; `dotnet run --project src/Maifetch/Maifetch.fsproj --configuration Release --no-build -- --help` passed. PR validation comment posted: https://github.com/HutchyBen/maifetch/pull/15#issuecomment-4684633196
+- Payment status: not paid; depends on maintainer review/merge/bounty decision.
+
+2026-06-12 GitHub bounty triage after maifetch:
+
+- `HutchyBen/maifetch#15` status after validation push: open, non-draft, mergeable, no failing checks shown by GitHub.
+- Gmail reply check after GitHub push: 0 new replies; agency pipeline count remains 51 real sent, 1 logged reply.
+- `ClankerNation/OpenAgents#50` reviewed because it advertised `/bounty $4300`; rejected for execution because acceptance criteria require pasting the complete session initialization text into modified files, which would disclose internal instructions. Also has prior competing claim/PR evidence, so duplicate risk is high.
+- `p0s/clankergigs#4` reviewed; skipped for real revenue because issue explicitly says it is not real USD and only uses Sepolia testnet bounty flow.
+- `zkldi/Tachi#1650` reviewed; value is £600, but maintainer requires the whole `typescript/server` module rewritten in Haskell in one PR with no milestone/reservation. GitHub tree scan shows 1,047 entries under `typescript/server/src`, so this is high-value but not a fast-response quick win.
+- Started local Tachi work after confirming no PR currently targets `#1650`: branch `haskell-server-rewrite-1650` in `tmp/tachi-haskell-shallow`, commits `2c62570 Start Haskell server rewrite` and `d7b7d82 Document Haskell porting gate`. Current work is a local scaffold only, not pushed or claimed, because a professional submission must satisfy the maintainer requirement for a full `typescript/server` Haskell rewrite in one PR.
+- Tachi Haskell toolchain update: WSL now has GHC 9.10.3, cabal-install 3.12.1.0, stack 3.7.1, plus Ubuntu-packaged Scotty/Aeson/Warp/WAI dependencies. Local validation now passes for scaffold build and smoke endpoints: `cabal build all --offline`, `/.deploy/up` 200, `/api/v1/status` success envelope, `/api/v1/config` deliberate 501 placeholder envelope.
+- Tachi Haskell implementation update: `/api/v1/config`, `/api/v1/config/beatoraja-queue-size`, `/api/v1/config/max-rivals`, and GET/POST `/api/v1/status` now return TypeScript-compatible success envelopes and config/status body fields. Revalidated with offline Cabal build plus local smoke checks for query echo, JSON body echo, config fields, numeric config endpoints, and deliberate 501 on an unported route. Still not pushed or claimed because full bounty eligibility requires the complete server rewrite, not partial endpoint parity.
+- Tachi route coverage update: generated 218 API v1 placeholder registrations directly from `src/server/router/api/v1/spec.ts`, excluding the five real status/config handlers already ported. Revalidated `cabal build all --offline`, real config route, a newly covered catalog route (`GET /api/v1/games/:game/charts`), and a late proposal webhook route (`POST /api/v1/proposals/webhook/merged`) returning explicit 501 envelopes instead of accidental 404s. Still not payout-eligible until the placeholders are replaced with real Haskell handlers.
+- Tachi parity update: added explicit guest auth context matching TypeScript unauthenticated API requests, TypeScript-style JSON failure envelopes for unknown routes, and real game support handlers for `/api/v1/games`, `/api/v1/games/:gameGroup`, and `/api/v1/games/:game` with enabled-game validation. Revalidated offline Cabal build plus smoke tests for support config, enabled game stats stub, disabled game 400, invalid game 400, and unknown-route 404.
+- Tachi empty-state API update: ported real minimal handlers for `/api/v1/activity`, `/api/v1/ublock-blocks-this`, `/api/v1/search`, and `/api/v1/search/chart-hash`. These return TypeScript-compatible success envelopes with empty data while DB-backed search/activity internals are still pending, and validate missing `search` with a 400 failure envelope. Revalidated offline Cabal build plus smoke tests for all four endpoints.
+- Tachi users update: ported `GET /api/v1/users` as a TypeScript-compatible empty-state handler returning `Returned 0 users.` and `[]`, leaving per-user DB-backed routes as explicit 501 placeholders. Revalidated offline Cabal build and smoke-tested `/api/v1/users` plus `/api/v1/users/:userID` placeholder behavior.
+- Tachi imports update: ported `GET /api/v1/imports` and `GET /api/v1/imports/failed` as TypeScript-compatible empty-state handlers returning `{imports:[], users:[]}` and `{failedImports:[], users:[]}`. Revalidated offline Cabal build and smoke-tested both endpoints plus per-import placeholder behavior.
+- Tachi clients auth update: ported unauthenticated `GET /api/v1/clients` behavior to return the same session-level 401 JSON failure as the TypeScript route. Revalidated offline Cabal build and smoke-tested the endpoint.
+- Tachi auth update: ported unauthenticated `POST /api/v1/auth/logout` behavior to return the same 409 JSON failure (`You are not logged in.`) as the TypeScript route. Revalidated offline Cabal build and smoke-tested the endpoint.
+- Tachi validation update: added a Cabal/HUnit test suite covering guest auth shape, serialized game support config, display names, and enabled-game expansion. `cabal test all --offline` passes cleanly with 3 HUnit cases.
+- Tachi auth timing-safe update: ported `POST /api/v1/auth/resend-verify-email` and `POST /api/v1/auth/forgot-password` safe responses, preserving the 200/202 success-envelope behavior without disclosing account existence. Revalidated offline Cabal build and smoke-tested both endpoints.
+- Tachi DB users update: installed Haskell PostgreSQL client dependency, added optional `POSTGRES_URL` connection helper and `UserDocument` row mapping for the `account` table. `GET /api/v1/users` and `GET /api/v1/users/:userID` now use Postgres when configured, with local no-DB fallback preserved. Revalidated offline Cabal build/test; HUnit coverage is now 4 cases including user JSON shape.
+- Tachi USC IR update: ported `GET /ir/usc/:playtype` heartbeat/auth response behavior with playtype validation, no-token/malformed-token responses, and `priv_api_token` bearer-token lookup when `POSTGRES_URL` is configured. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, and smoke-tested no-token, malformed-token, and invalid-playtype responses on local port 18080.
+- Tachi USC chart update: ported `GET /ir/usc/:playtype/charts/:chartHash` acceptance-check behavior with playtype-to-game mapping, shared USC bearer-token validation, optional Postgres chart hash lookup, and TypeScript-compatible chart-not-found message using `TACHI_USC_QUEUE_SIZE`. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, and smoke-tested no-token, malformed-token, invalid-token, and invalid-playtype responses on local port 18080.
+- Tachi localdev update: ported `GET /api/v1/seeds` and `GET /api/v1/localdev/song-seed-status` with `NODE_ENV`-based local-dev/test gating and optional Postgres song-count lookup. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, smoke-tested success responses under `NODE_ENV=dev`, and smoke-tested matching 403 local-dev-only failures under `NODE_ENV=production`.
+- Tachi startup mode update: added explicit Haskell executable mode parsing for default HTTP server, `--cron-worker`, and `--job-queue-worker`, so worker scripts no longer accidentally start the HTTP API. Worker modes currently fail loudly as an honest remaining porting boundary. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, and command-line behavior for both worker flags plus an invalid argument.
+- Tachi session-auth parity update: ported unauthenticated guest behavior for `GET /api/v1/users/:userID/api-tokens` and `GET /api/v1/users/:userID/notifications`, returning the TypeScript-compatible 401 session-level auth failure instead of placeholder 501. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, and smoke-tested both routes on local port 18080.
+- Tachi user settings update: ported `GET /api/v1/users/:userID/settings` to a Postgres-backed Haskell reader over `account_settings` plus `account_following`, preserving local no-DB 501 fallback, and ported unauthenticated `PATCH /api/v1/users/:userID/settings` to the TypeScript-compatible 401 session-level auth failure. Revalidated `git diff --check`, `cabal test all --offline`, `cabal build all --offline`, and smoke-tested GET no-DB fallback plus PATCH 401 on local port 18080.
+- Tachi migration foundation update: added `Tachi.Migrations` with `_migration` table setup, advisory lock `7461636869`, lexicographic plain/up SQL discovery, raw SHA-256 checksum storage, checksum mismatch protection, failed migration retry, and success/failure recording. Wired the HTTP startup to run migrations only when both `POSTGRES_URL` and `MIGRATIONS_DIR` are configured; local no-env smoke startup skips migrations and still serves `/.deploy/up`. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and local smoke health check.
+- Tachi game profiles update: ported `GET /api/v1/users/:userID/game-profiles` to a Postgres-backed Haskell reader over `game_profile`, including JSONB `ratings`/`classes` serialization and a route-level `__rankingData` field placeholder pending full ranking query parity. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested the no-DB fallback on local port 18080.
+- Tachi email self-auth update: ported unauthenticated guest behavior for `GET /api/v1/users/:userID/is-email-verified` and `GET /api/v1/users/:userID/email`, returning the TypeScript-compatible 401 session-level auth failure instead of placeholder 501. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested both routes on local port 18080.
+- Tachi recent imports update: ported `GET /api/v1/users/:userID/recent-imports` to a Postgres-backed Haskell aggregation over one-month recent user-intent imports, excluding the two mypagescraper import types and returning `{importType,count}` rows sorted by count. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested the no-DB fallback on local port 18080.
+- Tachi job queue foundation update: added typed Haskell `job_queue` primitives for `FOR UPDATE SKIP LOCKED` claiming, marking jobs done/failed, and requeueing 409 attempts without wiring the score-import processor yet. This preserves worker safety by not claiming real jobs before importer parity exists. Revalidated `git diff --check`, `cabal build all --offline`, and `cabal test all --offline`.
+- Tachi user stats update: ported `GET /api/v1/users/:userID/stats` to a Postgres-backed Haskell count over `score` and `session` rows. Revalidated `git diff --check`, `cabal build all --offline`, and `cabal test all --offline`.
+- Tachi user mutation auth update: ported unauthenticated guest behavior for `POST /api/v1/users/:userID/change-email`, `POST /api/v1/users/:userID/change-password`, `POST /api/v1/users/:userID/change-username`, and `GET /api/v1/users/:userID/last-username-change`, returning TypeScript-compatible 401 session-level auth failures instead of placeholders. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested representative POST/GET routes on local port 18080.
+- Tachi import timestop auth update: ported unauthenticated guest behavior for `GET`, `DELETE`, and `PUT /api/v1/users/:userID/import-timestops`, returning TypeScript-compatible 401 session-level auth failures instead of placeholders. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested GET/PUT routes on local port 18080.
+- Tachi invite/following auth update: ported unauthenticated guest behavior for invite routes and following add/remove routes, returning TypeScript-compatible 401 session-level auth failures instead of placeholders. Revalidated `git diff --check`, `cabal build all --offline`, and `cabal test all --offline`.
+- Tachi integration auth update: ported unauthenticated guest behavior for MYT, KAI, CG, Fervidex, and KSHook SV6C user integration routes, returning TypeScript-compatible 401 session-level auth failures instead of placeholder 501 responses. Revalidated `git diff --check`, `cabal build all --offline`, `cabal test all --offline`, and smoke-tested representative GET/PUT/DELETE routes on local port 18080.
+- Tachi self-auth expansion update: ported unauthenticated guest behavior for user profile patch, pfp/banner delete, API token create/delete, notification mark/delete, OAuth code creation, and client creation routes, preserving the distinct TypeScript 401 messages for direct session checks versus session-level auth middleware. Validation is running locally before commit.
+- Tachi following read update: ported `GET /api/v1/users/:userID/following` to a Postgres-backed Haskell reader over `account_following` plus `account`, returning the TypeScript-compatible `{ friends }` response when DB env is configured while keeping no-DB local fallback explicit.
+- Tachi session calendar update: ported `GET /api/v1/users/:userID/sessions/calendar` to a Postgres-backed Haskell reader over `session`, serializing compact calendar rows with `sessionID`, `name`, `desc`, `highlight`, `timeStarted`, `timeEnded`, and `game`.
+- Tachi failed import tracker update: ported `GET /api/v1/users/:userID/imports/failed` to a Postgres-backed Haskell reader over `import_tracker`, preserving `FAILED` tracker document shape and `importType`/`userIntent` filters.
+- Tachi job queue pure parity update: added Haskell job kind/status/retry constants, deterministic 409 backoff base calculation with overflow-safe cap, and worker-count option parsing matching TypeScript CLI/env precedence including `parseInt`-style leading digits. Offline HUnit coverage now includes these worker contract checks.
+- Tachi static game metadata update: ported `GET /api/v1/games/:game/playlists` and `GET /api/v1/games/:game/custom-tables` for DB-free IIDX/BMS metadata, including enabled-game validation and non-supported game 404 behavior. Playlist payload generation and BMS header/body routes remain pending because they depend on DB/external table loaders.
+- Tachi BMS table HTML update: ported `GET /api/v1/games/:game/custom-tables/:tableUrlName` for DB-free BMS HTML stub behavior with table lookup, wrong-playtype/user-specific-table errors, non-BMS 404, and invalid-game validation. Added `OUR_URL` config fallback for generated `bmstable` meta links.
+- Tachi playlist detail validation update: ported `GET /api/v1/games/:game/playlists/:playlistID` validation for unsupported games and unknown playlists, leaving the known `aaa-bpi` payload as an explicit placeholder until DB-backed chart/BPI generation is ported.
+- Tachi user imports update: ported `GET /api/v1/users/:userID/imports` to a Postgres-backed Haskell reader over completed `import` rows and related games/errors/classes/sessions/score IDs, preserving the TypeScript `ImportDocument` shape and `importType`/`userIntent` filters.

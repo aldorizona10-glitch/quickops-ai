@@ -61,6 +61,13 @@ ALLOWED_RECIPIENTS = {
     "hiring@laminr.co",
     "mercedes@kinxshn.com",
     "bert@segments.ai",
+    "hello@syncodelive.com",
+    "info@stiuvou.ch",
+    "contact@stillwind.ai",
+    "contact@cc.dev",
+    "support@mimicscribe.app",
+    "hello@topolog.co.uk",
+    "info@littletough.com",
 }
 
 

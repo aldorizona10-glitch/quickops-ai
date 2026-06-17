@@ -1,6 +1,6 @@
 # Full Automation Revenue Scout Report
 
-Generated: 2026-06-11 08:07:04 WIB
+Generated: 2026-06-15 11:14:21 WIB
 
 This report lists earning paths where discovery and triage can be automated. It does not claim money is earned until a platform/client/maintainer accepts and pays.
 
@@ -37,7 +37,7 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
-- Contact URL: 
+- Contact URL: https://visisign.app/contact
 - Draft subject: Show HN - e-signature workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -56,6 +56,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - PDF workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
+### Show HN: I am running 3 coding agents non-stop over the last 3 days. Here is how
+
+- Source: hacker_news
+- Lane: HN Show HN product feedback
+- Score: 83
+- URL: https://news.ycombinator.com/item?id=48520757
+- Context: https://news.ycombinator.com/item?id=48520757
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - AI workflow testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
 ### Show HN: Inspection Credit – read your inspection, draft the negotiation
 
 - Source: hacker_news
@@ -67,22 +82,7 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: hello@inspectioncredit.com
-- Contact URL: mailto:hello@inspectioncredit.com
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Kompressr – One Step CDN which optimizes all your files
-
-- Source: hacker_news
-- Lane: HN Show HN technical tester
-- Score: 70
-- URL: https://news.ycombinator.com/item?id=47933765
-- Context: https://news.ycombinator.com/item?id=47933765
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: 
-- Contact URL: 
+- Contact URL: https://www.inspectioncredit.com/contact
 - Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -97,7 +97,7 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
-- Contact URL: 
+- Contact URL: https://intunedhq.com/contact
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -113,36 +113,6 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
 - Contact URL: 
-- Draft subject: Show HN - AI workflow testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: OTA – a readiness contract for software repos
-
-- Source: hacker_news
-- Lane: HN Show HN product feedback
-- Score: 60
-- URL: https://ota.run
-- Context: https://news.ycombinator.com/item?id=48234838
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: os@ota.run
-- Contact URL: 
-- Draft subject: Show HN - practical workflow/testing pass
-- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
-
-### Show HN: Clor – give your agent claws
-
-- Source: hacker_news
-- Lane: HN Show HN workflow buyer
-- Score: 60
-- URL: https://clor.com/
-- Context: https://news.ycombinator.com/item?id=48375347
-- Automation: auto_discover_auto_draft_manual_send
-- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
-- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: support@clor.com
-- Contact URL: https://clor.com/claws/support-vendor-status-watch
 - Draft subject: Show HN - AI workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -186,8 +156,23 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Automation: auto_discover_auto_draft_manual_send
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
-- Contact email: hello@integuru.ai
-- Contact URL: mailto:hello@integuru.ai
+- Contact email: 
+- Contact URL: 
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### Show HN: DocStreamAI – Automatic invoice/receipt collection for Quickbooks/Xero
+
+- Source: hacker_news
+- Lane: HN Show HN workflow buyer
+- Score: 50
+- URL: https://docstreamai.com/
+- Context: https://news.ycombinator.com/item?id=48485900
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
+- Contact email: 
+- Contact URL: 
 - Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
@@ -202,9 +187,24 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
-- Contact URL: https://apps.apple.com/us/app/reorder-contacts-reorder-it/id583700229
+- Contact URL: 
 - Draft subject: Show HN - e-signature workflow testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
+
+### souleater06/mineagent: Bounty
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/souleater06/mineagent/issues/21
+- Context: https://github.com/souleater06/mineagent/issues/21
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
 
 ### MoonFuji/BountyScout: 🎯 Bounty Alert: 1 fresh fiat bounty
 
@@ -236,13 +236,13 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
 
-### xevrion-v2/agent-playground: Bounty issue template omits required /bounty marker
+### Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug: Bounty: Chapter 2 \u2014 Bounties Before Bags
 
 - Source: github
 - Lane: Open-source paid bounty
 - Score: 45
-- URL: https://github.com/xevrion-v2/agent-playground/issues/687
-- Context: https://github.com/xevrion-v2/agent-playground/issues/687
+- URL: https://github.com/Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug/issues/2
+- Context: https://github.com/Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug/issues/2
 - Automation: auto_discover_manual_claim_auto_pr_possible
 - Cash path: Bounty payment only after maintainer accepts/merges and pays
 - Blocker: Must inspect duplicate attempts and payout rules before coding
@@ -251,13 +251,13 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
 
-### Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug: Bounty: Chapter 2 \u2014 Bounties Before Bags
+### xevrion-v2/agent-playground: Bounty issue template omits required /bounty marker
 
 - Source: github
 - Lane: Open-source paid bounty
 - Score: 45
-- URL: https://github.com/Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug/issues/2
-- Context: https://github.com/Marvin-The-Bodega-Cat/sleeping-soundly-on-the-rug/issues/2
+- URL: https://github.com/xevrion-v2/agent-playground/issues/687
+- Context: https://github.com/xevrion-v2/agent-playground/issues/687
 - Automation: auto_discover_manual_claim_auto_pr_possible
 - Cash path: Bounty payment only after maintainer accepts/merges and pays
 - Blocker: Must inspect duplicate attempts and payout rules before coding
@@ -296,6 +296,21 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
 
+### Freeuni-OOP/final-project-gitbounty: Implement Bounties Page
+
+- Source: github
+- Lane: Open-source paid bounty
+- Score: 45
+- URL: https://github.com/Freeuni-OOP/final-project-gitbounty/issues/68
+- Context: https://github.com/Freeuni-OOP/final-project-gitbounty/issues/68
+- Automation: auto_discover_manual_claim_auto_pr_possible
+- Cash path: Bounty payment only after maintainer accepts/merges and pays
+- Blocker: Must inspect duplicate attempts and payout rules before coding
+- Contact email: 
+- Contact URL: 
+- Draft subject: 
+- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+
 ### onflow/flow-credit-markets: Bug Bounty
 
 - Source: github
@@ -326,35 +341,20 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: 
 - Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
 
-### redmushie/ss14-starlight: Bounty administration console
+### Show HN: SynCodeLive – code and talk with your team along with AI, live
 
-- Source: github
-- Lane: Open-source paid bounty
+- Source: hacker_news
+- Lane: HN Show HN testing buyer
 - Score: 45
-- URL: https://github.com/redmushie/ss14-starlight/issues/11
-- Context: https://github.com/redmushie/ss14-starlight/issues/11
-- Automation: auto_discover_manual_claim_auto_pr_possible
-- Cash path: Bounty payment only after maintainer accepts/merges and pays
-- Blocker: Must inspect duplicate attempts and payout rules before coding
+- URL: https://syncodelive.com/
+- Context: https://news.ycombinator.com/item?id=48487791
+- Automation: auto_discover_auto_draft_manual_send
+- Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
+- Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
 - Contact email: 
 - Contact URL: 
-- Draft subject: 
-- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
-
-### kiddie7/Bug-bounty-: Bug Bounty Report
-
-- Source: github
-- Lane: Open-source paid bounty
-- Score: 45
-- URL: https://github.com/kiddie7/Bug-bounty-/issues/1
-- Context: https://github.com/kiddie7/Bug-bounty-/issues/1
-- Automation: auto_discover_manual_claim_auto_pr_possible
-- Cash path: Bounty payment only after maintainer accepts/merges and pays
-- Blocker: Must inspect duplicate attempts and payout rules before coding
-- Contact email: 
-- Contact URL: 
-- Draft subject: 
-- Next action: Open issue, check comments/claims, implement only if clean and bounty is explicit.
+- Draft subject: Show HN - practical workflow/testing pass
+- Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
 ### Show HN: Odeva Booking – A unified PMS for holiday parks and campgrounds
 
@@ -371,13 +371,13 @@ This report lists earning paths where discovery and triage can be automated. It 
 - Draft subject: Show HN - practical workflow/testing pass
 - Next action: If contact exists, review draft and send one specific offer. If only contact URL exists, use form manually.
 
-### Show HN: A Bluesky client for PICO-8
+### Show HN: Sandbox AI-app lifecycle, from build to run
 
 - Source: hacker_news
 - Lane: HN Show HN testing buyer
 - Score: 43
-- URL: https://picosky.vinnymac.dev/
-- Context: https://news.ycombinator.com/item?id=48475534
+- URL: https://capakit.com/
+- Context: https://news.ycombinator.com/item?id=48461287
 - Automation: auto_discover_auto_draft_manual_send
 - Cash path: USD 50-100 paid feedback/testing/workflow offer if public contact exists
 - Blocker: Send only if contact is public and relevant; no spam; no account/KYC bypass
