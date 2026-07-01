@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Loop Lab - TestSprite Hackathon Entry</title>
+  <meta name="description" content="A compact QA loop dashboard built for the TestSprite CLI hackathon.">
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <div>
+      <p class="eyebrow">TestSprite Season 3</p>
+      <h1>Loop Lab</h1>
+    </div>
+    <div class="score" aria-live="polite">
+      <span id="pass-rate">0%</span>
+      <small>pass rate</small>
+    </div>
+  </header>
+
+  <main class="shell">
+    <section class="panel intake" aria-labelledby="intake-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Maker</p>
+          <h2 id="intake-title">Add a loop item</h2>
+        </div>
+        <button id="seed-demo" type="button">Seed demo</button>
+      </div>
+
+      <form id="loop-form">
+        <label>
+          Title
+          <input id="title" name="title" autocomplete="off" placeholder="Checkout accepts valid card" required>
+        </label>
+        <label>
+          Area
+          <select id="area" name="area">
+            <option>Frontend</option>
+            <option>Backend</option>
+            <option>Auth</option>
+            <option>Billing</option>
+            <option>Data</option>
+          </select>
+        </label>
+        <label>
+          Risk
+          <select id="risk" name="risk">
+            <option>High</option>
+            <option>Medium</option>
+            <option>Low</option>
+          </select>
+        </label>
+        <label>
+          Expected behavior
+          <textarea id="expected" name="expected" rows="4" placeholder="Describe what must pass." required></textarea>
+        </label>
+        <button class="primary" type="submit">Add to queue</button>
+      </form>
+    </section>
+
+    <section class="panel queue" aria-labelledby="queue-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Checker</p>
+          <h2 id="queue-title">Verification queue</h2>
+        </div>
+        <div class="filters" role="group" aria-label="Queue filters">
+          <button class="filter active" data-filter="all" type="button">All</button>
+          <button class="filter" data-filter="failing" type="button">Failing</button>
+          <button class="filter" data-filter="passing" type="button">Passing</button>
+        </div>
+      </div>
+      <div id="empty-state" class="empty">No loop items yet.</div>
+      <ul id="loop-list" class="loop-list"></ul>
+    </section>
+
+    <section class="panel timeline" aria-labelledby="timeline-title">
+      <div class="section-head">
+        <div>
+          <p class="eyebrow">Fix and verify</p>
+          <h2 id="timeline-title">Run history</h2>
+        </div>
+        <button id="clear-history" type="button">Clear</button>
+      </div>
+      <ol id="history-list" class="history-list"></ol>
+    </section>
+  </main>
+
+  <template id="item-template">
+    <li class="loop-item">
+      <div>
+        <div class="item-title"></div>
+        <div class="meta"></div>
+        <p class="expected"></p>
+      </div>
+      <div class="item-actions">
+        <button data-action="fail" type="button">Fail</button>
+        <button data-action="pass" type="button">Pass</button>
+        <button data-action="remove" type="button" aria-label="Remove item">Remove</button>
+      </div>
+    </li>
+  </template>
+
+  <script src="./app.js"></script>
+</body>
+</html>

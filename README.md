@@ -23,6 +23,16 @@ Live page:
 - https://aldorizona10-glitch.github.io/quickops-ai/
 - https://aldorizona10-glitch.github.io/quickops-ai/landing/
 - https://aldorizona10-glitch.github.io/quickops-ai/security-audit/
+- https://aldorizona10-glitch.github.io/quickops-ai/loop-lab/
+
+## TestSprite Hackathon Entry
+
+Loop Lab is the Season 3 TestSprite CLI hackathon entry in `loop-lab/`.
+
+- App: https://aldorizona10-glitch.github.io/quickops-ai/loop-lab/
+- Source: `loop-lab/`
+- Loop log: `LOOP.md`
+- Checker target: TestSprite CLI against the live public URL
 
 ## Full Automation Runner
 
